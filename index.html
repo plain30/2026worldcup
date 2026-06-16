@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 북중미 월드컵 경기결과 대시보드</title>
+<style>
+  :root{
+    --bg:#0b1220; --panel:#121b2e; --panel2:#0f1726; --line:#243049;
+    --txt:#e8eef7; --muted:#93a1bd; --accent:#3da5ff; --accent2:#34d399;
+    --gold:#f5c542; --red:#ef4444; --yellow:#facc15; --green:#22c55e; --chip:#1c2740;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+    background:linear-gradient(160deg,#0b1220,#0d1526 60%,#0b1220);color:var(--txt);}
+  .wrap{max-width:1180px;margin:0 auto;padding:22px 16px 60px;}
+  header.top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px;justify-content:space-between;
+    border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:6px;}
+  h1{font-size:24px;margin:0;letter-spacing:-.3px;}
+  h1 span{color:var(--accent);}
+  .sub{color:var(--muted);font-size:13px;margin-top:6px;}
+  .updated{font-size:12px;color:var(--muted);background:var(--chip);padding:6px 11px;border-radius:20px;border:1px solid var(--line);}
+  .toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .btn{cursor:pointer;font-size:12px;font-weight:700;padding:7px 13px;border-radius:9px;border:1px solid var(--accent);background:var(--accent);color:#04101f;transition:.12s;}
+  .btn:hover{filter:brightness(1.08);}
+  .btn:disabled{opacity:.6;cursor:default;}
+  .btn.ghbtn{background:var(--panel2);color:var(--accent);text-decoration:none;}
+  .auto{font-size:11.5px;color:var(--muted);display:inline-flex;align-items:center;gap:5px;cursor:pointer;user-select:none;}
+  .tabs{display:flex;gap:6px;margin:18px 0;flex-wrap:wrap;}
+  .tab{cursor:pointer;padding:10px 16px;border-radius:10px;border:1px solid var(--line);
+    background:var(--panel2);color:var(--muted);font-size:14px;font-weight:600;transition:.15s;}
+  .tab:hover{color:var(--txt);border-color:var(--accent);}
+  .tab.active{background:var(--accent);color:#04101f;border-color:var(--accent);}
+  .view{display:none;animation:fade .25s ease;}
+  .view.active{display:block;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+  .daygroup{margin-bottom:26px;}
+  .dayhead{display:flex;align-items:center;gap:10px;margin:0 0 12px;}
+  .daybadge{background:var(--accent);color:#04101f;font-weight:700;font-size:13px;padding:5px 12px;border-radius:8px;}
+  .dayhead .dow{color:var(--muted);font-size:13px;}
+  .matchgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px;}
+  .match{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.15s;}
+  .match:hover{border-color:var(--accent);}
+  .mtop{display:flex;justify-content:space-between;align-items:center;padding:7px 13px;
+    border-bottom:1px solid var(--line);font-size:11.5px;color:var(--muted);background:var(--panel2);}
+  .gtag{background:var(--chip);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-weight:700;color:var(--accent);}
+  .mbody{padding:14px 13px;cursor:pointer;}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 0;}
+  .team{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15px;}
+  .flag{font-size:19px;width:24px;text-align:center;}
+  .score{font-size:20px;font-weight:800;min-width:26px;text-align:center;}
+  .winner .score{color:var(--accent2);}
+  .loser{opacity:.62;}
+  .pending{color:var(--gold);font-size:12px;font-weight:700;}
+  .venue{font-size:11.5px;color:var(--muted);margin-top:9px;display:flex;align-items:center;gap:5px;}
+  .expand{font-size:11.5px;color:var(--accent);text-align:center;padding:7px;border-top:1px solid var(--line);cursor:pointer;user-select:none;}
+  .detail{display:none;border-top:1px solid var(--line);padding:14px 13px;background:var(--panel2);}
+  .detail.open{display:block;}
+  .dsec{margin-bottom:14px;}.dsec:last-child{margin-bottom:0;}
+  .dlabel{font-size:11px;letter-spacing:.5px;color:var(--muted);text-transform:uppercase;font-weight:700;margin-bottom:7px;}
+  .event{display:flex;align-items:center;gap:8px;font-size:13px;padding:3px 0;}
+  .ic{width:16px;text-align:center;}
+  .mins{color:var(--muted);font-size:11.5px;min-width:30px;}
+  .lineteams{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .lt h4{margin:0 0 6px;font-size:13px;}
+  .form{color:var(--muted);font-weight:500;font-size:11px;margin-left:5px;}
+  .pl{font-size:12px;padding:2px 0;color:var(--txt);display:flex;gap:6px;align-items:baseline;}
+  .pl .n{color:var(--muted);font-size:10.5px;min-width:14px;}
+  .subline{font-size:11.5px;color:var(--muted);padding:2px 0;}
+  .subline b{color:var(--accent2);font-weight:600;}
+  .subout{color:#f08a8a;}
+  .na{color:var(--muted);font-size:12px;font-style:italic;}
+  .groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(345px,1fr));gap:14px;}
+  .gcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+  .ghead{background:var(--panel2);padding:10px 14px;font-weight:700;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;}
+  .ghead .gl{color:var(--accent);}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th,td{padding:7px 6px;text-align:center;}
+  th{color:var(--muted);font-weight:600;font-size:11px;border-bottom:1px solid var(--line);}
+  td.tn{text-align:left;font-weight:600;}
+  tbody tr{border-bottom:1px solid #1a2438;}tbody tr:last-child{border-bottom:none;}
+  .pos{width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;border-radius:5px;font-size:11px;font-weight:700;}
+  .q1{background:rgba(52,211,153,.18);color:#5eead4;border:1px solid rgba(52,211,153,.4);}
+  .q2{background:rgba(61,165,255,.16);color:#7dc4ff;border:1px solid rgba(61,165,255,.35);}
+  .q3{background:rgba(245,197,66,.14);color:#f5c542;border:1px solid rgba(245,197,66,.3);}
+  .q4{background:rgba(148,161,189,.12);color:var(--muted);border:1px solid var(--line);}
+  td.pts{font-weight:800;color:var(--txt);}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:4px 0 18px;}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .dot{width:11px;height:11px;border-radius:3px;display:inline-block;}
+  .note{background:rgba(245,197,66,.07);border:1px solid rgba(245,197,66,.25);border-radius:12px;
+    padding:14px 16px;margin-top:24px;font-size:12.5px;color:#d7c89a;line-height:1.6;}
+  .note b{color:var(--gold);}
+  .filterbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center;}
+  .filterbar .fl{font-size:12px;color:var(--muted);margin-right:2px;}
+  .fchip{cursor:pointer;font-size:12px;padding:5px 11px;border-radius:18px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);}
+  .fchip.active{background:var(--chip);color:var(--accent);border-color:var(--accent);}
+  footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.7;}
+  footer a{color:var(--accent);text-decoration:none;}
+  .stat{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:8px 13px;margin:0 6px 6px 0;font-size:13px;}
+  .stat b{color:var(--accent);font-size:16px;}
+  .rankwrap{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px;}
+  .rankcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+  .rankhead{background:var(--panel2);padding:11px 15px;font-weight:700;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+  .rankhead .ri{font-size:17px;}
+  .rrow{display:flex;align-items:center;gap:10px;padding:8px 15px;border-bottom:1px solid #1a2438;font-size:13.5px;}
+  .rrow:last-child{border-bottom:none;}
+  .rrank{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;background:var(--chip);color:var(--muted);}
+  .rrow.top1 .rrank{background:var(--gold);color:#3a2c00;}
+  .rrow.top2 .rrank{background:#c9d4e6;color:#1a2233;}
+  .rrow.top3 .rrank{background:#cd7f32;color:#241200;}
+  .rname{flex:1;font-weight:600;}
+  .rteam{color:var(--muted);font-size:11.5px;}
+  .rcount{font-weight:800;color:var(--accent2);font-size:15px;}
+  .rcount.a{color:var(--accent);}
+  .secttitle{font-size:14px;font-weight:700;color:var(--muted);margin:6px 0 12px;}
+  .loading{text-align:center;color:var(--muted);padding:50px;font-size:14px;}
+  @media(max-width:640px){.rankwrap{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>2026 <span>북중미 월드컵</span> 경기결과 대시보드</h1>
+      <div class="sub">FIFA World Cup 2026 · 미국 · 캐나다 · 멕시코 · 48개국 · 12개 조</div>
+    </div>
+    <div class="toolbar">
+      <span class="updated" id="updated">불러오는 중…</span>
+      <button class="btn" id="refreshBtn" title="최신 data.json을 다시 불러옵니다">🔄 새로고침</button>
+      <label class="auto"><input type="checkbox" id="autoChk"> 자동 60초</label>
+      <a class="btn ghbtn" id="ghRun" style="display:none" target="_blank" rel="noopener" title="GitHub Actions를 지금 실행해 최신 데이터를 수집합니다">▶ GitHub에서 최신 받기</a>
+    </div>
+  </header>
+  <div id="statbar" style="margin-top:14px;"></div>
+  <div class="tabs">
+    <div class="tab active" data-v="results">📅 날짜별 경기결과</div>
+    <div class="tab" data-v="details">👥 경기별 선수기록</div>
+    <div class="tab" data-v="standings">🏆 조별리그 순위</div>
+  </div>
+  <div class="view active" id="results"><div class="loading">데이터 불러오는 중…</div></div>
+  <div class="view" id="details"></div>
+  <div class="view" id="standings">
+    <div class="legend">
+      <span><i class="dot q1"></i> 1위 (16강)</span>
+      <span><i class="dot q2"></i> 2위 (16강)</span>
+      <span><i class="dot q3"></i> 3위 (성적 따라 진출)</span>
+      <span><i class="dot q4"></i> 4위</span>
+    </div>
+    <div class="groups" id="groupGrid"></div>
+  </div>
+  <div class="note" id="dataNote"></div>
+  <footer>
+    데이터: GitHub Actions가 <a href="https://www.football-data.org" target="_blank">football-data.org</a> API에서 스코어·순위를 자동 갱신.
+    선수 상세(라인업·득점·도움·카드)는 교차검증 시드 데이터.<br>
+    제작: 종로전기(주) 요청 · 인터랙티브 단일 페이지 대시보드 (GitHub Pages 배포용).
+  </footer>
+</div>
+
+<!-- 로컬 더블클릭에서도 동작하도록 데이터를 별도 파일로 로드 (window.WC_DATA) -->
+<script src="data.js"></script>
+<script>
+const FLAG={"Mexico":"🇲🇽","South Africa":"🇿🇦","South Korea":"🇰🇷","Czechia":"🇨🇿","Canada":"🇨🇦","Bosnia and Herzegovina":"🇧🇦","Qatar":"🇶🇦","Switzerland":"🇨🇭","Brazil":"🇧🇷","Morocco":"🇲🇦","Haiti":"🇭🇹","Scotland":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","United States":"🇺🇸","Australia":"🇦🇺","Turkey":"🇹🇷","Paraguay":"🇵🇾","Germany":"🇩🇪","Curaçao":"🇨🇼","Ivory Coast":"🇨🇮","Ecuador":"🇪🇨","Netherlands":"🇳🇱","Japan":"🇯🇵","Sweden":"🇸🇪","Tunisia":"🇹🇳","Belgium":"🇧🇪","Egypt":"🇪🇬","Iran":"🇮🇷","New Zealand":"🇳🇿","Spain":"🇪🇸","Cape Verde":"🇨🇻","Saudi Arabia":"🇸🇦","Uruguay":"🇺🇾","France":"🇫🇷","Senegal":"🇸🇳","Norway":"🇳🇴","Iraq":"🇮🇶","Argentina":"🇦🇷","Austria":"🇦🇹","Algeria":"🇩🇿","Jordan":"🇯🇴","Portugal":"🇵🇹","Colombia":"🇨🇴","DR Congo":"🇨🇩","Uzbekistan":"🇺🇿","England":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","Croatia":"🇭🇷","Ghana":"🇬🇭","Panama":"🇵🇦"};
+const KO={"Mexico":"멕시코","South Africa":"남아공","South Korea":"대한민국","Czechia":"체코","Canada":"캐나다","Bosnia and Herzegovina":"보스니아","Qatar":"카타르","Switzerland":"스위스","Brazil":"브라질","Morocco":"모로코","Haiti":"아이티","Scotland":"스코틀랜드","United States":"미국","Australia":"호주","Turkey":"튀르키예","Paraguay":"파라과이","Germany":"독일","Curaçao":"퀴라소","Ivory Coast":"코트디부아르","Ecuador":"에콰도르","Netherlands":"네덜란드","Japan":"일본","Sweden":"스웨덴","Tunisia":"튀니지","Belgium":"벨기에","Egypt":"이집트","Iran":"이란","New Zealand":"뉴질랜드","Spain":"스페인","Cape Verde":"카보베르데","Saudi Arabia":"사우디아라비아","Uruguay":"우루과이","France":"프랑스","Senegal":"세네갈","Norway":"노르웨이","Iraq":"이라크","Argentina":"아르헨티나","Austria":"오스트리아","Algeria":"알제리","Jordan":"요르단","Portugal":"포르투갈","Colombia":"콜롬비아","DR Congo":"DR콩고","Uzbekistan":"우즈베키스탄","England":"잉글랜드","Croatia":"크로아티아","Ghana":"가나","Panama":"파나마"};
+function ko(t){return KO[t]||t;}
+function fl(t){return FLAG[t]||"";}
+
+let DATA=null, MATCHES=[], STANDINGS=[], autoTimer=null;
+
+// 1) data.js(<script src>)로 들어온 window.WC_DATA를 기본값으로 사용 → 로컬 더블클릭에서도 표시됨
+// 2) 웹서버(GitHub Pages)면 최신 data.json을 fetch해 덮어씀(자동 갱신본 우선)
+function start(){
+  if(window.WC_DATA){DATA=window.WC_DATA; render();}   // 즉시 1차 표시
+  setup();                                             // 버튼/탭 1회 연결
+  loadData(false);                                     // 최신 data.json 시도
+}
+
+function setUpdated(extra){
+  document.getElementById('updated').textContent='기준 '+((DATA&&DATA.updated)||'-')+(extra!=null?extra:' · 자동갱신');
+}
+function render(){
+  MATCHES=(DATA&&DATA.matches)||[]; STANDINGS=(DATA&&DATA.standings)||[];
+  setUpdated();
+  renderStat(); renderResults(); renderDetails(); renderStandings(); renderNote();
+}
+
+// 최신 data.json을 다시 불러와 화면 갱신. manual=true면 버튼 피드백 표시.
+function loadData(manual){
+  const btn=document.getElementById('refreshBtn');
+  if(manual&&btn){btn.disabled=true;btn.textContent='⏳ 불러오는 중…';}
+  return fetch('data.json',{cache:'no-store'})
+    .then(r=>{if(!r.ok)throw 0;return r.json();})
+    .then(d=>{DATA=d;render();
+      if(manual){const t=new Date(),hh=('0'+t.getHours()).slice(-2),mm=('0'+t.getMinutes()).slice(-2);
+        setUpdated(' · '+hh+':'+mm+' 새로고침됨');}})
+    .catch(()=>{
+      if(!DATA){document.getElementById('results').innerHTML='<div class="loading">⚠️ 데이터를 불러오지 못했습니다. index.html · data.js · data.json을 같은 폴더에 두세요.</div>';
+        setUpdated(' · 데이터 없음');}
+      else if(manual){setUpdated(' · ⚠ 로컬 파일에선 새로고침 불가 (GitHub Pages에서 사용)');}
+    })
+    .finally(()=>{ if(btn){btn.disabled=false;btn.textContent='🔄 새로고침';} });
+}
+
+// 탭/버튼 1회 연결
+function setup(){
+  document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById(t.dataset.v).classList.add('active');
+  }));
+  const btn=document.getElementById('refreshBtn');
+  if(btn)btn.addEventListener('click',()=>loadData(true));
+  const auto=document.getElementById('autoChk');
+  if(auto)auto.addEventListener('change',()=>{
+    if(auto.checked){autoTimer=setInterval(()=>loadData(false),60000);}
+    else{clearInterval(autoTimer);autoTimer=null;}
+  });
+  // GitHub Pages에서 열었을 때: 그 자리에서 Actions(워크플로) 실행 페이지로 이동하는 버튼 노출
+  try{
+    if(location.hostname.endsWith('github.io')){
+      const user=location.hostname.split('.')[0];
+      const repo=(location.pathname.split('/').filter(Boolean)[0])||(user+'.github.io');
+      const a=document.getElementById('ghRun');
+      a.href='https://github.com/'+user+'/'+repo+'/actions/workflows/update-data.yml';
+      a.style.display='inline-block';
+    }
+  }catch(e){}
+}
+
+const DOW=["일","월","화","수","목","금","토"];
+function fmtDate(d){const dt=new Date(d+"T00:00:00");return (dt.getMonth()+1)+"월 "+dt.getDate()+"일";}
+function dow(d){return DOW[new Date(d+"T00:00:00").getDay()];}
+function toggle(id){const e=document.getElementById(id);if(e)e.classList.toggle("open");}
+
+function renderStat(){
+  const done=MATCHES.filter(m=>!m.pending);
+  let goals=0;done.forEach(m=>goals+=(m.s1||0)+(m.s2||0));
+  let cards=0,reds=0;done.forEach(m=>(m.cards||[]).forEach(c=>{cards++;if(c.c==="red")reds++;}));
+  const avg=done.length?(goals/done.length).toFixed(2):"0";
+  document.getElementById("statbar").innerHTML=
+   '<span class="stat"><b>'+done.length+'</b> 경기 완료</span>'+
+   '<span class="stat"><b>'+goals+'</b> 골</span>'+
+   '<span class="stat"><b>'+avg+'</b> 경기당 평균골</span>'+
+   '<span class="stat"><b>'+cards+'</b> 경고/퇴장 (퇴장 '+reds+')</span>'+
+   '<span class="stat"><b>48</b> 개국 / 12개 조</span>';
+}
+
+function goalsLine(m){
+  if(m.pending||!m.goals||!m.goals.length)return '';
+  return '<div class="venue">⚽ '+m.goals.map(x=>x.p+(x.m?" "+x.m+"'":"")).join(" · ")+'</div>';
+}
+function detailHtml(m){
+  let h="";
+  h+='<div class="dsec"><div class="dlabel">⚽ 득점</div>';
+  if(m.goals&&m.goals.length){m.goals.forEach(g=>{h+='<div class="event"><span class="mins">'+(g.m?g.m+"'":"—")+'</span><span class="ic">'+fl(g.t)+'</span><span>'+g.p+'</span></div>';});}
+  else h+='<div class="na">기록된 득점 없음</div>';
+  if(m.assists&&m.assists.length)h+='<div class="subline" style="margin-top:6px;">🅰️ 도움: '+m.assists.map(a=>a.p+"("+ko(a.t)+")").join(", ")+'</div>';
+  h+='</div>';
+  h+='<div class="dsec"><div class="dlabel">🟨🟥 카드</div>';
+  if(m.cards&&m.cards.length){m.cards.forEach(c=>{h+='<div class="event"><span class="mins">'+(c.m?c.m+"'":"—")+'</span><span class="ic">'+(c.c==="red"?"🟥":"🟨")+'</span><span class="'+(c.c==='red'?'subout':'')+'">'+c.p+' <span style="color:var(--muted)">('+ko(c.t)+')</span></span></div>';});}
+  else h+='<div class="na">기록된 카드 없음 (미확인)</div>';
+  h+='</div>';
+  if(m.lineups){
+    h+='<div class="dsec"><div class="dlabel">👥 출전 선수 (선발 XI · 교체)</div><div class="lineteams">';
+    for(const team in m.lineups){
+      const L=m.lineups[team];
+      h+='<div class="lt"><h4>'+fl(team)+' '+ko(team)+(L.f?'<span class="form">'+L.f+'</span>':"")+'</h4>';
+      if(L.xi&&L.xi.length)L.xi.forEach((p,i)=>{h+='<div class="pl"><span class="n">'+(i+1)+'</span>'+p+'</div>';});
+      else h+='<div class="na">선발 명단 미확인</div>';
+      if(L.subs&&L.subs.length){h+='<div class="dlabel" style="margin-top:8px;font-size:10px;">교체</div>';
+        L.subs.forEach(s=>{if(s.out&&s.in)h+='<div class="subline">'+(s.m?s.m+"' ":"")+'<span class="subout">▼ '+s.out+'</span> → <b>▲ '+s.in+'</b></div>';
+          else if(s.in)h+='<div class="subline"><b>▲ '+s.in+'</b> 교체 투입 <span style="color:var(--muted)">(시점 미상)</span></div>';});}
+      if(L.note)h+='<div class="subline" style="margin-top:6px;font-style:italic;">※ '+L.note+'</div>';
+      h+='</div>';
+    }
+    h+='</div></div>';
+  }
+  return h;
+}
+function matchCard(m,idx){
+  const w1=!m.pending&&m.s1>m.s2, w2=!m.pending&&m.s2>m.s1;
+  const r=(t,s,win,lose)=>'<div class="row '+(win?'winner':'')+' '+(lose?'loser':'')+'"><div class="team"><span class="flag">'+fl(t)+'</span>'+ko(t)+'</div><div class="score">'+(m.pending?'':s)+'</div></div>';
+  const hasDetail=!m.pending&&((m.goals&&m.goals.length)||(m.cards&&m.cards.length)||m.lineups);
+  let body;
+  if(m.pending){
+    body='<div class="row"><div class="team"><span class="flag">'+fl(m.t1)+'</span>'+ko(m.t1)+'</div><div class="pending">vs</div></div>'+
+         '<div class="row"><div class="team"><span class="flag">'+fl(m.t2)+'</span>'+ko(m.t2)+'</div><div class="pending">예정</div></div>';
+  } else { body=r(m.t1,m.s1,w1,w2)+r(m.t2,m.s2,w2,w1)+goalsLine(m); }
+  return '<div class="match" data-group="'+m.group+'">'+
+    '<div class="mtop"><span class="gtag">'+m.group+'조</span><span>'+(m.venue||'')+(m.city?' · '+m.city:'')+'</span></div>'+
+    '<div class="mbody" '+(hasDetail?'onclick="toggle(\'d'+idx+'\')"':'')+'>'+body+'</div>'+
+    (hasDetail?'<div class="expand" onclick="toggle(\'d'+idx+'\')">▼ 선수 기록 보기</div><div class="detail" id="d'+idx+'">'+detailHtml(m)+'</div>':'')+
+  '</div>';
+}
+function renderResults(){
+  const dates=[...new Set(MATCHES.map(m=>m.date))].sort();
+  let html="";
+  dates.forEach(d=>{
+    const list=MATCHES.filter(m=>m.date===d);
+    html+='<div class="daygroup"><div class="dayhead"><span class="daybadge">'+fmtDate(d)+'</span><span class="dow">('+dow(d)+') · '+list.length+'경기</span></div><div class="matchgrid">';
+    list.forEach(m=>{html+=matchCard(m,MATCHES.indexOf(m));});
+    html+='</div></div>';
+  });
+  document.getElementById("results").innerHTML=html;
+}
+
+function topScorers(){
+  const map={};
+  MATCHES.filter(m=>!m.pending).forEach(m=>(m.goals||[]).forEach(g=>{
+    let name=g.p; if(name.indexOf("자책골")>=0)return;
+    name=name.replace(/\s*\(PK\)/,"").trim();
+    const k=name+"|"+g.t; (map[k]=map[k]||{p:name,t:g.t,n:0}).n++;
+  }));
+  return Object.values(map).sort((a,b)=>b.n-a.n||a.p.localeCompare(b.p));
+}
+function topAssists(){
+  const map={};
+  MATCHES.filter(m=>!m.pending).forEach(m=>(m.assists||[]).forEach(a=>{
+    const k=a.p+"|"+a.t; (map[k]=map[k]||{p:a.p,t:a.t,n:0}).n++;
+  }));
+  return Object.values(map).sort((a,b)=>b.n-a.n||a.p.localeCompare(b.p));
+}
+function rankCard(title,icon,list,cls){
+  let rows=list.slice(0,12).map((x,i)=>'<div class="rrow '+(i===0?'top1':i===1?'top2':i===2?'top3':'')+'">'+
+    '<div class="rrank">'+(i+1)+'</div><div class="rname">'+fl(x.t)+' '+x.p+'</div>'+
+    '<div class="rteam">'+ko(x.t)+'</div><div class="rcount '+cls+'">'+x.n+'</div></div>').join("");
+  if(!list.length)rows='<div class="na" style="padding:14px 15px;">기록 없음</div>';
+  return '<div class="rankcard"><div class="rankhead"><span class="ri">'+icon+'</span>'+title+'</div>'+rows+'</div>';
+}
+function renderDetails(){
+  const done=MATCHES.filter(m=>!m.pending&&((m.goals&&m.goals.length)||m.lineups));
+  const groups=[...new Set(done.map(m=>m.group))];
+  const rankHtml='<div class="secttitle">🏅 토너먼트 개인 순위</div>'+
+    '<div class="rankwrap">'+rankCard("득점 순위","⚽",topScorers(),"")+rankCard("도움 순위","🅰️",topAssists(),"a")+'</div>';
+  const filterHtml='<div class="secttitle">📋 경기별 상세 기록</div><div class="filterbar" id="detailFilter">'+
+    '<span class="fl">조 필터:</span><span class="fchip active" data-g="all">전체</span>'+groups.map(g=>'<span class="fchip" data-g="'+g+'">'+g+'조</span>').join("")+'</div>'+
+    '<div id="detailList"></div>';
+  document.getElementById("details").innerHTML=rankHtml+filterHtml;
+  function draw(f){
+    const list=done.filter(m=>f==="all"||m.group===f);
+    document.getElementById("detailList").innerHTML='<div class="matchgrid">'+list.map(m=>{
+      const idx=MATCHES.indexOf(m), w1=m.s1>m.s2, w2=m.s2>m.s1;
+      return '<div class="match"><div class="mtop"><span class="gtag">'+m.group+'조</span><span>'+fmtDate(m.date)+(m.city?' · '+m.city:'')+'</span></div>'+
+        '<div class="mbody" onclick="toggle(\'x'+idx+'\')">'+
+         '<div class="row '+(w1?'winner':'')+' '+(w2?'loser':'')+'"><div class="team"><span class="flag">'+fl(m.t1)+'</span>'+ko(m.t1)+'</div><div class="score">'+m.s1+'</div></div>'+
+         '<div class="row '+(w2?'winner':'')+' '+(w1?'loser':'')+'"><div class="team"><span class="flag">'+fl(m.t2)+'</span>'+ko(m.t2)+'</div><div class="score">'+m.s2+'</div></div></div>'+
+        '<div class="expand" onclick="toggle(\'x'+idx+'\')">▼ 상세 기록</div>'+
+        '<div class="detail open" id="x'+idx+'">'+detailHtml(m)+'</div></div>';
+    }).join("")+'</div>';
+  }
+  draw("all");
+  document.querySelectorAll("#detailFilter .fchip").forEach(c=>c.addEventListener("click",()=>{
+    document.querySelectorAll("#detailFilter .fchip").forEach(x=>x.classList.remove("active"));
+    c.classList.add("active");draw(c.dataset.g);
+  }));
+}
+
+function renderStandings(){
+  let html="";
+  STANDINGS.forEach(grp=>{
+    const teams=grp.teams.slice().sort((a,b)=>{
+      if(a.na&&!b.na)return 1;if(b.na&&!a.na)return -1;
+      if(b.pts!==a.pts)return b.pts-a.pts;
+      const gda=a.gf-a.ga,gdb=b.gf-b.ga;if(gdb!==gda)return gdb-gda;return b.gf-a.gf;
+    });
+    const played=grp.teams.some(t=>t.pld>0);
+    html+='<div class="gcard"><div class="ghead"><span class="gl">'+grp.g+'조</span><span style="color:var(--muted);font-size:12px;font-weight:500;">'+(played?"진행 중":"경기 전")+'</span></div>'+
+     '<table><thead><tr><th></th><th style="text-align:left">팀</th><th>경기</th><th>승</th><th>무</th><th>패</th><th>득</th><th>실</th><th>차</th><th>승점</th></tr></thead><tbody>';
+    teams.forEach((t,i)=>{
+      const cls=i===0?"q1":i===1?"q2":i===2?"q3":"q4";
+      const gd=t.gf-t.ga, gds=gd>0?"+"+gd:gd;
+      html+='<tr><td><span class="pos '+cls+'">'+(i+1)+'</span></td><td class="tn">'+fl(t.t)+' '+ko(t.t)+'</td>'+
+       '<td>'+(t.na?"—":t.pld)+'</td><td>'+(t.na?"—":t.w)+'</td><td>'+(t.na?"—":t.d)+'</td><td>'+(t.na?"—":t.l)+'</td>'+
+       '<td>'+(t.na?"—":t.gf)+'</td><td>'+(t.na?"—":t.ga)+'</td><td>'+(t.na?"—":gds)+'</td><td class="pts">'+(t.na?"—":t.pts)+'</td></tr>';
+    });
+    html+='</tbody></table></div>';
+  });
+  document.getElementById("groupGrid").innerHTML=html;
+}
+
+function renderNote(){
+  document.getElementById("dataNote").innerHTML=
+   '<b>데이터 신뢰도 주석</b><br>'+
+   '· <b>자동 갱신</b>: GitHub Actions가 정해진 주기로 football-data.org에서 경기 스코어와 조별 순위를 가져와 갱신합니다(무료 토큰 필요). 선발 라인업·카드·도움 등 선수 상세는 무료 API 범위 밖이라 시드 데이터를 유지합니다.<br>'+
+   '· <b>스웨덴 vs 튀니지</b>(F조, 6/14): 최종 스코어 미반영으로 "결과대기" 표시. 확정 시 F조 순위 변동.<br>'+
+   '· <b>호주 2-0 튀르키예</b>(D조, 6/13): 득점자(이란쿤다·메트칼프) 확인, 정확한 시간·전체 라인업 미확인.<br>'+
+   '· <b>득점 순위</b>는 자책골을 제외하고 집계하며 페널티킥 득점은 포함합니다. <b>도움 순위</b>는 매체 보도 기준이라 일부 참고용입니다.';
+}
+
+start();
+</script>
+</body>
+</html>
