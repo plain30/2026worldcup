@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-17 07:43 UTC",
+  "updated": "2026-06-17 08:36 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -2340,5 +2340,740 @@ window.WC_DATA = {
   "playerRanks": {
     "scorers": [],
     "assists": []
+  },
+  "scorers": [
+    {
+      "p": "카이 하베르츠",
+      "t": "Germany",
+      "n": 2,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": [
+            45,
+            88
+          ]
+        }
+      ]
+    },
+    {
+      "p": "폴라린 발로건",
+      "t": "United States",
+      "n": 2,
+      "where": [
+        {
+          "o": "Paraguay",
+          "m": [
+            31,
+            "45+5"
+          ]
+        }
+      ]
+    },
+    {
+      "p": "가마다 다이치",
+      "t": "Japan",
+      "n": 1,
+      "where": [
+        {
+          "o": "Netherlands",
+          "m": [
+            89
+          ]
+        }
+      ]
+    },
+    {
+      "p": "나카무라 게이토",
+      "t": "Japan",
+      "n": 1,
+      "where": [
+        {
+          "o": "Netherlands",
+          "m": [
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "p": "나타니엘 브라운",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": [
+            68
+          ]
+        }
+      ]
+    },
+    {
+      "p": "네스토리 이란쿤다",
+      "t": "Australia",
+      "n": 1,
+      "where": [
+        {
+          "o": "Turkey",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "니코 슐로터베크",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "p": "데니즈 운다브",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": [
+            78
+          ]
+        }
+      ]
+    },
+    {
+      "p": "라디슬라프 크레이치",
+      "t": "Czechia",
+      "n": 1,
+      "where": [
+        {
+          "o": "South Korea",
+          "m": [
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "p": "라울 히메네스",
+      "t": "Mexico",
+      "n": 1,
+      "where": [
+        {
+          "o": "South Africa",
+          "m": [
+            67
+          ]
+        }
+      ]
+    },
+    {
+      "p": "리바노 코메넨시아",
+      "t": "Curaçao",
+      "n": 1,
+      "where": [
+        {
+          "o": "Germany",
+          "m": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "p": "마우리시오",
+      "t": "Paraguay",
+      "n": 1,
+      "where": [
+        {
+          "o": "United States",
+          "m": [
+            73
+          ]
+        }
+      ]
+    },
+    {
+      "p": "브렐 엠볼로",
+      "t": "Switzerland",
+      "n": 1,
+      "where": [
+        {
+          "o": "Qatar",
+          "m": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "p": "비니시우스 주니오르",
+      "t": "Brazil",
+      "n": 1,
+      "where": [
+        {
+          "o": "Morocco",
+          "m": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "p": "사일 라린",
+      "t": "Canada",
+      "n": 1,
+      "where": [
+        {
+          "o": "Bosnia and Herzegovina",
+          "m": [
+            78
+          ]
+        }
+      ]
+    },
+    {
+      "p": "오현규",
+      "t": "South Korea",
+      "n": 1,
+      "where": [
+        {
+          "o": "Czechia",
+          "m": [
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "p": "요보 루키치",
+      "t": "Bosnia and Herzegovina",
+      "n": 1,
+      "where": [
+        {
+          "o": "Canada",
+          "m": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "p": "이스마엘 사이바리",
+      "t": "Morocco",
+      "n": 1,
+      "where": [
+        {
+          "o": "Brazil",
+          "m": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "p": "자말 무시알라",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "p": "조반니 레이나",
+      "t": "United States",
+      "n": 1,
+      "where": [
+        {
+          "o": "Paraguay",
+          "m": [
+            "90+8"
+          ]
+        }
+      ]
+    },
+    {
+      "p": "존 매긴",
+      "t": "Scotland",
+      "n": 1,
+      "where": [
+        {
+          "o": "Haiti",
+          "m": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "p": "코너 메트칼프",
+      "t": "Australia",
+      "n": 1,
+      "where": [
+        {
+          "o": "Turkey",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "크리센시오 서머빌",
+      "t": "Netherlands",
+      "n": 1,
+      "where": [
+        {
+          "o": "Japan",
+          "m": [
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "p": "펠릭스 은메차",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "p": "피르힐 판데이크",
+      "t": "Netherlands",
+      "n": 1,
+      "where": [
+        {
+          "o": "Japan",
+          "m": [
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "p": "황인범",
+      "t": "South Korea",
+      "n": 1,
+      "where": [
+        {
+          "o": "Czechia",
+          "m": [
+            67
+          ]
+        }
+      ]
+    },
+    {
+      "p": "훌리안 키뇨네스",
+      "t": "Mexico",
+      "n": 1,
+      "where": [
+        {
+          "o": "South Africa",
+          "m": [
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "assists": [
+    {
+      "p": "나타니엘 브라운",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "데니즈 운다브",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "라이언 흐라번베르흐",
+      "t": "Netherlands",
+      "n": 1,
+      "where": [
+        {
+          "o": "Japan",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "로베르토 알바라도",
+      "t": "Mexico",
+      "n": 1,
+      "where": [
+        {
+          "o": "South Africa",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "말릭 틸먼",
+      "t": "United States",
+      "n": 1,
+      "where": [
+        {
+          "o": "Paraguay",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "벤 가논-도크",
+      "t": "Scotland",
+      "n": 1,
+      "where": [
+        {
+          "o": "Haiti",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "브라힘 디아스",
+      "t": "Morocco",
+      "n": 1,
+      "where": [
+        {
+          "o": "Brazil",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "브루누 기마랑이스",
+      "t": "Brazil",
+      "n": 1,
+      "where": [
+        {
+          "o": "Morocco",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "알렉스 프리먼",
+      "t": "United States",
+      "n": 1,
+      "where": [
+        {
+          "o": "Paraguay",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "요주아 키미히",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "크리스천 풀리식",
+      "t": "United States",
+      "n": 1,
+      "where": [
+        {
+          "o": "Paraguay",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "프로미스 데이비드",
+      "t": "Canada",
+      "n": 1,
+      "where": [
+        {
+          "o": "Bosnia and Herzegovina",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "플로리안 비르츠",
+      "t": "Germany",
+      "n": 1,
+      "where": [
+        {
+          "o": "Curaçao",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "호맘 아흐메드",
+      "t": "Qatar",
+      "n": 1,
+      "where": [
+        {
+          "o": "Switzerland",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "황인범",
+      "t": "South Korea",
+      "n": 1,
+      "where": [
+        {
+          "o": "Czechia",
+          "m": []
+        }
+      ]
+    },
+    {
+      "p": "훌리오 엔시소",
+      "t": "Paraguay",
+      "n": 1,
+      "where": [
+        {
+          "o": "United States",
+          "m": []
+        }
+      ]
+    }
+  ],
+  "bracket": {
+    "r32": [
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      }
+    ],
+    "r16": [
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      }
+    ],
+    "qf": [
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      }
+    ],
+    "sf": [
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      },
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      }
+    ],
+    "third": [
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      }
+    ],
+    "final": [
+      {
+        "t1": null,
+        "t2": null,
+        "s1": null,
+        "s2": null
+      }
+    ]
   }
 };
