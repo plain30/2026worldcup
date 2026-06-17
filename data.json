@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16 07:45 UTC",
+  "updated": "2026-06-17 02:07 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -968,9 +968,8 @@
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 3,
+      "s2": 1
     },
     {
       "date": "2026-06-16",
@@ -983,9 +982,8 @@
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 4
     },
     {
       "date": "2026-06-16",
@@ -2164,42 +2162,42 @@
       "teams": [
         {
           "t": "France",
-          "pld": 0,
-          "w": 0,
+          "pld": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0
+          "gf": 3,
+          "ga": 1,
+          "pts": 3
         },
         {
           "t": "Senegal",
-          "pld": 0,
+          "pld": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
           "pts": 0
         },
         {
           "t": "Norway",
-          "pld": 0,
-          "w": 0,
+          "pld": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0
+          "gf": 4,
+          "ga": 1,
+          "pts": 3
         },
         {
           "t": "Iraq",
-          "pld": 0,
+          "pld": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 4,
           "pts": 0
         }
       ]
@@ -2340,5 +2338,9 @@
       ]
     }
   ],
-  "source_note": "FIFA api.fifa.com"
+  "source_note": "FIFA api.fifa.com",
+  "playerRanks": {
+    "scorers": [],
+    "assists": []
+  }
 }
