@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17 02:07 UTC",
+  "updated": "2026-06-17 04:09 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -996,9 +996,8 @@
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 3,
+      "s2": 0
     },
     {
       "date": "2026-06-16",
@@ -2207,13 +2206,13 @@
       "teams": [
         {
           "t": "Argentina",
-          "pld": 0,
-          "w": 0,
+          "pld": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
+          "gf": 3,
           "ga": 0,
-          "pts": 0
+          "pts": 3
         },
         {
           "t": "Austria",
@@ -2227,12 +2226,12 @@
         },
         {
           "t": "Algeria",
-          "pld": 0,
+          "pld": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 0,
-          "ga": 0,
+          "ga": 3,
           "pts": 0
         },
         {
