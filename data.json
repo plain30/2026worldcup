@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20 17:54 UTC",
+  "updated": "2026-06-20 19:40 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1455,9 +1455,8 @@
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 5,
+      "s2": 1
     },
     {
       "date": "2026-06-21",
@@ -2246,13 +2245,13 @@
       "teams": [
         {
           "t": "Netherlands",
-          "pld": 1,
-          "w": 0,
+          "pld": 2,
+          "w": 1,
           "d": 1,
           "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 1
+          "gf": 7,
+          "ga": 3,
+          "pts": 4
         },
         {
           "t": "Japan",
@@ -2266,12 +2265,12 @@
         },
         {
           "t": "Sweden",
-          "pld": 1,
+          "pld": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
-          "gf": 5,
-          "ga": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 6,
           "pts": 3
         },
         {
