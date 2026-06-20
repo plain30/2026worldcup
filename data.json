@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19 23:36 UTC",
+  "updated": "2026-06-20 03:55 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1369,9 +1369,8 @@
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 1
     },
     {
       "date": "2026-06-20",
@@ -1384,9 +1383,8 @@
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 3,
+      "s2": 0
     },
     {
       "date": "2026-06-20",
@@ -2114,42 +2112,42 @@
       "teams": [
         {
           "t": "Scotland",
-          "pld": 1,
+          "pld": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 1,
-          "ga": 0,
+          "ga": 1,
           "pts": 3
         },
         {
           "t": "Brazil",
-          "pld": 1,
-          "w": 0,
+          "pld": 2,
+          "w": 1,
           "d": 1,
           "l": 0,
-          "gf": 1,
+          "gf": 4,
           "ga": 1,
-          "pts": 1
+          "pts": 4
         },
         {
           "t": "Morocco",
-          "pld": 1,
-          "w": 0,
+          "pld": 2,
+          "w": 1,
           "d": 1,
           "l": 0,
-          "gf": 1,
+          "gf": 2,
           "ga": 1,
-          "pts": 1
+          "pts": 4
         },
         {
           "t": "Haiti",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 0,
-          "ga": 1,
+          "ga": 4,
           "pts": 0
         }
       ]
