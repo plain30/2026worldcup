@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-21 00:09 UTC",
+  "updated": "2026-06-21 05:25 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1439,9 +1439,8 @@ window.WC_DATA = {
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 0
     },
     {
       "date": "2026-06-21",
@@ -2219,23 +2218,23 @@ window.WC_DATA = {
         },
         {
           "t": "Ecuador",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 1,
           "gf": 0,
           "ga": 1,
-          "pts": 0
+          "pts": 1
         },
         {
           "t": "Curaçao",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 1,
           "gf": 1,
           "ga": 7,
-          "pts": 0
+          "pts": 1
         }
       ]
     },
@@ -3549,7 +3548,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Germany",
         "t2": null,
         "s1": null,
         "s2": null
