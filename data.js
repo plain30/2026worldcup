@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-21 20:12 UTC",
+  "updated": "2026-06-21 21:55 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1481,9 +1481,8 @@ window.WC_DATA = {
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 0
     },
     {
       "date": "2026-06-22",
@@ -2286,13 +2285,13 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "Belgium",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 0,
           "gf": 1,
           "ga": 1,
-          "pts": 1
+          "pts": 2
         },
         {
           "t": "Egypt",
@@ -2306,13 +2305,13 @@ window.WC_DATA = {
         },
         {
           "t": "Iran",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 0,
           "gf": 2,
           "ga": 2,
-          "pts": 1
+          "pts": 2
         },
         {
           "t": "New Zealand",
