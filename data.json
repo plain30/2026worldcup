@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 20:34 UTC",
+  "updated": "2026-06-23 22:16 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1866,9 +1866,8 @@
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 0
     },
     {
       "date": "2026-06-24",
@@ -2747,13 +2746,13 @@
       "teams": [
         {
           "t": "England",
-          "pld": 1,
+          "pld": 2,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 4,
           "ga": 2,
-          "pts": 3
+          "pts": 4
         },
         {
           "t": "Croatia",
@@ -2767,13 +2766,13 @@
         },
         {
           "t": "Ghana",
-          "pld": 1,
+          "pld": 2,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 1,
           "ga": 0,
-          "pts": 3
+          "pts": 4
         },
         {
           "t": "Panama",
