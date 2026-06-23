@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-22 23:21 UTC",
+  "updated": "2026-06-23 01:31 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1781,9 +1781,8 @@ window.WC_DATA = {
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 3,
+      "s2": 0
     },
     {
       "date": "2026-06-23",
@@ -2616,13 +2615,13 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "France",
-          "pld": 1,
-          "w": 1,
+          "pld": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 3,
+          "gf": 6,
           "ga": 1,
-          "pts": 3
+          "pts": 6
         },
         {
           "t": "Senegal",
@@ -2646,12 +2645,12 @@ window.WC_DATA = {
         },
         {
           "t": "Iraq",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 4,
+          "ga": 7,
           "pts": 0
         }
       ]
