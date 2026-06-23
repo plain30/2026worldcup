@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-23 02:50 UTC",
+  "updated": "2026-06-23 06:09 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1823,9 +1823,8 @@ window.WC_DATA = {
       "assists": [],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 2
     },
     {
       "date": "2026-06-24",
@@ -2679,22 +2678,22 @@ window.WC_DATA = {
         },
         {
           "t": "Algeria",
-          "pld": 1,
-          "w": 0,
+          "pld": 2,
+          "w": 1,
           "d": 0,
           "l": 1,
-          "gf": 0,
-          "ga": 3,
-          "pts": 0
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
         },
         {
           "t": "Jordan",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
-          "gf": 1,
-          "ga": 3,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
           "pts": 0
         }
       ]
@@ -2918,6 +2917,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "나디르 벤부알리",
+      "t": "Algeria",
+      "n": 1
+    },
+    {
       "p": "나카무라 케이토",
       "t": "Japan",
       "n": 1
@@ -2930,6 +2934,11 @@ window.WC_DATA = {
     {
       "p": "네이선 살리바",
       "t": "Canada",
+      "n": 1
+    },
+    {
+      "p": "니자르 알 라시단",
+      "t": "Jordan",
       "n": 1
     },
     {
@@ -3020,16 +3029,6 @@ window.WC_DATA = {
     {
       "p": "마티아스 갈라르사",
       "t": "Paraguay",
-      "n": 1
-    },
-    {
-      "p": "마티아스 스반베리",
-      "t": "Sweden",
-      "n": 1
-    },
-    {
-      "p": "모스타파 지코",
-      "t": "Egypt",
       "n": 1
     },
     {
@@ -3190,6 +3189,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "리야드 마레즈",
+      "t": "Algeria",
+      "n": 1
+    },
+    {
       "p": "막시 아라우호",
       "t": "Uruguay",
       "n": 1
@@ -3212,6 +3216,11 @@ window.WC_DATA = {
     {
       "p": "모하메드 하니",
       "t": "Egypt",
+      "n": 1
+    },
+    {
+      "p": "무사 알 타마리",
+      "t": "Jordan",
       "n": 1
     },
     {
@@ -3272,16 +3281,6 @@ window.WC_DATA = {
     {
       "p": "아드리앙 라비오",
       "t": "France",
-      "n": 1
-    },
-    {
-      "p": "아르튀르 마쉬아퀴",
-      "t": "DR Congo",
-      "n": 1
-    },
-    {
-      "p": "아미르 알 아마리",
-      "t": "Iraq",
       "n": 1
     },
     {
@@ -3382,7 +3381,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Argentina",
         "t2": null,
         "s1": null,
         "s2": null
