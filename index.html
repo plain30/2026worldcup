@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>2026 북중미 월드컵 대시보드</title>
+<style>
+  :root{
+    --bg:#0b1220; --bg2:#0d1526; --panel:#121b2e; --panel2:#0f1726; --line:#2b3a57;
+    --txt:#e8eef7; --muted:#93a1bd; --accent:#3da5ff; --accent2:#34d399;
+    --gold:#f5c542; --red:#ef4444; --chip:#1c2740; --winbg:rgba(52,211,153,.12);
+  }
+  html[data-theme="light"]{
+    --bg:#eef2f8; --bg2:#e7edf6; --panel:#ffffff; --panel2:#f3f6fb; --line:#cdd8ea;
+    --txt:#16202e; --muted:#5b6b85; --accent:#1f6fe0; --accent2:#0fae6e;
+    --gold:#c98a00; --red:#dc2626; --chip:#eaf0fa; --winbg:rgba(15,174,110,.12);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+    background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--txt);min-height:100vh;transition:background .3s,color .3s;}
+  .wrap{max-width:1200px;margin:0 auto;padding:20px 16px 60px;}
+  header.top{display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:14px;}
+  h1{font-size:22px;margin:0;letter-spacing:-.3px;}
+  h1 span.a{color:var(--accent);}
+  .sub{color:var(--muted);font-size:12.5px;margin-top:5px;}
+  .toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .updated{font-size:11.5px;color:var(--muted);background:var(--chip);padding:6px 10px;border-radius:18px;border:1px solid var(--line);}
+  .tbtn{cursor:pointer;font-size:12.5px;font-weight:700;padding:7px 11px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--txt);display:inline-flex;align-items:center;gap:6px;transition:.15s;}
+  .tbtn:hover{border-color:var(--accent);}
+  .tbtn.ghbtn{background:var(--panel2);color:var(--accent);text-decoration:none;}
+  .tabs{display:flex;gap:6px;margin:16px 0;flex-wrap:wrap;}
+  .tab{cursor:pointer;padding:9px 15px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);font-size:13.5px;font-weight:600;transition:.15s;}
+  .tab:hover{color:var(--txt);}
+  .tab.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .view{display:none;animation:fade .25s ease;}
+  .view.active{display:block;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+
+  .flagimg{width:22px;height:15px;object-fit:cover;border-radius:3px;vertical-align:middle;box-shadow:0 0 0 1px var(--line);background:var(--chip);}
+
+  .subtabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap;}
+  .subtab{cursor:pointer;font-size:12.5px;font-weight:700;padding:6px 14px;border-radius:18px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);}
+  .subtab.active{background:var(--chip);color:var(--accent);border-color:var(--accent);}
+
+  .daygroup{margin-bottom:12px;}
+  .dayhead{font-weight:700;font-size:13px;color:var(--accent);margin:0;display:flex;align-items:center;gap:8px;cursor:pointer;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 12px;user-select:none;transition:.12s;}
+  .dayhead:hover{border-color:var(--accent);}
+  .dayhead .arw{font-size:11px;width:12px;color:var(--muted);}
+  .dayhead .cnt{color:var(--muted);font-weight:500;font-size:11.5px;margin-left:auto;}
+  .mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;margin-top:10px;}
+  .match{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 13px;}
+  .mtop{font-size:11px;color:var(--muted);margin-bottom:7px;display:flex;justify-content:space-between;}
+  .tag{background:var(--chip);border:1px solid var(--line);border-radius:5px;padding:1px 7px;font-weight:700;color:var(--accent);}
+  .row{display:flex;align-items:center;justify-content:space-between;padding:3px 0;}
+  .team{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;}
+  .sc{font-size:18px;font-weight:800;min-width:22px;text-align:center;}
+  .pend{color:var(--gold);font-size:11.5px;font-weight:700;}
+  .win{color:inherit;}
+  .lose{opacity:1;}
+  .gl{font-size:11.5px;color:var(--muted);margin-top:8px;border-top:1px dashed var(--line);padding-top:7px;line-height:1.6;}
+  .gl .gi{color:var(--accent2);font-weight:700;}
+
+  .groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px;}
+  .gcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .ghead{background:var(--panel2);padding:9px 13px;font-weight:700;border-bottom:1px solid var(--line);}
+  .ghead .gl2{color:var(--accent);}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th,td{padding:6px 5px;text-align:center;}
+  th{color:var(--muted);font-weight:600;font-size:10.5px;border-bottom:1px solid var(--line);}
+  td.tn{text-align:left;font-weight:600;}
+  td.tn span.nm{display:inline-flex;align-items:center;gap:7px;}
+  tbody tr{border-bottom:1px solid var(--line);}tbody tr:last-child{border-bottom:none;}
+  .pos{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;border-radius:4px;font-size:10.5px;font-weight:700;}
+  .q1{background:rgba(52,211,153,.2);color:var(--accent2);}
+  .q2{background:rgba(61,165,255,.18);color:var(--accent);}
+  .q3{background:rgba(245,197,66,.18);color:var(--gold);}
+  .q4{background:var(--chip);color:var(--muted);}
+  td.pts{font-weight:800;}
+
+  .rankwrap{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:640px){.rankwrap{grid-template-columns:1fr;}}
+  .rankcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .rankhead{background:var(--panel2);padding:11px 14px;font-weight:700;border-bottom:1px solid var(--line);}
+  .rrow{display:flex;align-items:flex-start;gap:10px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:13.5px;}
+  .rrow:last-child{border-bottom:none;}
+  .rrank{width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11.5px;background:var(--chip);color:var(--muted);flex:none;margin-top:1px;}
+  .rrow.t1 .rrank{background:var(--gold);color:#241a00;}.rrow.t2 .rrank{background:#c9d4e6;color:#1a2233;}.rrow.t3 .rrank{background:#cd7f32;color:#fff;}
+  .rname{flex:1;}
+  .rname .rtop{font-weight:600;display:flex;align-items:center;gap:7px;}
+  .rwhere{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.5;}
+  .rn{font-weight:800;color:var(--accent2);font-size:15px;flex:none;}
+  .rn.a{color:var(--accent);}
+  .na{color:var(--muted);font-style:italic;padding:14px;font-size:12.5px;}
+  .rmorebtn{cursor:pointer;text-align:center;font-size:12px;font-weight:700;color:var(--accent);padding:10px;border-top:1px solid var(--line);user-select:none;background:var(--panel2);transition:.12s;}
+  .rmorebtn:hover{background:var(--chip);}
+
+  .brkscroll{overflow-x:auto;padding-bottom:12px;}
+  .bracket{position:relative;display:flex;gap:34px;min-width:1100px;}
+  .connectors{position:absolute;left:0;top:0;pointer-events:none;z-index:0;overflow:visible;}
+  .connectors path{stroke:var(--line);stroke-width:2;fill:none;}
+  .bcol{display:flex;flex-direction:column;justify-content:space-around;min-width:180px;}
+  .bcol h3{font-size:12px;text-align:center;color:var(--accent);margin:0 0 10px;letter-spacing:.5px;}
+  .bmatch{position:relative;z-index:1;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:7px 9px;margin:7px 0;}
+  .brow{display:flex;justify-content:space-between;align-items:center;padding:2px 0;font-size:12px;gap:6px;}
+  .brow .bt{display:flex;align-items:center;gap:6px;font-weight:600;flex:1;min-width:0;word-break:keep-all;line-height:1.25;}
+  .brow .bs{font-weight:800;min-width:16px;text-align:center;flex:none;}
+  .bdt{font-size:10px;color:var(--accent);text-align:center;margin-bottom:5px;font-weight:700;letter-spacing:.3px;}
+  .bmatch .brow.w{color:var(--accent2);}.bmatch .brow.w .bs{color:var(--accent2);}
+  .bmatch .brow.l{opacity:.5;}
+  .champ{background:var(--winbg);border:1.5px solid var(--accent2);}
+  .champtag{text-align:center;font-size:11px;color:var(--accent2);font-weight:800;margin-top:4px;}
+  .thirdwrap{margin-top:18px;}
+  .thirdwrap .lbl{font-size:12px;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  .tbd{color:var(--muted);font-style:italic;}
+
+  footer{margin-top:30px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.6;}
+  footer a{color:var(--accent);text-decoration:none;}
+  .note{background:rgba(245,197,66,.08);border:1px solid rgba(245,197,66,.3);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:12.5px;color:var(--muted);}
+  .note b{color:var(--gold);}
+  .secttitle{font-size:14px;font-weight:700;color:var(--muted);margin:4px 0 12px;display:flex;align-items:center;gap:8px;}
+  .demoflag{background:var(--chip);border:1px solid var(--gold);color:var(--gold);font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>2026 <span class="a">북중미 월드컵</span> 대시보드</h1>
+      <div class="sub">FIFA World Cup 2026 · 48개국 · 조별리그 → 32강 → 결승</div>
+    </div>
+    <div class="toolbar">
+      <span class="updated" id="updated">불러오는 중…</span>
+      <button class="tbtn" id="refreshBtn" onclick="loadData(true)">🔄 새로고침</button>
+      <a class="tbtn ghbtn" id="ghRun" style="display:none" target="_blank" rel="noopener">▶ 최신 받기</a>
+      <button class="tbtn" id="themeBtn" onclick="toggleTheme()">🌙 어두운 화면</button>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <div class="tab active" data-v="results">📅 경기결과</div>
+    <div class="tab" data-v="standings">🏆 조별리그 순위</div>
+    <div class="tab" data-v="players">👟 선수기록</div>
+    <div class="tab" data-v="bracket">🗺️ 토너먼트 대진표</div>
+  </div>
+
+  <div class="view active" id="results"></div>
+  <div class="view" id="standings"></div>
+  <div class="view" id="players"></div>
+  <div class="view" id="bracket"></div>
+
+  <footer>
+    데이터: GitHub Actions가 <a href="https://www.fifa.com/ko/match-centre" target="_blank">FIFA</a>·API-Football에서 자동 갱신.
+    실데이터가 비어있는 항목은 <b style="color:var(--gold)">데모 샘플</b>로 표시됩니다. · 빌드 v7
+  </footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+const ISO={"Mexico":"mx","South Africa":"za","South Korea":"kr","Czechia":"cz","Canada":"ca","Bosnia and Herzegovina":"ba","Qatar":"qa","Switzerland":"ch","Brazil":"br","Morocco":"ma","Haiti":"ht","Scotland":"gb-sct","United States":"us","Australia":"au","Turkey":"tr","Paraguay":"py","Germany":"de","Curacao":"cw","Curaçao":"cw","Ivory Coast":"ci","Ecuador":"ec","Netherlands":"nl","Japan":"jp","Sweden":"se","Tunisia":"tn","Belgium":"be","Egypt":"eg","Iran":"ir","New Zealand":"nz","Spain":"es","Cape Verde":"cv","Saudi Arabia":"sa","Uruguay":"uy","France":"fr","Senegal":"sn","Norway":"no","Iraq":"iq","Argentina":"ar","Austria":"at","Algeria":"dz","Jordan":"jo","Portugal":"pt","Colombia":"co","DR Congo":"cd","Uzbekistan":"uz","England":"gb-eng","Croatia":"hr","Ghana":"gh","Panama":"pa"};
+const KO={"Mexico":"멕시코","South Africa":"남아공","South Korea":"대한민국","Czechia":"체코","Canada":"캐나다","Bosnia and Herzegovina":"보스니아","Qatar":"카타르","Switzerland":"스위스","Brazil":"브라질","Morocco":"모로코","Haiti":"아이티","Scotland":"스코틀랜드","United States":"미국","Australia":"호주","Turkey":"튀르키예","Paraguay":"파라과이","Germany":"독일","Curacao":"퀴라소","Curaçao":"퀴라소","Ivory Coast":"코트디부아르","Ecuador":"에콰도르","Netherlands":"네덜란드","Japan":"일본","Sweden":"스웨덴","Tunisia":"튀니지","Belgium":"벨기에","Egypt":"이집트","Iran":"이란","New Zealand":"뉴질랜드","Spain":"스페인","Cape Verde":"카보베르데","Saudi Arabia":"사우디","Uruguay":"우루과이","France":"프랑스","Senegal":"세네갈","Norway":"노르웨이","Iraq":"이라크","Argentina":"아르헨티나","Austria":"오스트리아","Algeria":"알제리","Jordan":"요르단","Portugal":"포르투갈","Colombia":"콜롬비아","DR Congo":"DR콩고","Uzbekistan":"우즈벡","England":"잉글랜드","Croatia":"크로아티아","Ghana":"가나","Panama":"파나마"};
+const STARS={"Mexico":"라울 히메네스","South Africa":"퍼시 타우","South Korea":"손흥민","Czechia":"파트리크 시크","Canada":"조너선 데이비드","Bosnia and Herzegovina":"에딘 제코","Qatar":"아크람 아피프","Switzerland":"브렐 엠볼로","Brazil":"비니시우스","Morocco":"아슈라프 하키미","Haiti":"프란츠디 피에로","Scotland":"존 매긴","United States":"크리스천 풀리식","Australia":"네스토리 이란쿤다","Turkey":"케난 일디즈","Paraguay":"미겔 알미론","Germany":"카이 하베르츠","Curacao":"위르헌 로카디아","Ivory Coast":"세바스티앵 알레르","Ecuador":"에네르 발렌시아","Netherlands":"코디 학포","Japan":"가마다 다이치","Sweden":"알렉산데르 이삭","Tunisia":"유세프 음사크니","Belgium":"로멜루 루카쿠","Egypt":"모하메드 살라","Iran":"메흐디 타레미","New Zealand":"크리스 우드","Spain":"라민 야말","Cape Verde":"헬더 타바레스","Saudi Arabia":"살렘 알도사리","Uruguay":"다르윈 누녜스","France":"킬리안 음바페","Senegal":"사디오 마네","Norway":"엘링 홀란드","Iraq":"아이멘 후세인","Argentina":"리오넬 메시","Austria":"마르코 아르나우토비치","Algeria":"리야드 마레즈","Jordan":"무사 알타마리","Portugal":"크리스티아누 호날두","Colombia":"하메스 로드리게스","DR Congo":"실라스","Uzbekistan":"엘도르 쇼무로도프","England":"해리 케인","Croatia":"루카 모드리치","Ghana":"모하메드 쿠두스","Panama":"호세 폰스"};
+const ko=t=>KO[t]||t;
+function fl(t){const c=ISO[t];return c?'<img class="flagimg" loading="lazy" src="https://flagcdn.com/w40/'+c+'.png" alt="">':'';}
+
+/* 테마 */
+function applyTheme(t){document.documentElement.setAttribute("data-theme",t);document.getElementById("themeBtn").textContent=t==="dark"?"☀️ 밝은 화면":"🌙 어두운 화면";try{localStorage.setItem("wc_theme",t);}catch(e){}}
+function toggleTheme(){applyTheme(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark");}
+(function(){let t="dark";try{t=localStorage.getItem("wc_theme")||"dark";}catch(e){}applyTheme(t);})();
+
+/* ===== 데모(폴백) 데이터 ===== */
+const GROUPS={A:["Mexico","South Korea","Czechia","South Africa"],B:["Switzerland","Canada","Qatar","Bosnia and Herzegovina"],C:["Brazil","Morocco","Scotland","Haiti"],D:["United States","Australia","Turkey","Paraguay"],E:["Germany","Ivory Coast","Ecuador","Curacao"],F:["Netherlands","Japan","Sweden","Tunisia"],G:["Belgium","Egypt","Iran","New Zealand"],H:["Spain","Uruguay","Saudi Arabia","Cape Verde"],I:["France","Senegal","Norway","Iraq"],J:["Argentina","Austria","Algeria","Jordan"],K:["Portugal","Colombia","DR Congo","Uzbekistan"],L:["England","Croatia","Ghana","Panama"]};
+const pad=n=>(n<10?"0"+n:""+n), MINS=[12,24,38,45,57,68,79,88];
+function goalsFor(team,n,seed){const o=[];for(let i=0;i<n;i++)o.push({p:STARS[team]||(ko(team)+" 공격수"),t:team,m:MINS[(seed+i*3)%MINS.length]});return o;}
+function demoMatches(){const MD=[[[0,1],[2,3]],[[0,2],[3,1]],[[3,0],[1,2]]],out=[];Object.entries(GROUPS).forEach(([g,t],gi)=>{MD.forEach((md,mdi)=>{md.forEach((pp,k)=>{const seed=gi*5+mdi*2+k,s1=seed%3,s2=(seed*2+1)%3,a=t[pp[0]],b=t[pp[1]];out.push({date:`2026-06-${pad(11+mdi*5+(gi%5))}`,group:g,md:mdi+1,t1:a,t2:b,s1,s2,goals:goalsFor(a,s1,seed).concat(goalsFor(b,s2,seed+4)).sort((x,y)=>x.m-y.m)});});});});return out;}
+function demoStandings(){const PTS=[[7,5,4,0],[9,4,3,1],[7,6,3,0],[9,6,3,0]];return Object.entries(GROUPS).map(([g,ts],gi)=>{const pat=PTS[gi%PTS.length];return {g,teams:ts.map((t,i)=>{const pts=pat[i],w=Math.floor(pts/3),d=pts%3,l=3-w-d;return {t,pld:3,w,d,l,gf:8-i*2+(gi%3),ga:2+i*2,pts};})};});}
+const DEMO_SCORERS=[{p:"해리 케인",t:"England",n:6,w:"조별 가나전 2골 · 16강 모로코전 2골 · 8강 · 4강"},{p:"킬리안 음바페",t:"France",n:5,w:"조별 알제리전 2골 · 32강 1골 · 8강 2골"},{p:"카이 하베르츠",t:"Germany",n:4,w:"조별 퀴라소전 2골 · 16강 · 8강"},{p:"리오넬 메시",t:"Argentina",n:4,w:"조별 가나전 · 16강 2골 · 4강"},{p:"손흥민",t:"South Korea",n:3,w:"조별 체코전 · 세네갈전 · 16강"},{p:"비니시우스",t:"Brazil",n:3,w:"조별 모로코전 · 16강 2골"},{p:"크리스티아누 호날두",t:"Portugal",n:3,w:"조별 우즈벡전 · 사우디전 · 8강"},{p:"폴라린 발로건",t:"United States",n:3,w:"조별 파라과이전 2골 · 일본전"}];
+const DEMO_ASSISTS=[{p:"케빈 더 브라위너",t:"Belgium",n:4,w:"조별 이집트전 · 호주전 · 16강 2도움"},{p:"주드 벨링엄",t:"England",n:3,w:"조별 가나전 · 8강 · 4강"},{p:"이강인",t:"South Korea",n:3,w:"조별 체코전 2 · 세네갈전 1도움"},{p:"플로리안 비르츠",t:"Germany",n:3,w:"조별 퀴라소전 2 · 8강 1도움"},{p:"하피냐",t:"Brazil",n:2,w:"조별 모로코전 · 16강"},{p:"크리스천 풀리식",t:"United States",n:2,w:"조별 파라과이전 · 일본전"}];
+const R32_PAIRS=[["Mexico","Scotland"],["Netherlands","Ecuador"],["Argentina","Ghana"],["Spain","Iran"],["Germany","Sweden"],["Brazil","Czechia"],["Portugal","Saudi Arabia"],["France","Algeria"],["England","Morocco"],["Belgium","Australia"],["United States","Japan"],["Canada","Uruguay"],["South Korea","Senegal"],["Switzerland","Austria"],["Egypt","Colombia"],["Croatia","Ivory Coast"]];
+function playRound(pairs,r){return pairs.map((m,i)=>{const hw=((i+r)%2===0),lo=(i%3===0)?0:1,s1=hw?2:lo,s2=hw?lo:2;return {t1:m[0],t2:m[1],s1,s2};});}
+function winOf(m){return m.s1==null||m.s2==null?null:(m.s1>m.s2?m.t1:m.t2);}
+function nextPairs(rd){const w=rd.map(winOf),o=[];for(let i=0;i<w.length;i+=2)o.push([w[i],w[i+1]]);return o;}
+function demoBracket(){const r32=playRound(R32_PAIRS,0),r16=playRound(nextPairs(r32),1),qf=playRound(nextPairs(r16),0),sf=playRound(nextPairs(qf),1),final=playRound(nextPairs(sf),0);const lo=m=>m.s1>m.s2?m.t2:m.t1;const third=playRound([[lo(sf[0]),lo(sf[1])]],1);return {r32,r16,qf,sf,final,third};}
+function buildDemo(){return {updated:"데모", matches:demoMatches(), standings:demoStandings(), scorers:DEMO_SCORERS, assists:DEMO_ASSISTS, bracket:demoBracket(), _demo:{results:true,standings:true,players:true,bracket:true}};}
+
+/* ===== 데이터 로딩: 실데이터 우선, 빈 항목은 데모 ===== */
+let DATA=buildDemo();
+function overlay(d){
+  if(!d||typeof d!=="object")return;
+  if(Array.isArray(d.matches)&&d.matches.length){DATA.matches=d.matches;DATA._demo.results=false;}
+  if(Array.isArray(d.standings)&&d.standings.length){DATA.standings=d.standings;DATA._demo.standings=false;}
+  if(Array.isArray(d.scorers)&&d.scorers.length){DATA.scorers=d.scorers;DATA._demo.players=false;}
+  if(Array.isArray(d.assists)&&d.assists.length){DATA.assists=d.assists;}
+  if(d.bracket&&d.bracket.r32&&d.bracket.r32.some(m=>m&&(m.t1||m.t2))){DATA.bracket=d.bracket;DATA._demo.bracket=false;}
+  if(d.updated)DATA.updated=d.updated;
+}
+function setUpdated(extra){document.getElementById("updated").textContent=(DATA.updated&&DATA.updated!=="데모"?"기준 "+DATA.updated:"데모 데이터")+(extra||"");}
+function loadData(manual){
+  const btn=document.getElementById("refreshBtn");
+  if(manual&&btn){btn.disabled=true;btn.textContent="⏳…";}
+  return fetch("data.json?t="+Date.now(),{cache:"no-store"})
+    .then(r=>{if(!r.ok)throw 0;return r.json();})
+    .then(d=>{overlay(d);renderAll();if(manual){const t=new Date();setUpdated(" · "+("0"+t.getHours()).slice(-2)+":"+("0"+t.getMinutes()).slice(-2)+" 새로고침");}})
+    .catch(()=>{renderAll();})
+    .finally(()=>{if(btn){btn.disabled=false;btn.textContent="🔄 새로고침";}});
+}
+
+/* ===== 렌더 ===== */
+function renderAll(){setUpdated();renderResults();renderStandings();renderPlayers();renderBracket();}
+function matchCard(m){
+ const pend=m.pending||m.s1==null||m.s2==null;
+ const w1=!pend&&m.s1>m.s2,w2=!pend&&m.s2>m.s1;
+ const goalLine=(m.goals&&m.goals.length)?`<div class="gl">⚽ ${m.goals.map(g=>`<span class="gi">${g.p}</span>${g.m?" "+g.m+"'":""}`).join(" · ")}</div>`:"";
+ const sc=v=>pend?'<span class="pend">·</span>':v;
+ return `<div class="match"><div class="mtop"><span class="tag">${m.group?m.group+"조":"경기"}${m.md?" · MD"+m.md:""}</span><span>${pend?"예정":(m.date?m.date.slice(5).replace("-","/"):"")}</span></div>
+   <div class="row ${w1?'win':w2?'lose':''}"><div class="team">${fl(m.t1)}${ko(m.t1)}</div><div class="sc">${sc(m.s1)}</div></div>
+   <div class="row ${w2?'win':w1?'lose':''}"><div class="team">${fl(m.t2)}${ko(m.t2)}</div><div class="sc">${sc(m.s2)}</div></div>
+   ${goalLine}</div>`;
+}
+function section(title,count,inner){return `<div class="daygroup"><div class="dayhead" onclick="collapseToggle(this)"><span class="arw">▾</span>${title}<span class="cnt">${count}경기</span></div><div class="mgrid">${inner}</div></div>`;}
+function collapseToggle(el){const b=el.nextElementSibling,h=b.style.display==="none";b.style.display=h?"":"none";el.querySelector(".arw").textContent=h?"▾":"▸";}
+function toggleAllSections(){const heads=[...document.querySelectorAll("#results .dayhead")].filter(h=>h.offsetParent!==null);const open=heads.some(h=>h.nextElementSibling.style.display!=="none");heads.forEach(h=>{h.nextElementSibling.style.display=open?"none":"";h.querySelector(".arw").textContent=open?"▸":"▾";});}
+function renderResults(){
+ const ms=DATA.matches||[];
+ const demoTag=DATA._demo.results?'<span class="demoflag">데모</span>':"";
+ document.getElementById("results").innerHTML=
+   `<div class="secttitle">📅 경기결과 ${demoTag}</div>
+    <div class="subtabs"><span class="subtab active" data-s="date">📅 날짜별</span><span class="subtab" data-s="group">🔠 조별</span><span class="subtab" onclick="toggleAllSections()">⬍ 전체 접기/펼치기</span></div>
+    <div id="resByDate"></div><div id="resByGroup" style="display:none;"></div>`;
+ let bd="";
+ [...new Set(ms.map(m=>m.date).filter(Boolean))].sort().forEach(d=>{const list=ms.filter(m=>m.date===d);bd+=section(`${d.slice(5,7)}월 ${d.slice(8)}일`,list.length,list.map(matchCard).join(""));});
+ document.getElementById("resByDate").innerHTML=bd||'<div class="na">표시할 경기가 없습니다.</div>';
+ let bg="";
+ [...new Set(ms.map(m=>m.group).filter(Boolean))].sort().forEach(g=>{const list=ms.filter(m=>m.group===g);bg+=section(`${g}조`,list.length,list.map(matchCard).join(""));});
+ document.getElementById("resByGroup").innerHTML=bg||'<div class="na">조별 경기가 없습니다.</div>';
+ document.querySelectorAll("#results .subtab[data-s]").forEach(s=>s.addEventListener("click",()=>{
+   document.querySelectorAll("#results .subtab[data-s]").forEach(x=>x.classList.remove("active"));s.classList.add("active");
+   document.getElementById("resByDate").style.display=s.dataset.s==="date"?"":"none";
+   document.getElementById("resByGroup").style.display=s.dataset.s==="group"?"":"none";
+ }));
+}
+function renderStandings(){
+ const demoTag=DATA._demo.standings?'<span class="demoflag">데모</span>':"";
+ let h=`<div class="secttitle">🏆 조별리그 순위 ${demoTag}</div><div class="groups">`;
+ (DATA.standings||[]).forEach(grp=>{
+   const teams=grp.teams.slice().sort((a,b)=>b.pts-a.pts||(b.gf-b.ga)-(a.gf-a.ga)||b.gf-a.gf);
+   h+=`<div class="gcard"><div class="ghead"><span class="gl2">${grp.g}조</span></div><table><thead><tr><th></th><th style="text-align:left">팀</th><th>경기</th><th>승</th><th>무</th><th>패</th><th>득</th><th>실</th><th>차</th><th>점</th></tr></thead><tbody>`;
+   teams.forEach((t,i)=>{const cls=i===0?"q1":i===1?"q2":i===2?"q3":"q4",gd=t.gf-t.ga;h+=`<tr><td><span class="pos ${cls}">${i+1}</span></td><td class="tn"><span class="nm">${fl(t.t)} ${ko(t.t)}</span></td><td>${t.pld}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td><td>${t.gf}</td><td>${t.ga}</td><td>${gd>0?"+"+gd:gd}</td><td class="pts">${t.pts}</td></tr>`;});
+   h+="</tbody></table></div>";
+ });
+ document.getElementById("standings").innerHTML=h+"</div>";
+}
+function whereText(x){
+ if(Array.isArray(x.where)&&x.where.length)return x.where.map(w=>"vs "+ko(w.o)+(w.m&&w.m.length?" "+w.m.map(v=>v+"'").join("·"):"")).join(" · ");
+ return x.w||"";
+}
+function rankRow(x,i,cls){const wt=whereText(x);return `<div class="rrow ${i===0?'t1':i===1?'t2':i===2?'t3':''}"><div class="rrank">${i+1}</div><div class="rname"><div class="rtop">${fl(x.t)} ${x.p}</div>${wt?`<div class="rwhere">${wt}</div>`:""}</div><div class="rn ${cls}">${x.n}</div></div>`;}
+function toggleMore(id,btn){const e=document.getElementById(id);if(e.style.display==="none"){e.style.display="";btn.textContent="▴ 접기";}else{e.style.display="none";btn.textContent=btn.getAttribute("data-open");}}
+function rankCard(title,icon,list,cls){
+ list=list||[];
+ if(!list.length)return `<div class="rankcard"><div class="rankhead">${icon} ${title}</div><div class="na">기록 없음</div></div>`;
+ const top=list.slice(0,10), rest=list.slice(10);
+ let body=top.map((x,i)=>rankRow(x,i,cls)).join("");
+ if(rest.length){
+   const id="more_"+cls+"_"+Math.random().toString(36).slice(2,7);
+   const label=`▾ 11위~${list.length}위 더보기 (${rest.length}명)`;
+   body+=`<div id="${id}" style="display:none;">${rest.map((x,i)=>rankRow(x,i+10,cls)).join("")}</div>`+
+         `<div class="rmorebtn" data-open="${label}" onclick="toggleMore('${id}',this)">${label}</div>`;
+ }
+ return `<div class="rankcard"><div class="rankhead">${icon} ${title}</div>${body}</div>`;
+}
+function renderPlayers(){
+ const demoTag=DATA._demo.players?'<span class="demoflag">데모</span>':"";
+ document.getElementById("players").innerHTML=`<div class="secttitle">👟 선수기록 ${demoTag} · 이름 아래 기록 경기 표시</div><div class="rankwrap">`+rankCard("득점 순위","⚽",DATA.scorers,"")+rankCard("도움 순위","🅰️",DATA.assists,"a")+"</div>";
+}
+function bmatch(m,champ){
+ const pend=m.s1==null||m.s2==null,w1=!pend&&m.s1>m.s2,w2=!pend&&m.s2>m.s1,tbd=t=>t?fl(t)+ko(t):'<span class="tbd">미정</span>';
+ return `<div class="bmatch ${champ?'champ':''}">${m.dt?'<div class="bdt">'+m.dt+'</div>':''}<div class="brow ${w1?'w':w2?'l':''}"><span class="bt">${tbd(m.t1)}</span><span class="bs">${m.s1==null?"":m.s1}</span></div>
+   <div class="brow ${w2?'w':w1?'l':''}"><span class="bt">${tbd(m.t2)}</span><span class="bs">${m.s2==null?"":m.s2}</span></div>
+   ${champ&&!pend?`<div class="champtag">🏆 우승: ${ko(w1?m.t1:m.t2)}</div>`:""}</div>`;
+}
+function bcol(title,arr,champ){return `<div class="bcol"><h3>${title}</h3>${(arr||[]).map(m=>bmatch(m,champ)).join("")}</div>`;}
+function renderBracket(){
+ const B=DATA.bracket||{}, demoTag=DATA._demo.bracket?'<span class="demoflag">데모</span>':"";
+ let h=`<div class="secttitle">🗺️ 녹아웃 토너먼트 대진표 ${demoTag}</div>`;
+ h+=`<div class="note"><b>32강 → 16강 → 8강 → 4강 → 결승</b>. 각 경기에서 다음 라운드로 <b>연결선</b>이 이어집니다. 가로 스크롤. (아직 안 치러진 경기는 "미정")</div>`;
+ h+=`<div class="brkscroll"><div class="bracket" id="brk"><svg class="connectors" id="conn"></svg>
+   ${bcol("32강",B.r32)}${bcol("16강",B.r16)}${bcol("8강",B.qf)}${bcol("4강",B.sf)}${bcol("결승",B.final,true)}
+ </div></div>`;
+ if(B.third&&B.third.length)h+=`<div class="thirdwrap"><div class="lbl">🥉 3·4위전</div><div class="mgrid" style="max-width:320px;">${bmatch(B.third[0])}</div></div>`;
+ document.getElementById("bracket").innerHTML=h;
+}
+function drawConnectors(){
+ const brk=document.getElementById("brk");if(!brk)return;const svg=document.getElementById("conn");if(!svg)return;
+ const cols=[...brk.querySelectorAll(".bcol")],W=brk.scrollWidth,H=brk.scrollHeight;
+ svg.setAttribute("width",W);svg.setAttribute("height",H);svg.setAttribute("viewBox","0 0 "+W+" "+H);
+ let d="";
+ for(let c=0;c<cols.length-1;c++){const src=[...cols[c].querySelectorAll(".bmatch")],tgt=[...cols[c+1].querySelectorAll(".bmatch")];src.forEach((m,i)=>{const t=tgt[Math.floor(i/2)];if(!t)return;const x1=m.offsetLeft+m.offsetWidth,y1=m.offsetTop+m.offsetHeight/2,x2=t.offsetLeft,y2=t.offsetTop+t.offsetHeight/2,mx=(x1+x2)/2;d+=`M${x1} ${y1} H${mx} V${y2} H${x2} `;});}
+ svg.innerHTML=`<path d="${d}"></path>`;
+}
+
+/* 탭 + GitHub 버튼 */
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
+ document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+ document.querySelectorAll(".view").forEach(x=>x.classList.remove("active"));
+ t.classList.add("active");document.getElementById(t.dataset.v).classList.add("active");
+ if(t.dataset.v==="bracket")setTimeout(drawConnectors,40);
+}));
+window.addEventListener("resize",()=>{if(document.getElementById("bracket").classList.contains("active"))drawConnectors();});
+try{if(location.hostname.endsWith("github.io")){const u=location.hostname.split(".")[0],r=(location.pathname.split("/").filter(Boolean)[0])||(u+".github.io");const a=document.getElementById("ghRun");a.href="https://github.com/"+u+"/"+r+"/actions/workflows/update-data.yml";a.style.display="inline-flex";}}catch(e){}
+
+overlay(window.WC_DATA); renderAll(); loadData(false);
+</script>
+</body>
+</html>
