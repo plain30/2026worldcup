@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-24 21:25 UTC",
+  "updated": "2026-06-24 22:48 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1002,15 +1002,29 @@ window.WC_DATA = {
       "date": "2026-06-16",
       "group": "H",
       "t1": "Spain",
-      "t2": "Cape Verde Islands",
+      "t2": "Cape Verde",
       "venue": "",
       "city": "",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "시드니 카브랄",
+          "t": "Cape Verde",
+          "m": 16,
+          "c": "yellow"
+        },
+        {
+          "p": "페드리",
+          "t": "Spain",
+          "m": "90+3",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 0,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-16",
@@ -1791,15 +1805,67 @@ window.WC_DATA = {
       "date": "2026-06-22",
       "group": "H",
       "t1": "Uruguay",
-      "t2": "Cape Verde Islands",
+      "t2": "Cape Verde",
       "venue": "",
       "city": "",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "케빈 피나",
+          "t": "Cape Verde",
+          "m": 21
+        },
+        {
+          "p": "막시 아라우호",
+          "t": "Uruguay",
+          "m": 44
+        },
+        {
+          "p": "카노비오",
+          "t": "Uruguay",
+          "m": "45+6"
+        },
+        {
+          "p": "엘리우 바렐라",
+          "t": "Cape Verde",
+          "m": 61
+        }
+      ],
+      "assists": [
+        {
+          "p": "막시 아라우호",
+          "t": "Uruguay"
+        }
+      ],
+      "cards": [
+        {
+          "p": "시드니 카브랄",
+          "t": "Cape Verde",
+          "m": 5,
+          "c": "yellow"
+        },
+        {
+          "p": "벤탄쿠르",
+          "t": "Uruguay",
+          "m": 20,
+          "c": "yellow"
+        },
+        {
+          "p": "올리베라",
+          "t": "Uruguay",
+          "m": 58,
+          "c": "yellow"
+        },
+        {
+          "p": "디네이 보르제스",
+          "t": "Cape Verde",
+          "m": "90+3",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 2,
-      "s2": 2
+      "s2": 2,
+      "naverEvents": true
     },
     {
       "date": "2026-06-23",
@@ -2192,6 +2258,21 @@ window.WC_DATA = {
     {
       "date": "2026-06-25",
       "group": "A",
+      "t1": "South Africa",
+      "t2": "South Korea",
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey",
+      "goals": [],
+      "assists": [],
+      "cards": [],
+      "lineups": null,
+      "s1": null,
+      "s2": null,
+      "pending": true
+    },
+    {
+      "date": "2026-06-25",
+      "group": "A",
       "t1": "Czechia",
       "t2": "Mexico",
       "venue": "Mexico City Stadium",
@@ -2206,18 +2287,60 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-25",
-      "group": "A",
-      "t1": "South Africa",
-      "t2": "South Korea",
-      "venue": "Monterrey Stadium",
-      "city": "Monterrey",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "group": "B",
+      "t1": "Bosnia and Herzegovina",
+      "t2": "Qatar",
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "goals": [
+        {
+          "p": "알라이베고비치",
+          "t": "Bosnia and Herzegovina",
+          "m": 29
+        },
+        {
+          "p": "하산 알 하이도스",
+          "t": "Qatar",
+          "m": 42
+        },
+        {
+          "p": "마흐미치",
+          "t": "Bosnia and Herzegovina",
+          "m": 80
+        }
+      ],
+      "assists": [
+        {
+          "p": "바시치",
+          "t": "Bosnia and Herzegovina"
+        },
+        {
+          "p": "에드밀손 주니오르",
+          "t": "Qatar"
+        },
+        {
+          "p": "하지카두니치",
+          "t": "Bosnia and Herzegovina"
+        }
+      ],
+      "cards": [
+        {
+          "p": "아흐메드 파티",
+          "t": "Qatar",
+          "m": 78,
+          "c": "yellow"
+        },
+        {
+          "p": "마흐미치",
+          "t": "Bosnia and Herzegovina",
+          "m": 82,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "naverEvents": true,
+      "s1": 3,
+      "s2": 1
     },
     {
       "date": "2026-06-25",
@@ -2278,66 +2401,9 @@ window.WC_DATA = {
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 2,
-      "s2": 1,
-      "naverEvents": true
-    },
-    {
-      "date": "2026-06-25",
-      "group": "B",
-      "t1": "Bosnia and Herzegovina",
-      "t2": "Qatar",
-      "venue": "Seattle Stadium",
-      "city": "Seattle",
-      "goals": [
-        {
-          "p": "알라이베고비치",
-          "t": "Bosnia and Herzegovina",
-          "m": 29
-        },
-        {
-          "p": "하산 알 하이도스",
-          "t": "Qatar",
-          "m": 42
-        },
-        {
-          "p": "마흐미치",
-          "t": "Bosnia and Herzegovina",
-          "m": 80
-        }
-      ],
-      "assists": [
-        {
-          "p": "바시치",
-          "t": "Bosnia and Herzegovina"
-        },
-        {
-          "p": "에드밀손 주니오르",
-          "t": "Qatar"
-        },
-        {
-          "p": "하지카두니치",
-          "t": "Bosnia and Herzegovina"
-        }
-      ],
-      "cards": [
-        {
-          "p": "아흐메드 파티",
-          "t": "Qatar",
-          "m": 78,
-          "c": "yellow"
-        },
-        {
-          "p": "마흐미치",
-          "t": "Bosnia and Herzegovina",
-          "m": 82,
-          "c": "yellow"
-        }
-      ],
-      "lineups": null,
-      "s1": 3,
-      "s2": 1,
-      "naverEvents": true
+      "s2": 1
     },
     {
       "date": "2026-06-25",
@@ -2372,21 +2438,6 @@ window.WC_DATA = {
     {
       "date": "2026-06-26",
       "group": "D",
-      "t1": "Turkey",
-      "t2": "United States",
-      "venue": "Los Angeles Stadium",
-      "city": "Los Angeles",
-      "goals": [],
-      "assists": [],
-      "cards": [],
-      "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
-    },
-    {
-      "date": "2026-06-26",
-      "group": "D",
       "t1": "Paraguay",
       "t2": "Australia",
       "venue": "San Francisco Bay Area Stadium",
@@ -2401,11 +2452,11 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-26",
-      "group": "E",
-      "t1": "Ecuador",
-      "t2": "Germany",
-      "venue": "New York/New Jersey Stadium",
-      "city": "New Jersey",
+      "group": "D",
+      "t1": "Turkey",
+      "t2": "United States",
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2421,6 +2472,21 @@ window.WC_DATA = {
       "t2": "Ivory Coast",
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
+      "goals": [],
+      "assists": [],
+      "cards": [],
+      "lineups": null,
+      "s1": null,
+      "s2": null,
+      "pending": true
+    },
+    {
+      "date": "2026-06-26",
+      "group": "E",
+      "t1": "Ecuador",
+      "t2": "Germany",
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2507,25 +2573,10 @@ window.WC_DATA = {
     {
       "date": "2026-06-27",
       "group": "H",
-      "t1": "Cape Verde Islands",
+      "t1": "Cape Verde",
       "t2": "Saudi Arabia",
       "venue": "",
       "city": "",
-      "goals": [],
-      "assists": [],
-      "cards": [],
-      "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
-    },
-    {
-      "date": "2026-06-27",
-      "group": "I",
-      "t1": "Norway",
-      "t2": "France",
-      "venue": "Boston Stadium",
-      "city": "Boston",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2550,12 +2601,12 @@ window.WC_DATA = {
       "pending": true
     },
     {
-      "date": "2026-06-28",
-      "group": "J",
-      "t1": "Jordan",
-      "t2": "Argentina",
-      "venue": "Dallas Stadium",
-      "city": "Dallas",
+      "date": "2026-06-27",
+      "group": "I",
+      "t1": "Norway",
+      "t2": "France",
+      "venue": "Boston Stadium",
+      "city": "Boston",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2581,11 +2632,11 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-28",
-      "group": "K",
-      "t1": "Colombia",
-      "t2": "Portugal",
-      "venue": "Miami Stadium",
-      "city": "Miami",
+      "group": "J",
+      "t1": "Jordan",
+      "t2": "Argentina",
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2601,6 +2652,21 @@ window.WC_DATA = {
       "t2": "Uzbekistan",
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
+      "goals": [],
+      "assists": [],
+      "cards": [],
+      "lineups": null,
+      "s1": null,
+      "s2": null,
+      "pending": true
+    },
+    {
+      "date": "2026-06-28",
+      "group": "K",
+      "t1": "Colombia",
+      "t2": "Portugal",
+      "venue": "Miami Stadium",
+      "city": "Miami",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2991,13 +3057,13 @@ window.WC_DATA = {
         },
         {
           "t": "Cape Verde",
-          "pld": 0,
+          "pld": 2,
           "w": 0,
-          "d": 0,
+          "d": 2,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0
+          "gf": 2,
+          "ga": 2,
+          "pts": 2
         }
       ]
     },
@@ -3182,7 +3248,7 @@ window.WC_DATA = {
       ]
     }
   ],
-  "source_note": "football-data.org",
+  "source_note": "FIFA api.fifa.com",
   "scorers": [
     {
       "p": "리오넬 메시",
@@ -3691,7 +3757,7 @@ window.WC_DATA = {
     "r32": [
       {
         "t1": null,
-        "t2": null,
+        "t2": "Canada",
         "s1": null,
         "s2": null
       },
@@ -3762,7 +3828,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Switzerland",
         "t2": null,
         "s1": null,
         "s2": null
