@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24 05:07 UTC",
+  "updated": "2026-06-24 05:41 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1007,10 +1007,24 @@
       "city": "애틀랜타",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "시드니 카브랄",
+          "t": "Cape Verde",
+          "m": 16,
+          "c": "yellow"
+        },
+        {
+          "p": "페드리",
+          "t": "Spain",
+          "m": "90+3",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 0,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-16",
@@ -1566,10 +1580,48 @@
       "city": "Kansas City",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "알시바르",
+          "t": "Ecuador",
+          "m": 38,
+          "c": "yellow"
+        },
+        {
+          "p": "레안드로 바쿠나",
+          "t": "Curaçao",
+          "m": 39,
+          "c": "yellow"
+        },
+        {
+          "p": "주니뉴 바쿠나",
+          "t": "Curaçao",
+          "m": 53,
+          "c": "yellow"
+        },
+        {
+          "p": "코메넨시아",
+          "t": "Curaçao",
+          "m": 56,
+          "c": "yellow"
+        },
+        {
+          "p": "가리",
+          "t": "Curaçao",
+          "m": 75,
+          "c": "yellow"
+        },
+        {
+          "p": "카스타네르",
+          "t": "Curaçao",
+          "m": "90+1",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 0,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-21",
@@ -1660,10 +1712,24 @@
       "city": "Los Angeles",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "루카쿠",
+          "t": "Belgium",
+          "m": 3,
+          "c": "yellow"
+        },
+        {
+          "p": "에자톨라히",
+          "t": "Iran",
+          "m": 33,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 0,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-22",
@@ -1777,12 +1843,49 @@
       "t2": "Iraq",
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "음바페",
+          "t": "France",
+          "m": 14
+        },
+        {
+          "p": "음바페",
+          "t": "France",
+          "m": 54
+        },
+        {
+          "p": "뎀벨레",
+          "t": "France",
+          "m": 66
+        }
+      ],
+      "assists": [
+        {
+          "p": "올리세",
+          "t": "France"
+        },
+        {
+          "p": "뎀벨레",
+          "t": "France"
+        },
+        {
+          "p": "올리세",
+          "t": "France"
+        }
+      ],
+      "cards": [
+        {
+          "p": "아미르 알 아마리",
+          "t": "Iraq",
+          "m": 6,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 3,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-23",
@@ -1791,12 +1894,56 @@
       "t2": "Senegal",
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
-      "goals": [],
-      "assists": [],
+      "goals": [
+        {
+          "p": "페데르센",
+          "t": "Norway",
+          "m": 43
+        },
+        {
+          "p": "홀란",
+          "t": "Norway",
+          "m": 48
+        },
+        {
+          "p": "이스마일라 사르",
+          "t": "Senegal",
+          "m": 53
+        },
+        {
+          "p": "홀란",
+          "t": "Norway",
+          "m": 58
+        },
+        {
+          "p": "이스마일라 사르",
+          "t": "Senegal",
+          "m": "90+3"
+        }
+      ],
+      "assists": [
+        {
+          "p": "외데고르",
+          "t": "Norway"
+        },
+        {
+          "p": "마네",
+          "t": "Senegal"
+        },
+        {
+          "p": "베르그",
+          "t": "Norway"
+        },
+        {
+          "p": "잭슨",
+          "t": "Senegal"
+        }
+      ],
       "cards": [],
       "lineups": null,
       "s1": 3,
-      "s2": 2
+      "s2": 2,
+      "naverEvents": true
     },
     {
       "date": "2026-06-23",
@@ -1805,12 +1952,54 @@
       "t2": "Austria",
       "venue": "Dallas Stadium",
       "city": "Dallas",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "메시",
+          "t": "Argentina",
+          "m": 38
+        },
+        {
+          "p": "메시",
+          "t": "Argentina",
+          "m": "90+5"
+        }
+      ],
+      "assists": [
+        {
+          "p": "메디나",
+          "t": "Argentina"
+        }
+      ],
+      "cards": [
+        {
+          "p": "포슈",
+          "t": "Austria",
+          "m": 40,
+          "c": "yellow"
+        },
+        {
+          "p": "메디나",
+          "t": "Argentina",
+          "m": 76,
+          "c": "yellow"
+        },
+        {
+          "p": "라이머",
+          "t": "Austria",
+          "m": 76,
+          "c": "yellow"
+        },
+        {
+          "p": "파레데스",
+          "t": "Argentina",
+          "m": "90+2",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 2,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-23",
@@ -1819,12 +2008,51 @@
       "t2": "Algeria",
       "venue": "San Francisco Bay Area Stadium",
       "city": "San Francisco Bay Area",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "니자르 알 라시단",
+          "t": "Jordan",
+          "m": 36
+        },
+        {
+          "p": "벤부알리",
+          "t": "Algeria",
+          "m": 69
+        },
+        {
+          "p": "구이리",
+          "t": "Algeria",
+          "m": 82
+        }
+      ],
+      "assists": [
+        {
+          "p": "무사 알 타마리",
+          "t": "Jordan"
+        },
+        {
+          "p": "마레즈",
+          "t": "Algeria"
+        }
+      ],
+      "cards": [
+        {
+          "p": "제루키",
+          "t": "Algeria",
+          "m": 44,
+          "c": "yellow"
+        },
+        {
+          "p": "후삼 아부 다합",
+          "t": "Jordan",
+          "m": 64,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 1,
-      "s2": 2
+      "s2": 2,
+      "naverEvents": true
     },
     {
       "date": "2026-06-24",
@@ -1880,9 +2108,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 5,
-      "s2": 0,
-      "naverEvents": true
+      "s2": 0
     },
     {
       "date": "2026-06-24",
@@ -1925,9 +2153,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 1,
-      "s2": 0,
-      "naverEvents": true
+      "s2": 0
     },
     {
       "date": "2026-06-24",
@@ -1953,9 +2181,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 0,
-      "s2": 0,
-      "naverEvents": true
+      "s2": 0
     },
     {
       "date": "2026-06-24",
@@ -1992,9 +2220,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 0,
-      "s2": 1,
-      "naverEvents": true
+      "s2": 1
     },
     {
       "date": "2026-06-25",
