@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-24 03:49 UTC",
+  "updated": "2026-06-24 05:07 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1833,12 +1833,56 @@ window.WC_DATA = {
       "t2": "Uzbekistan",
       "venue": "Houston Stadium",
       "city": "Houston",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "크리스티아누 호날두",
+          "t": "Portugal",
+          "m": 6
+        },
+        {
+          "p": "누누 멘데스",
+          "t": "Portugal",
+          "m": 17
+        },
+        {
+          "p": "크리스티아누 호날두",
+          "t": "Portugal",
+          "m": 39
+        },
+        {
+          "p": "하파엘 레앙",
+          "t": "Portugal",
+          "m": 87
+        }
+      ],
+      "assists": [
+        {
+          "p": "주앙 칸셀루",
+          "t": "Portugal"
+        },
+        {
+          "p": "브루노 페르난데스",
+          "t": "Portugal"
+        }
+      ],
+      "cards": [
+        {
+          "p": "함로베코프",
+          "t": "Uzbekistan",
+          "m": 14,
+          "c": "yellow"
+        },
+        {
+          "p": "헤나투 베이가",
+          "t": "Portugal",
+          "m": 68,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 5,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-24",
@@ -1847,13 +1891,43 @@ window.WC_DATA = {
       "t2": "DR Congo",
       "venue": "Guadalajara Stadium",
       "city": "Guadalajara",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "무뇨스",
+          "t": "Colombia",
+          "m": 76
+        }
+      ],
+      "assists": [
+        {
+          "p": "퀸테로",
+          "t": "Colombia"
+        }
+      ],
+      "cards": [
+        {
+          "p": "루쿠미",
+          "t": "Colombia",
+          "m": 56,
+          "c": "yellow"
+        },
+        {
+          "p": "피켈",
+          "t": "DR Congo",
+          "m": "90+3",
+          "c": "yellow"
+        },
+        {
+          "p": "레르마",
+          "t": "Colombia",
+          "m": "90+4",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-24",
@@ -1864,10 +1938,24 @@ window.WC_DATA = {
       "city": "Boston",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "라이스",
+          "t": "England",
+          "m": 41,
+          "c": "yellow"
+        },
+        {
+          "p": "윌리엄스",
+          "t": "Ghana",
+          "m": 60,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 0,
-      "s2": 0
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-24",
@@ -1876,12 +1964,37 @@ window.WC_DATA = {
       "t2": "Croatia",
       "venue": "Toronto Stadium",
       "city": "Toronto",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "부디미르",
+          "t": "Croatia",
+          "m": 54
+        }
+      ],
+      "assists": [
+        {
+          "p": "스타니시치",
+          "t": "Croatia"
+        }
+      ],
+      "cards": [
+        {
+          "p": "바르세나스",
+          "t": "Panama",
+          "m": 61,
+          "c": "yellow"
+        },
+        {
+          "p": "페타르 수치치",
+          "t": "Croatia",
+          "m": "90+2",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
       "s1": 0,
-      "s2": 1
+      "s2": 1,
+      "naverEvents": true
     },
     {
       "date": "2026-06-25",
@@ -2710,22 +2823,22 @@ window.WC_DATA = {
         },
         {
           "t": "Colombia",
-          "pld": 1,
-          "w": 1,
+          "pld": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 3,
+          "gf": 4,
           "ga": 1,
-          "pts": 3
+          "pts": 6
         },
         {
           "t": "DR Congo",
-          "pld": 1,
+          "pld": 2,
           "w": 0,
           "d": 1,
-          "l": 0,
+          "l": 1,
           "gf": 1,
-          "ga": 1,
+          "ga": 2,
           "pts": 1
         },
         {
@@ -2812,6 +2925,11 @@ window.WC_DATA = {
       "p": "조너선 데이비드",
       "t": "Canada",
       "n": 3
+    },
+    {
+      "p": "다니엘 무뇨스",
+      "t": "Colombia",
+      "n": 2
     },
     {
       "p": "마테우스 쿠냐",
@@ -2951,11 +3069,6 @@ window.WC_DATA = {
     {
       "p": "니코 슐로터벡",
       "t": "Germany",
-      "n": 1
-    },
-    {
-      "p": "다니엘 무뇨스",
-      "t": "Colombia",
       "n": 1
     },
     {
