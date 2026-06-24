@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-24 19:54 UTC",
+  "updated": "2026-06-24 21:25 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1002,27 +1002,13 @@ window.WC_DATA = {
       "date": "2026-06-16",
       "group": "H",
       "t1": "Spain",
-      "t2": "Cape Verde",
-      "venue": "애틀랜타 스타디움 (메르세데스-벤츠)",
-      "city": "애틀랜타",
+      "t2": "Cape Verde Islands",
+      "venue": "",
+      "city": "",
       "goals": [],
       "assists": [],
-      "cards": [
-        {
-          "p": "시드니 카브랄",
-          "t": "Cape Verde",
-          "m": 16,
-          "c": "yellow"
-        },
-        {
-          "p": "페드리",
-          "t": "Spain",
-          "m": "90+3",
-          "c": "yellow"
-        }
-      ],
+      "cards": [],
       "lineups": null,
-      "naverEvents": true,
       "s1": 0,
       "s2": 0
     },
@@ -1805,31 +1791,10 @@ window.WC_DATA = {
       "date": "2026-06-22",
       "group": "H",
       "t1": "Uruguay",
-      "t2": "Cape Verde",
-      "venue": "Miami Stadium",
-      "city": "Miami",
-      "goals": [
-        {
-          "p": "케빈 피나",
-          "t": "Cape Verde",
-          "m": 21
-        },
-        {
-          "p": "막시 아라우호",
-          "t": "Uruguay",
-          "m": 44
-        },
-        {
-          "p": "아구스틴 카노비오",
-          "t": "Uruguay",
-          "m": "45+6"
-        },
-        {
-          "p": "엘리오 바렐라",
-          "t": "Cape Verde",
-          "m": 61
-        }
-      ],
+      "t2": "Cape Verde Islands",
+      "venue": "",
+      "city": "",
+      "goals": [],
       "assists": [],
       "cards": [],
       "lineups": null,
@@ -2227,21 +2192,6 @@ window.WC_DATA = {
     {
       "date": "2026-06-25",
       "group": "A",
-      "t1": "South Africa",
-      "t2": "South Korea",
-      "venue": "Monterrey Stadium",
-      "city": "Monterrey",
-      "goals": [],
-      "assists": [],
-      "cards": [],
-      "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
-    },
-    {
-      "date": "2026-06-25",
-      "group": "A",
       "t1": "Czechia",
       "t2": "Mexico",
       "venue": "Mexico City Stadium",
@@ -2256,11 +2206,11 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-25",
-      "group": "B",
-      "t1": "Bosnia and Herzegovina",
-      "t2": "Qatar",
-      "venue": "Seattle Stadium",
-      "city": "Seattle",
+      "group": "A",
+      "t1": "South Africa",
+      "t2": "South Korea",
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2276,13 +2226,118 @@ window.WC_DATA = {
       "t2": "Canada",
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "바르가스",
+          "t": "Switzerland",
+          "m": 46
+        },
+        {
+          "p": "만잠비",
+          "t": "Switzerland",
+          "m": 57
+        },
+        {
+          "p": "프로미스 데이비드",
+          "t": "Canada",
+          "m": 76
+        }
+      ],
+      "assists": [
+        {
+          "p": "만잠비",
+          "t": "Switzerland"
+        },
+        {
+          "p": "엠볼로",
+          "t": "Switzerland"
+        },
+        {
+          "p": "네이선 살리바",
+          "t": "Canada"
+        }
+      ],
+      "cards": [
+        {
+          "p": "래린",
+          "t": "Canada",
+          "m": 32,
+          "c": "yellow"
+        },
+        {
+          "p": "자카",
+          "t": "Switzerland",
+          "m": 32,
+          "c": "yellow"
+        },
+        {
+          "p": "밀러",
+          "t": "Canada",
+          "m": 87,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 2,
+      "s2": 1,
+      "naverEvents": true
+    },
+    {
+      "date": "2026-06-25",
+      "group": "B",
+      "t1": "Bosnia and Herzegovina",
+      "t2": "Qatar",
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "goals": [
+        {
+          "p": "알라이베고비치",
+          "t": "Bosnia and Herzegovina",
+          "m": 29
+        },
+        {
+          "p": "하산 알 하이도스",
+          "t": "Qatar",
+          "m": 42
+        },
+        {
+          "p": "마흐미치",
+          "t": "Bosnia and Herzegovina",
+          "m": 80
+        }
+      ],
+      "assists": [
+        {
+          "p": "바시치",
+          "t": "Bosnia and Herzegovina"
+        },
+        {
+          "p": "에드밀손 주니오르",
+          "t": "Qatar"
+        },
+        {
+          "p": "하지카두니치",
+          "t": "Bosnia and Herzegovina"
+        }
+      ],
+      "cards": [
+        {
+          "p": "아흐메드 파티",
+          "t": "Qatar",
+          "m": 78,
+          "c": "yellow"
+        },
+        {
+          "p": "마흐미치",
+          "t": "Bosnia and Herzegovina",
+          "m": 82,
+          "c": "yellow"
+        }
+      ],
+      "lineups": null,
+      "s1": 3,
+      "s2": 1,
+      "naverEvents": true
     },
     {
       "date": "2026-06-25",
@@ -2317,21 +2372,6 @@ window.WC_DATA = {
     {
       "date": "2026-06-26",
       "group": "D",
-      "t1": "Paraguay",
-      "t2": "Australia",
-      "venue": "San Francisco Bay Area Stadium",
-      "city": "San Francisco Bay Area",
-      "goals": [],
-      "assists": [],
-      "cards": [],
-      "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
-    },
-    {
-      "date": "2026-06-26",
-      "group": "D",
       "t1": "Turkey",
       "t2": "United States",
       "venue": "Los Angeles Stadium",
@@ -2346,11 +2386,11 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-26",
-      "group": "E",
-      "t1": "Curaçao",
-      "t2": "Ivory Coast",
-      "venue": "Philadelphia Stadium",
-      "city": "Philadelphia",
+      "group": "D",
+      "t1": "Paraguay",
+      "t2": "Australia",
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2366,6 +2406,21 @@ window.WC_DATA = {
       "t2": "Germany",
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
+      "goals": [],
+      "assists": [],
+      "cards": [],
+      "lineups": null,
+      "s1": null,
+      "s2": null,
+      "pending": true
+    },
+    {
+      "date": "2026-06-26",
+      "group": "E",
+      "t1": "Curaçao",
+      "t2": "Ivory Coast",
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2452,25 +2507,10 @@ window.WC_DATA = {
     {
       "date": "2026-06-27",
       "group": "H",
-      "t1": "Cape Verde",
+      "t1": "Cape Verde Islands",
       "t2": "Saudi Arabia",
-      "venue": "Houston Stadium",
-      "city": "Houston",
-      "goals": [],
-      "assists": [],
-      "cards": [],
-      "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
-    },
-    {
-      "date": "2026-06-27",
-      "group": "I",
-      "t1": "Senegal",
-      "t2": "Iraq",
-      "venue": "Toronto Stadium",
-      "city": "Toronto",
+      "venue": "",
+      "city": "",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2495,12 +2535,12 @@ window.WC_DATA = {
       "pending": true
     },
     {
-      "date": "2026-06-28",
-      "group": "J",
-      "t1": "Algeria",
-      "t2": "Austria",
-      "venue": "Kansas City Stadium",
-      "city": "Kansas City",
+      "date": "2026-06-27",
+      "group": "I",
+      "t1": "Senegal",
+      "t2": "Iraq",
+      "venue": "Toronto Stadium",
+      "city": "Toronto",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2526,11 +2566,11 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-28",
-      "group": "K",
-      "t1": "DR Congo",
-      "t2": "Uzbekistan",
-      "venue": "Atlanta Stadium",
-      "city": "Atlanta",
+      "group": "J",
+      "t1": "Algeria",
+      "t2": "Austria",
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2546,6 +2586,21 @@ window.WC_DATA = {
       "t2": "Portugal",
       "venue": "Miami Stadium",
       "city": "Miami",
+      "goals": [],
+      "assists": [],
+      "cards": [],
+      "lineups": null,
+      "s1": null,
+      "s2": null,
+      "pending": true
+    },
+    {
+      "date": "2026-06-28",
+      "group": "K",
+      "t1": "DR Congo",
+      "t2": "Uzbekistan",
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
       "goals": [],
       "assists": [],
       "cards": [],
@@ -2636,43 +2691,43 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "Canada",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
           "d": 1,
-          "l": 0,
-          "gf": 7,
-          "ga": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 3,
           "pts": 4
         },
         {
           "t": "Bosnia and Herzegovina",
-          "pld": 2,
-          "w": 0,
+          "pld": 3,
+          "w": 1,
           "d": 1,
           "l": 1,
-          "gf": 2,
-          "ga": 5,
-          "pts": 1
+          "gf": 5,
+          "ga": 6,
+          "pts": 4
         },
         {
           "t": "Qatar",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
-          "gf": 1,
-          "ga": 7,
+          "l": 2,
+          "gf": 2,
+          "ga": 10,
           "pts": 1
         },
         {
           "t": "Switzerland",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 5,
-          "ga": 2,
-          "pts": 4
+          "gf": 7,
+          "ga": 3,
+          "pts": 7
         }
       ]
     },
@@ -2936,13 +2991,13 @@ window.WC_DATA = {
         },
         {
           "t": "Cape Verde",
-          "pld": 2,
+          "pld": 0,
           "w": 0,
-          "d": 2,
+          "d": 0,
           "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 2
+          "gf": 0,
+          "ga": 0,
+          "pts": 0
         }
       ]
     },
@@ -3127,7 +3182,7 @@ window.WC_DATA = {
       ]
     }
   ],
-  "source_note": "FIFA api.fifa.com",
+  "source_note": "football-data.org",
   "scorers": [
     {
       "p": "리오넬 메시",
@@ -3150,6 +3205,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "요한 만잠비",
+      "t": "Switzerland",
+      "n": 3
+    },
+    {
       "p": "조너선 데이비드",
       "t": "Canada",
       "n": 3
@@ -3157,6 +3217,11 @@ window.WC_DATA = {
     {
       "p": "다니엘 무뇨스",
       "t": "Colombia",
+      "n": 2
+    },
+    {
+      "p": "루벤 바르가스",
+      "t": "Switzerland",
       "n": 2
     },
     {
@@ -3190,13 +3255,13 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "엘리야 저스트",
-      "t": "New Zealand",
+      "p": "에르민 마흐미치",
+      "t": "Bosnia and Herzegovina",
       "n": 2
     },
     {
-      "p": "요한 만잠비",
-      "t": "Switzerland",
+      "p": "엘리야 저스트",
+      "t": "New Zealand",
       "n": 2
     },
     {
@@ -3330,11 +3395,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "루벤 바르가스",
-      "t": "Switzerland",
-      "n": 1
-    },
-    {
       "p": "루이스 디아스",
       "t": "Colombia",
       "n": 1
@@ -3365,11 +3425,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "마커스 래시포드",
-      "t": "England",
-      "n": 1
-    },
-    {
       "p": "오현규",
       "t": "South Korea",
       "n": 1
@@ -3390,6 +3445,11 @@ window.WC_DATA = {
       "p": "알렉산더 이삭",
       "t": "Sweden",
       "n": 3
+    },
+    {
+      "p": "네이선 살리바",
+      "t": "Canada",
+      "n": 2
     },
     {
       "p": "데니스 운다브",
@@ -3419,6 +3479,11 @@ window.WC_DATA = {
     {
       "p": "브라힘 디아스",
       "t": "Morocco",
+      "n": 2
+    },
+    {
+      "p": "브렐 엠볼로",
+      "t": "Switzerland",
       "n": 2
     },
     {
@@ -3457,11 +3522,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "네이선 살리바",
-      "t": "Canada",
-      "n": 1
-    },
-    {
       "p": "누르 알 로와브데",
       "t": "Jordan",
       "n": 1
@@ -3484,6 +3544,11 @@ window.WC_DATA = {
     {
       "p": "다비드 묄레르 볼페",
       "t": "Norway",
+      "n": 1
+    },
+    {
+      "p": "데니스 하지카두니치",
+      "t": "Bosnia and Herzegovina",
       "n": 1
     },
     {
@@ -3577,11 +3642,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "브렐 엠볼로",
-      "t": "Switzerland",
-      "n": 1
-    },
-    {
       "p": "브루노 기마랑이스",
       "t": "Brazil",
       "n": 1
@@ -3614,11 +3674,6 @@ window.WC_DATA = {
     {
       "p": "사디오 마네",
       "t": "Senegal",
-      "n": 1
-    },
-    {
-      "p": "세아드 콜라시나츠",
-      "t": "Bosnia and Herzegovina",
       "n": 1
     },
     {
