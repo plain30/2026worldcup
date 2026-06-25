@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24 22:48 UTC",
+  "updated": "2026-06-25 00:15 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1022,9 +1022,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 0,
-      "s2": 0,
-      "naverEvents": true
+      "s2": 0
     },
     {
       "date": "2026-06-16",
@@ -1863,9 +1863,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 2,
-      "s2": 2,
-      "naverEvents": true
+      "s2": 2
     },
     {
       "date": "2026-06-23",
@@ -2412,13 +2412,75 @@
       "t2": "Haiti",
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "하키미",
+          "t": "Morocco",
+          "m": 39
+        },
+        {
+          "p": "이시도르",
+          "t": "Haiti",
+          "m": 43
+        },
+        {
+          "p": "사이바리",
+          "t": "Morocco",
+          "m": "45+1"
+        },
+        {
+          "p": "라히미",
+          "t": "Morocco",
+          "m": 78
+        },
+        {
+          "p": "야신",
+          "t": "Morocco",
+          "m": 89
+        }
+      ],
+      "assists": [
+        {
+          "p": "뒤베른",
+          "t": "Haiti"
+        },
+        {
+          "p": "하키미",
+          "t": "Morocco"
+        },
+        {
+          "p": "리아드",
+          "t": "Morocco"
+        },
+        {
+          "p": "라히미",
+          "t": "Morocco"
+        }
+      ],
+      "cards": [
+        {
+          "p": "플라시드",
+          "t": "Haiti",
+          "m": 79,
+          "c": "yellow"
+        },
+        {
+          "p": "나종",
+          "t": "Haiti",
+          "m": 80,
+          "c": "yellow"
+        },
+        {
+          "p": "카지미르",
+          "t": "Haiti",
+          "m": "90+3",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 4,
+      "s2": 2,
+      "naverEvents": true
     },
     {
       "date": "2026-06-25",
@@ -2427,13 +2489,61 @@
       "t2": "Brazil",
       "venue": "Miami Stadium",
       "city": "Miami",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "비니시우스",
+          "t": "Brazil",
+          "m": 7
+        },
+        {
+          "p": "비니시우스",
+          "t": "Brazil",
+          "m": "45+3"
+        },
+        {
+          "p": "마테우스 쿠냐",
+          "t": "Brazil",
+          "m": 60
+        }
+      ],
+      "assists": [
+        {
+          "p": "하양",
+          "t": "Brazil"
+        },
+        {
+          "p": "브루노 기마랑이스",
+          "t": "Brazil"
+        },
+        {
+          "p": "브루노 기마랑이스",
+          "t": "Brazil"
+        }
+      ],
+      "cards": [
+        {
+          "p": "다닐루",
+          "t": "Brazil",
+          "m": 62,
+          "c": "yellow"
+        },
+        {
+          "p": "파비뉴",
+          "t": "Brazil",
+          "m": 82,
+          "c": "yellow"
+        },
+        {
+          "p": "크리스티",
+          "t": "Scotland",
+          "m": 89,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 3,
+      "naverEvents": true
     },
     {
       "date": "2026-06-26",
@@ -2802,42 +2912,42 @@
       "teams": [
         {
           "t": "Scotland",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 1,
+          "ga": 4,
           "pts": 3
         },
         {
           "t": "Brazil",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 4,
+          "gf": 7,
           "ga": 1,
-          "pts": 4
+          "pts": 7
         },
         {
           "t": "Morocco",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 2,
-          "ga": 1,
-          "pts": 4
+          "gf": 6,
+          "ga": 3,
+          "pts": 7
         },
         {
           "t": "Haiti",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
-          "gf": 0,
-          "ga": 4,
+          "l": 3,
+          "gf": 2,
+          "ga": 8,
           "pts": 0
         }
       ]
