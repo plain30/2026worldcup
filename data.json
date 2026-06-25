@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25 00:15 UTC",
+  "updated": "2026-06-25 03:26 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -2262,13 +2262,37 @@
       "t2": "South Korea",
       "venue": "Monterrey Stadium",
       "city": "Monterrey",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "마세코",
+          "t": "South Africa",
+          "m": 63
+        }
+      ],
+      "assists": [
+        {
+          "p": "모레미",
+          "t": "South Africa"
+        }
+      ],
+      "cards": [
+        {
+          "p": "모디바",
+          "t": "South Africa",
+          "m": 73,
+          "c": "yellow"
+        },
+        {
+          "p": "조규성",
+          "t": "South Korea",
+          "m": 79,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-25",
@@ -2277,13 +2301,49 @@
       "t2": "Mexico",
       "venue": "Mexico City Stadium",
       "city": "Mexico City",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "마테오 차베스",
+          "t": "Mexico",
+          "m": 55
+        },
+        {
+          "p": "퀴뇨네스",
+          "t": "Mexico",
+          "m": 61
+        },
+        {
+          "p": "알바로 피달고",
+          "t": "Mexico",
+          "m": "90+4"
+        }
+      ],
+      "assists": [
+        {
+          "p": "로모",
+          "t": "Mexico"
+        },
+        {
+          "p": "산체스",
+          "t": "Mexico"
+        },
+        {
+          "p": "알바라도",
+          "t": "Mexico"
+        }
+      ],
+      "cards": [
+        {
+          "p": "알바레스",
+          "t": "Mexico",
+          "m": 64,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 3,
+      "naverEvents": true
     },
     {
       "date": "2026-06-25",
@@ -2478,9 +2538,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 4,
-      "s2": 2,
-      "naverEvents": true
+      "s2": 2
     },
     {
       "date": "2026-06-25",
@@ -2541,9 +2601,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 0,
-      "s2": 3,
-      "naverEvents": true
+      "s2": 3
     },
     {
       "date": "2026-06-26",
@@ -2822,43 +2882,43 @@
       "teams": [
         {
           "t": "Mexico",
-          "pld": 2,
-          "w": 2,
+          "pld": 3,
+          "w": 3,
           "d": 0,
           "l": 0,
-          "gf": 3,
+          "gf": 6,
           "ga": 0,
-          "pts": 6
+          "pts": 9
         },
         {
           "t": "South Korea",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 2,
-          "ga": 2,
+          "ga": 3,
           "pts": 3
         },
         {
           "t": "Czechia",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
+          "l": 2,
           "gf": 2,
-          "ga": 3,
+          "ga": 6,
           "pts": 1
         },
         {
           "t": "South Africa",
-          "pld": 2,
-          "w": 0,
+          "pld": 3,
+          "w": 1,
           "d": 1,
           "l": 1,
-          "gf": 1,
+          "gf": 2,
           "ga": 3,
-          "pts": 1
+          "pts": 4
         }
       ]
     },
@@ -3366,6 +3426,11 @@
       "n": 5
     },
     {
+      "p": "비니시우스 주니오르",
+      "t": "Brazil",
+      "n": 4
+    },
+    {
       "p": "엘링 홀란",
       "t": "Norway",
       "n": 4
@@ -3381,8 +3446,18 @@
       "n": 3
     },
     {
+      "p": "마테우스 쿠냐",
+      "t": "Brazil",
+      "n": 3
+    },
+    {
       "p": "요한 만잠비",
       "t": "Switzerland",
+      "n": 3
+    },
+    {
+      "p": "이스마엘 사이바리",
+      "t": "Morocco",
       "n": 3
     },
     {
@@ -3401,11 +3476,6 @@
       "n": 2
     },
     {
-      "p": "마테우스 쿠냐",
-      "t": "Brazil",
-      "n": 2
-    },
-    {
       "p": "막시 아라우호",
       "t": "Uruguay",
       "n": 2
@@ -3418,11 +3488,6 @@
     {
       "p": "브라이언 브로베이",
       "t": "Netherlands",
-      "n": 2
-    },
-    {
-      "p": "비니시우스 주니오르",
-      "t": "Brazil",
       "n": 2
     },
     {
@@ -3443,11 +3508,6 @@
     {
       "p": "우에다 아야세",
       "t": "Japan",
-      "n": 2
-    },
-    {
-      "p": "이스마엘 사이바리",
-      "t": "Morocco",
       "n": 2
     },
     {
@@ -3494,6 +3554,16 @@
       "p": "해리 케인",
       "t": "England",
       "n": 2
+    },
+    {
+      "p": "훌리안 퀴뇨네스",
+      "t": "Mexico",
+      "n": 2
+    },
+    {
+      "p": "게시메 야신",
+      "t": "Morocco",
+      "n": 1
     },
     {
       "p": "그라니트 자카",
@@ -3591,16 +3661,6 @@
       "n": 1
     },
     {
-      "p": "마르틴 바투리나",
-      "t": "Croatia",
-      "n": 1
-    },
-    {
-      "p": "마우리시우",
-      "t": "Paraguay",
-      "n": 1
-    },
-    {
       "p": "오현규",
       "t": "South Korea",
       "n": 1
@@ -3615,6 +3675,11 @@
     {
       "p": "마이클 올리세",
       "t": "France",
+      "n": 3
+    },
+    {
+      "p": "브루노 기마랑이스",
+      "t": "Brazil",
       "n": 3
     },
     {
@@ -3640,6 +3705,11 @@
     {
       "p": "라이언 흐라벤베르흐",
       "t": "Netherlands",
+      "n": 2
+    },
+    {
+      "p": "로베르토 알바라도",
+      "t": "Mexico",
       "n": 2
     },
     {
@@ -3743,11 +3813,6 @@
       "n": 1
     },
     {
-      "p": "로베르토 알바라도",
-      "t": "Mexico",
-      "n": 1
-    },
-    {
       "p": "루벤 바르가스",
       "t": "Switzerland",
       "n": 1
@@ -3755,6 +3820,11 @@
     {
       "p": "루이스 디아스",
       "t": "Colombia",
+      "n": 1
+    },
+    {
+      "p": "루이스 로모",
+      "t": "Mexico",
       "n": 1
     },
     {
@@ -3818,11 +3888,6 @@
       "n": 1
     },
     {
-      "p": "브루노 기마랑이스",
-      "t": "Brazil",
-      "n": 1
-    },
-    {
       "p": "브루노 페르난데스",
       "t": "Portugal",
       "n": 1
@@ -3848,11 +3913,6 @@
       "n": 1
     },
     {
-      "p": "사디오 마네",
-      "t": "Senegal",
-      "n": 1
-    },
-    {
       "p": "이강인",
       "t": "South Korea",
       "n": 1
@@ -3866,13 +3926,13 @@
   "bracket": {
     "r32": [
       {
-        "t1": null,
+        "t1": "South Africa",
         "t2": "Canada",
         "s1": null,
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Brazil",
         "t2": null,
         "s1": null,
         "s2": null
@@ -3885,7 +3945,7 @@
       },
       {
         "t1": null,
-        "t2": null,
+        "t2": "Morocco",
         "s1": null,
         "s2": null
       },
