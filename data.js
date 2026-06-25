@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-25 20:58 UTC",
+  "updated": "2026-06-25 22:39 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -2642,13 +2642,52 @@ window.WC_DATA = {
       "t2": "Ivory Coast",
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "페페",
+          "t": "Ivory Coast",
+          "m": 7
+        },
+        {
+          "p": "페페",
+          "t": "Ivory Coast",
+          "m": 64
+        }
+      ],
+      "assists": [
+        {
+          "p": "디오망데",
+          "t": "Ivory Coast"
+        },
+        {
+          "p": "상가레",
+          "t": "Ivory Coast"
+        }
+      ],
+      "cards": [
+        {
+          "p": "페페",
+          "t": "Ivory Coast",
+          "m": 35,
+          "c": "yellow"
+        },
+        {
+          "p": "주니뉴 바쿠나",
+          "t": "Curaçao",
+          "m": 75,
+          "c": "yellow"
+        },
+        {
+          "p": "카스타네르",
+          "t": "Curaçao",
+          "m": 83,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 2,
+      "naverEvents": true
     },
     {
       "date": "2026-06-26",
@@ -2657,13 +2696,67 @@ window.WC_DATA = {
       "t2": "Germany",
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "사네",
+          "t": "Germany",
+          "m": 2
+        },
+        {
+          "p": "앙굴로",
+          "t": "Ecuador",
+          "m": 9
+        },
+        {
+          "p": "플라타",
+          "t": "Ecuador",
+          "m": 77
+        }
+      ],
+      "assists": [
+        {
+          "p": "비르츠",
+          "t": "Germany"
+        },
+        {
+          "p": "비테",
+          "t": "Ecuador"
+        },
+        {
+          "p": "로드리게스",
+          "t": "Ecuador"
+        }
+      ],
+      "cards": [
+        {
+          "p": "잉카피에",
+          "t": "Ecuador",
+          "m": 43,
+          "c": "yellow"
+        },
+        {
+          "p": "파블로비치",
+          "t": "Germany",
+          "m": 44,
+          "c": "yellow"
+        },
+        {
+          "p": "프랑코",
+          "t": "Ecuador",
+          "m": 50,
+          "c": "yellow"
+        },
+        {
+          "p": "플라타",
+          "t": "Ecuador",
+          "m": 89,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 2,
+      "s2": 1,
+      "naverEvents": true
     },
     {
       "date": "2026-06-26",
@@ -3062,42 +3155,42 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "Germany",
-          "pld": 2,
+          "pld": 3,
           "w": 2,
           "d": 0,
-          "l": 0,
-          "gf": 9,
-          "ga": 2,
+          "l": 1,
+          "gf": 10,
+          "ga": 4,
           "pts": 6
         },
         {
           "t": "Ivory Coast",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 0,
           "l": 1,
-          "gf": 2,
+          "gf": 4,
           "ga": 2,
-          "pts": 3
+          "pts": 6
         },
         {
           "t": "Ecuador",
-          "pld": 2,
-          "w": 0,
+          "pld": 3,
+          "w": 1,
           "d": 1,
           "l": 1,
-          "gf": 0,
-          "ga": 1,
-          "pts": 1
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
         },
         {
           "t": "Curaçao",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 7,
+          "ga": 9,
           "pts": 1
         }
       ]
@@ -3466,6 +3559,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "니콜라 페페",
+      "t": "Ivory Coast",
+      "n": 2
+    },
+    {
       "p": "다니엘 무뇨스",
       "t": "Colombia",
       "n": 2
@@ -3566,6 +3664,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "곤살로 플라타",
+      "t": "Ecuador",
+      "n": 1
+    },
+    {
       "p": "그라니트 자카",
       "t": "Switzerland",
       "n": 1
@@ -3611,6 +3714,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "닐손 앙굴로",
+      "t": "Ecuador",
+      "n": 1
+    },
+    {
       "p": "라디슬라프 크레이치",
       "t": "Czechia",
       "n": 1
@@ -3643,21 +3751,6 @@ window.WC_DATA = {
     {
       "p": "루이스 디아스",
       "t": "Colombia",
-      "n": 1
-    },
-    {
-      "p": "루이스 로모",
-      "t": "Mexico",
-      "n": 1
-    },
-    {
-      "p": "리바노 코메넨시아",
-      "t": "Curaçao",
-      "n": 1
-    },
-    {
-      "p": "마르코 아르나우토비치",
-      "t": "Austria",
       "n": 1
     },
     {
@@ -3743,6 +3836,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "플로리안 비르츠",
+      "t": "Germany",
+      "n": 2
+    },
+    {
       "p": "훌리오 엔시소",
       "t": "Paraguay",
       "n": 2
@@ -3803,8 +3901,18 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "디오망데",
+      "t": "Ivory Coast",
+      "n": 1
+    },
+    {
       "p": "라민 레자에이안",
       "t": "Iran",
+      "n": 1
+    },
+    {
+      "p": "로드리게스",
+      "t": "Ecuador",
       "n": 1
     },
     {
@@ -3898,21 +4006,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "비니시우스 주니오르",
-      "t": "Brazil",
-      "n": 1
-    },
-    {
-      "p": "빅토르 요케레스",
-      "t": "Sweden",
-      "n": 1
-    },
-    {
-      "p": "사노 카이슈",
-      "t": "Japan",
-      "n": 1
-    },
-    {
       "p": "이강인",
       "t": "South Korea",
       "n": 1
@@ -3950,7 +4043,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Ivory Coast",
         "t2": null,
         "s1": null,
         "s2": null
