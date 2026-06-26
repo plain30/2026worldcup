@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-26 20:48 UTC",
+  "updated": "2026-06-26 22:15 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -2982,13 +2982,85 @@ window.WC_DATA = {
       "t2": "Iraq",
       "venue": "Toronto Stadium",
       "city": "Toronto",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "디아라",
+          "t": "Senegal",
+          "m": 4
+        },
+        {
+          "p": "이스마일라 사르",
+          "t": "Senegal",
+          "m": 56
+        },
+        {
+          "p": "파페 게예",
+          "t": "Senegal",
+          "m": 59
+        },
+        {
+          "p": "파페 게예",
+          "t": "Senegal",
+          "m": 71
+        },
+        {
+          "p": "일리만 은디아예",
+          "t": "Senegal",
+          "m": 82
+        }
+      ],
+      "assists": [
+        {
+          "p": "세크",
+          "t": "Senegal"
+        },
+        {
+          "p": "카마라",
+          "t": "Senegal"
+        },
+        {
+          "p": "이스마일라 사르",
+          "t": "Senegal"
+        },
+        {
+          "p": "일리만 은디아예",
+          "t": "Senegal"
+        },
+        {
+          "p": "파페 게예",
+          "t": "Senegal"
+        }
+      ],
+      "cards": [
+        {
+          "p": "세크",
+          "t": "Senegal",
+          "m": 18,
+          "c": "yellow"
+        },
+        {
+          "p": "아미르 알 아마리",
+          "t": "Iraq",
+          "m": 75,
+          "c": "yellow"
+        },
+        {
+          "p": "파페 게예",
+          "t": "Senegal",
+          "m": 81,
+          "c": "yellow"
+        },
+        {
+          "p": "메르차스 도스키",
+          "t": "Iraq",
+          "m": 90,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 5,
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-27",
@@ -2997,13 +3069,73 @@ window.WC_DATA = {
       "t2": "France",
       "venue": "Boston Stadium",
       "city": "Boston",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "뎀벨레",
+          "t": "France",
+          "m": 7
+        },
+        {
+          "p": "뎀벨레",
+          "t": "France",
+          "m": 20
+        },
+        {
+          "p": "오스고르",
+          "t": "Norway",
+          "m": 21
+        },
+        {
+          "p": "뎀벨레",
+          "t": "France",
+          "m": 32
+        },
+        {
+          "p": "두에",
+          "t": "France",
+          "m": "90+4"
+        }
+      ],
+      "assists": [
+        {
+          "p": "음바페",
+          "t": "France"
+        },
+        {
+          "p": "음바페",
+          "t": "France"
+        },
+        {
+          "p": "시엘데루프",
+          "t": "Norway"
+        },
+        {
+          "p": "추아메니",
+          "t": "France"
+        },
+        {
+          "p": "바르콜라",
+          "t": "France"
+        }
+      ],
+      "cards": [
+        {
+          "p": "베르그",
+          "t": "Norway",
+          "m": 10,
+          "c": "yellow"
+        },
+        {
+          "p": "추아메니",
+          "t": "France",
+          "m": 74,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 4,
+      "naverEvents": true
     },
     {
       "date": "2026-06-28",
@@ -3462,42 +3594,42 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "France",
-          "pld": 2,
-          "w": 2,
+          "pld": 3,
+          "w": 3,
           "d": 0,
           "l": 0,
-          "gf": 6,
-          "ga": 1,
-          "pts": 6
+          "gf": 10,
+          "ga": 2,
+          "pts": 9
         },
         {
           "t": "Senegal",
-          "pld": 2,
-          "w": 0,
+          "pld": 3,
+          "w": 1,
           "d": 0,
           "l": 2,
-          "gf": 3,
+          "gf": 8,
           "ga": 6,
-          "pts": 0
+          "pts": 3
         },
         {
           "t": "Norway",
-          "pld": 2,
+          "pld": 3,
           "w": 2,
           "d": 0,
-          "l": 0,
-          "gf": 7,
-          "ga": 3,
+          "l": 1,
+          "gf": 8,
+          "ga": 7,
           "pts": 6
         },
         {
           "t": "Iraq",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
+          "l": 3,
           "gf": 1,
-          "ga": 7,
+          "ga": 12,
           "pts": 0
         }
       ]
@@ -3656,6 +3788,11 @@ window.WC_DATA = {
       "n": 4
     },
     {
+      "p": "우스만 뎀벨레",
+      "t": "France",
+      "n": 4
+    },
+    {
       "p": "킬리안 음바페",
       "t": "France",
       "n": 4
@@ -3683,6 +3820,11 @@ window.WC_DATA = {
     {
       "p": "이스마엘 사이바리",
       "t": "Morocco",
+      "n": 3
+    },
+    {
+      "p": "이스마일라 사르",
+      "t": "Senegal",
       "n": 3
     },
     {
@@ -3741,11 +3883,6 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "이스마일라 사르",
-      "t": "Senegal",
-      "n": 2
-    },
-    {
       "p": "카마다 다이치",
       "t": "Japan",
       "n": 2
@@ -3773,6 +3910,11 @@ window.WC_DATA = {
     {
       "p": "크리스티아누 호날두",
       "t": "Portugal",
+      "n": 2
+    },
+    {
+      "p": "파페 게예",
+      "t": "Senegal",
       "n": 2
     },
     {
@@ -3851,6 +3993,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "데지레 두에",
+      "t": "France",
+      "n": 1
+    },
+    {
       "p": "라디슬라프 크레이치",
       "t": "Czechia",
       "n": 1
@@ -3863,21 +4010,6 @@ window.WC_DATA = {
     {
       "p": "라민 야말",
       "t": "Spain",
-      "n": 1
-    },
-    {
-      "p": "라울 히메네스",
-      "t": "Mexico",
-      "n": 1
-    },
-    {
-      "p": "레오 외스티고르",
-      "t": "Norway",
-      "n": 1
-    },
-    {
-      "p": "로마노 슈미트",
-      "t": "Austria",
       "n": 1
     },
     {
@@ -3963,8 +4095,18 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "일리만 은디아예",
+      "t": "Senegal",
+      "n": 2
+    },
+    {
       "p": "크리스 우드",
       "t": "New Zealand",
+      "n": 2
+    },
+    {
+      "p": "킬리안 음바페",
+      "t": "France",
       "n": 2
     },
     {
@@ -4093,6 +4235,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "마마두 카마라",
+      "t": "Senegal",
+      "n": 1
+    },
+    {
       "p": "막시 아라우호",
       "t": "Uruguay",
       "n": 1
@@ -4115,21 +4262,6 @@ window.WC_DATA = {
     {
       "p": "모하메드 하니",
       "t": "Egypt",
-      "n": 1
-    },
-    {
-      "p": "무사 알 타마리",
-      "t": "Jordan",
-      "n": 1
-    },
-    {
-      "p": "미켈 오야르사발",
-      "t": "Spain",
-      "n": 1
-    },
-    {
-      "p": "바르쉬 알페르 이을마즈",
-      "t": "Turkey",
       "n": 1
     },
     {
@@ -4171,12 +4303,12 @@ window.WC_DATA = {
       },
       {
         "t1": "Ivory Coast",
-        "t2": null,
+        "t2": "Norway",
         "s1": null,
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "France",
         "t2": null,
         "s1": null,
         "s2": null
