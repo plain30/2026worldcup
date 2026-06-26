@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-26 00:11 UTC",
+  "updated": "2026-06-26 04:50 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -2614,11 +2614,24 @@ window.WC_DATA = {
       "city": "San Francisco Bay Area",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "어바인",
+          "t": "Australia",
+          "m": 46,
+          "c": "yellow"
+        },
+        {
+          "p": "디에고 고메스",
+          "t": "Paraguay",
+          "m": 77,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-26",
@@ -2627,13 +2640,59 @@ window.WC_DATA = {
       "t2": "United States",
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "트러스티",
+          "t": "United States",
+          "m": 3
+        },
+        {
+          "p": "귈러",
+          "t": "Turkey",
+          "m": 10
+        },
+        {
+          "p": "이을마즈",
+          "t": "Turkey",
+          "m": 31
+        },
+        {
+          "p": "버홀터",
+          "t": "United States",
+          "m": 49
+        },
+        {
+          "p": "아이한",
+          "t": "Turkey",
+          "m": "90+8"
+        }
+      ],
+      "assists": [
+        {
+          "p": "버홀터",
+          "t": "United States"
+        },
+        {
+          "p": "이을마즈",
+          "t": "Turkey"
+        },
+        {
+          "p": "쾨크취",
+          "t": "Turkey"
+        }
+      ],
+      "cards": [
+        {
+          "p": "버홀터",
+          "t": "United States",
+          "m": 19,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 3,
+      "s2": 2,
+      "naverEvents": true
     },
     {
       "date": "2026-06-26",
@@ -2765,13 +2824,42 @@ window.WC_DATA = {
       "t2": "Netherlands",
       "venue": "Kansas City Stadium",
       "city": "Kansas City",
-      "goals": [],
-      "assists": [],
+      "goals": [
+        {
+          "p": "브로베이",
+          "t": "Netherlands",
+          "m": 7
+        },
+        {
+          "p": "마스투리",
+          "t": "Tunisia",
+          "m": 54
+        },
+        {
+          "p": "반 헤케",
+          "t": "Netherlands",
+          "m": 62
+        }
+      ],
+      "assists": [
+        {
+          "p": "반 다이크",
+          "t": "Netherlands"
+        },
+        {
+          "p": "메브리",
+          "t": "Tunisia"
+        },
+        {
+          "p": "라인더르스",
+          "t": "Netherlands"
+        }
+      ],
       "cards": [],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 3,
+      "naverEvents": true
     },
     {
       "date": "2026-06-26",
@@ -2780,13 +2868,52 @@ window.WC_DATA = {
       "t2": "Sweden",
       "venue": "Dallas Stadium",
       "city": "Dallas",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "마에다",
+          "t": "Japan",
+          "m": 56
+        },
+        {
+          "p": "엘랑가",
+          "t": "Sweden",
+          "m": 62
+        }
+      ],
+      "assists": [
+        {
+          "p": "도안",
+          "t": "Japan"
+        },
+        {
+          "p": "요케레스",
+          "t": "Sweden"
+        }
+      ],
+      "cards": [
+        {
+          "p": "히엔",
+          "t": "Sweden",
+          "m": 32,
+          "c": "yellow"
+        },
+        {
+          "p": "다니구치",
+          "t": "Japan",
+          "m": 77,
+          "c": "yellow"
+        },
+        {
+          "p": "요케레스",
+          "t": "Sweden",
+          "m": 85,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 1,
+      "naverEvents": true
     },
     {
       "date": "2026-06-27",
@@ -3110,43 +3237,43 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "United States",
-          "pld": 2,
+          "pld": 3,
           "w": 2,
           "d": 0,
-          "l": 0,
-          "gf": 6,
-          "ga": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
           "pts": 6
         },
         {
           "t": "Australia",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
           "gf": 2,
           "ga": 2,
-          "pts": 3
+          "pts": 4
         },
         {
           "t": "Turkey",
-          "pld": 2,
-          "w": 0,
+          "pld": 3,
+          "w": 1,
           "d": 0,
           "l": 2,
-          "gf": 0,
-          "ga": 3,
-          "pts": 0
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
         },
         {
           "t": "Paraguay",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
           "gf": 2,
           "ga": 4,
-          "pts": 3
+          "pts": 4
         }
       ]
     },
@@ -3200,42 +3327,42 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "Netherlands",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 7,
-          "ga": 3,
-          "pts": 4
+          "gf": 10,
+          "ga": 4,
+          "pts": 7
         },
         {
           "t": "Japan",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 1,
+          "d": 2,
           "l": 0,
-          "gf": 6,
-          "ga": 2,
-          "pts": 4
+          "gf": 7,
+          "ga": 3,
+          "pts": 5
         },
         {
           "t": "Sweden",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 6,
-          "ga": 6,
-          "pts": 3
+          "gf": 7,
+          "ga": 7,
+          "pts": 4
         },
         {
           "t": "Tunisia",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
-          "gf": 1,
-          "ga": 9,
+          "l": 3,
+          "gf": 2,
+          "ga": 12,
           "pts": 0
         }
       ]
@@ -3544,6 +3671,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "브라이언 브로베이",
+      "t": "Netherlands",
+      "n": 3
+    },
+    {
       "p": "요한 만잠비",
       "t": "Switzerland",
       "n": 3
@@ -3584,8 +3716,8 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "브라이언 브로베이",
-      "t": "Netherlands",
+      "p": "안토니 엘랑가",
+      "t": "Sweden",
       "n": 2
     },
     {
@@ -3749,11 +3881,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "루이스 디아스",
-      "t": "Colombia",
-      "n": 1
-    },
-    {
       "p": "오현규",
       "t": "South Korea",
       "n": 1
@@ -3826,6 +3953,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "빅토르 요케레스",
+      "t": "Sweden",
+      "n": 2
+    },
+    {
       "p": "요주아 키미히",
       "t": "Germany",
       "n": 2
@@ -3838,6 +3970,11 @@ window.WC_DATA = {
     {
       "p": "플로리안 비르츠",
       "t": "Germany",
+      "n": 2
+    },
+    {
+      "p": "한니발 메브리",
+      "t": "Tunisia",
       "n": 2
     },
     {
@@ -3898,6 +4035,11 @@ window.WC_DATA = {
     {
       "p": "데클란 라이스",
       "t": "England",
+      "n": 1
+    },
+    {
+      "p": "도안 리츠",
+      "t": "Japan",
       "n": 1
     },
     {
@@ -3986,23 +4128,8 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "부카요 사카",
-      "t": "England",
-      "n": 1
-    },
-    {
-      "p": "브랜든 토마스-아산테",
-      "t": "Ghana",
-      "n": 1
-    },
-    {
-      "p": "브루노 페르난데스",
-      "t": "Portugal",
-      "n": 1
-    },
-    {
-      "p": "블라디미르 초우팔",
-      "t": "Czechia",
+      "p": "바르쉬 알페르 이을마즈",
+      "t": "Turkey",
       "n": 1
     },
     {
@@ -4026,7 +4153,7 @@ window.WC_DATA = {
       },
       {
         "t1": "Brazil",
-        "t2": null,
+        "t2": "Japan",
         "s1": null,
         "s2": null
       },
@@ -4037,7 +4164,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Netherlands",
         "t2": "Morocco",
         "s1": null,
         "s2": null
@@ -4074,7 +4201,7 @@ window.WC_DATA = {
       },
       {
         "t1": "United States",
-        "t2": null,
+        "t2": "Bosnia and Herzegovina",
         "s1": null,
         "s2": null
       },
@@ -4097,7 +4224,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Australia",
         "t2": null,
         "s1": null,
         "s2": null
