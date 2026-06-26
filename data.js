@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-26 22:15 UTC",
+  "updated": "2026-06-26 23:43 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -3058,9 +3058,9 @@ window.WC_DATA = {
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 5,
-      "s2": 0,
-      "naverEvents": true
+      "s2": 0
     },
     {
       "date": "2026-06-27",
@@ -3133,9 +3133,9 @@ window.WC_DATA = {
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 1,
-      "s2": 4,
-      "naverEvents": true
+      "s2": 4
     },
     {
       "date": "2026-06-28",
