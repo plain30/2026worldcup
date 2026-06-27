@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27 03:39 UTC",
+  "updated": "2026-06-27 06:53 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -2922,13 +2922,70 @@
       "t2": "Belgium",
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "트로사르",
+          "t": "Belgium",
+          "m": 28
+        },
+        {
+          "p": "트로사르",
+          "t": "Belgium",
+          "m": 50
+        },
+        {
+          "p": "더 브라위너",
+          "t": "Belgium",
+          "m": 66
+        },
+        {
+          "p": "저스트",
+          "t": "New Zealand",
+          "m": 84
+        },
+        {
+          "p": "루카쿠",
+          "t": "Belgium",
+          "m": 86
+        },
+        {
+          "p": "살레마키어스",
+          "t": "Belgium",
+          "m": "90+4"
+        }
+      ],
+      "assists": [
+        {
+          "p": "파나컨",
+          "t": "Belgium"
+        },
+        {
+          "p": "라스킨",
+          "t": "Belgium"
+        },
+        {
+          "p": "루카쿠",
+          "t": "Belgium"
+        }
+      ],
+      "cards": [
+        {
+          "p": "스타메닉",
+          "t": "New Zealand",
+          "m": 46,
+          "c": "yellow"
+        },
+        {
+          "p": "저스트",
+          "t": "New Zealand",
+          "m": 56,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 5,
+      "naverEvents": true
     },
     {
       "date": "2026-06-27",
@@ -2937,13 +2994,72 @@
       "t2": "Iran",
       "venue": "Seattle Stadium",
       "city": "Seattle",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "마흐무드 사베르",
+          "t": "Egypt",
+          "m": 5
+        },
+        {
+          "p": "레자에이안",
+          "t": "Iran",
+          "m": 14
+        }
+      ],
+      "assists": [
+        {
+          "p": "트레제게",
+          "t": "Egypt"
+        }
+      ],
+      "cards": [
+        {
+          "p": "카나니",
+          "t": "Iran",
+          "m": 19,
+          "c": "yellow"
+        },
+        {
+          "p": "마흐무드 사베르",
+          "t": "Egypt",
+          "m": 20,
+          "c": "yellow"
+        },
+        {
+          "p": "야세르 이브라힘",
+          "t": "Egypt",
+          "m": 42,
+          "c": "yellow"
+        },
+        {
+          "p": "네마티",
+          "t": "Iran",
+          "m": 43,
+          "c": "yellow"
+        },
+        {
+          "p": "에자톨라히",
+          "t": "Iran",
+          "m": 79,
+          "c": "yellow"
+        },
+        {
+          "p": "모하나드 라신",
+          "t": "Egypt",
+          "m": "90+2",
+          "c": "yellow"
+        },
+        {
+          "p": "카릴자데",
+          "t": "Iran",
+          "m": "90+4",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 1,
+      "naverEvents": true
     },
     {
       "date": "2026-06-27",
@@ -2992,9 +3108,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 0,
-      "s2": 1,
-      "naverEvents": true
+      "s2": 1
     },
     {
       "date": "2026-06-27",
@@ -3032,9 +3148,9 @@
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 0,
-      "s2": 0,
-      "naverEvents": true
+      "s2": 0
     },
     {
       "date": "2026-06-27",
@@ -3565,42 +3681,42 @@
       "teams": [
         {
           "t": "Belgium",
-          "pld": 2,
-          "w": 0,
+          "pld": 3,
+          "w": 1,
           "d": 2,
           "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 2
+          "gf": 6,
+          "ga": 2,
+          "pts": 5
         },
         {
           "t": "Egypt",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 1,
+          "d": 2,
           "l": 0,
-          "gf": 4,
-          "ga": 2,
-          "pts": 4
+          "gf": 5,
+          "ga": 3,
+          "pts": 5
         },
         {
           "t": "Iran",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
-          "d": 2,
+          "d": 3,
           "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 2
+          "gf": 3,
+          "ga": 3,
+          "pts": 3
         },
         {
           "t": "New Zealand",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
-          "gf": 3,
-          "ga": 5,
+          "l": 2,
+          "gf": 4,
+          "ga": 10,
           "pts": 1
         }
       ]
@@ -3874,6 +3990,11 @@
       "n": 3
     },
     {
+      "p": "엘리야 저스트",
+      "t": "New Zealand",
+      "n": 3
+    },
+    {
       "p": "요한 만잠비",
       "t": "Switzerland",
       "n": 3
@@ -3904,6 +4025,16 @@
       "n": 2
     },
     {
+      "p": "라민 레자에이안",
+      "t": "Iran",
+      "n": 2
+    },
+    {
+      "p": "레안드로 트로사르",
+      "t": "Belgium",
+      "n": 2
+    },
+    {
       "p": "루벤 바르가스",
       "t": "Switzerland",
       "n": 2
@@ -3931,11 +4062,6 @@
     {
       "p": "에르민 마흐미치",
       "t": "Bosnia and Herzegovina",
-      "n": 2
-    },
-    {
-      "p": "엘리야 저스트",
-      "t": "New Zealand",
       "n": 2
     },
     {
@@ -4061,16 +4187,6 @@
     {
       "p": "라디슬라프 크레이치",
       "t": "Czechia",
-      "n": 1
-    },
-    {
-      "p": "라민 레자에이안",
-      "t": "Iran",
-      "n": 1
-    },
-    {
-      "p": "라민 야말",
-      "t": "Spain",
       "n": 1
     },
     {
@@ -4211,6 +4327,11 @@
       "n": 1
     },
     {
+      "p": "니콜라 라스킨",
+      "t": "Belgium",
+      "n": 1
+    },
+    {
       "p": "니콜라 잭슨",
       "t": "Senegal",
       "n": 1
@@ -4266,6 +4387,11 @@
       "n": 1
     },
     {
+      "p": "로멜루 루카쿠",
+      "t": "Belgium",
+      "n": 1
+    },
+    {
       "p": "루벤 바르가스",
       "t": "Switzerland",
       "n": 1
@@ -4313,16 +4439,6 @@
     {
       "p": "말릭 틸만",
       "t": "United States",
-      "n": 1
-    },
-    {
-      "p": "멤피스 데파이",
-      "t": "Netherlands",
-      "n": 1
-    },
-    {
-      "p": "모스타파 지코",
-      "t": "Egypt",
       "n": 1
     },
     {
@@ -4387,7 +4503,7 @@
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Belgium",
         "t2": null,
         "s1": null,
         "s2": null
@@ -4418,7 +4534,7 @@
       },
       {
         "t1": "Australia",
-        "t2": null,
+        "t2": "Egypt",
         "s1": null,
         "s2": null
       },
