@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-27 22:04 UTC",
+  "updated": "2026-06-27 23:34 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -3381,13 +3381,52 @@ window.WC_DATA = {
       "t2": "England",
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "벨링엄",
+          "t": "England",
+          "m": 62
+        },
+        {
+          "p": "케인",
+          "t": "England",
+          "m": 67
+        }
+      ],
+      "assists": [
+        {
+          "p": "사카",
+          "t": "England"
+        },
+        {
+          "p": "벨링엄",
+          "t": "England"
+        }
+      ],
+      "cards": [
+        {
+          "p": "파하르도",
+          "t": "Panama",
+          "m": 53,
+          "c": "yellow"
+        },
+        {
+          "p": "콴사",
+          "t": "England",
+          "m": 60,
+          "c": "yellow"
+        },
+        {
+          "p": "안드라데",
+          "t": "Panama",
+          "m": 84,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 2,
+      "naverEvents": true
     },
     {
       "date": "2026-06-28",
@@ -3396,13 +3435,55 @@ window.WC_DATA = {
       "t2": "Ghana",
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "페타르 수치치",
+          "t": "Croatia",
+          "m": 31
+        },
+        {
+          "p": "루카센",
+          "t": "Ghana",
+          "m": 73
+        },
+        {
+          "p": "블라시치",
+          "t": "Croatia",
+          "m": 83
+        }
+      ],
+      "assists": [
+        {
+          "p": "코바치치",
+          "t": "Croatia"
+        },
+        {
+          "p": "누아마",
+          "t": "Ghana"
+        },
+        {
+          "p": "모드리치",
+          "t": "Croatia"
+        }
+      ],
+      "cards": [
+        {
+          "p": "페리시치",
+          "t": "Croatia",
+          "m": 68,
+          "c": "yellow"
+        },
+        {
+          "p": "페프라 오퐁",
+          "t": "Ghana",
+          "m": "90+4",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 2,
+      "s2": 1,
+      "naverEvents": true
     }
   ],
   "standings": [
@@ -3906,42 +3987,42 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "England",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 4,
+          "gf": 6,
           "ga": 2,
-          "pts": 4
+          "pts": 7
         },
         {
           "t": "Croatia",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 0,
           "l": 1,
-          "gf": 3,
-          "ga": 4,
-          "pts": 3
+          "gf": 5,
+          "ga": 5,
+          "pts": 6
         },
         {
           "t": "Ghana",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
           "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 0,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
           "pts": 4
         },
         {
           "t": "Panama",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
+          "l": 3,
           "gf": 0,
-          "ga": 2,
+          "ga": 4,
           "pts": 0
         }
       ]
@@ -4015,6 +4096,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "해리 케인",
+      "t": "England",
+      "n": 3
+    },
+    {
       "p": "니콜라 페페",
       "t": "Ivory Coast",
       "n": 2
@@ -4070,6 +4156,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "주드 벨링엄",
+      "t": "England",
+      "n": 2
+    },
+    {
       "p": "카마다 다이치",
       "t": "Japan",
       "n": 2
@@ -4107,11 +4198,6 @@ window.WC_DATA = {
     {
       "p": "폴라린 발로건",
       "t": "United States",
-      "n": 2
-    },
-    {
-      "p": "해리 케인",
-      "t": "England",
       "n": 2
     },
     {
@@ -4175,18 +4261,13 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "니콜라 블라시치",
+      "t": "Croatia",
+      "n": 1
+    },
+    {
       "p": "닐손 앙굴로",
       "t": "Ecuador",
-      "n": 1
-    },
-    {
-      "p": "데지레 두에",
-      "t": "France",
-      "n": 1
-    },
-    {
-      "p": "라디슬라프 크레이치",
-      "t": "Czechia",
       "n": 1
     },
     {
@@ -4249,6 +4330,11 @@ window.WC_DATA = {
     {
       "p": "모하메드 살라",
       "t": "Egypt",
+      "n": 2
+    },
+    {
+      "p": "부카요 사카",
+      "t": "England",
       "n": 2
     },
     {
@@ -4407,6 +4493,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "루카 모드리치",
+      "t": "Croatia",
+      "n": 1
+    },
+    {
       "p": "루카스 베리발",
       "t": "Sweden",
       "n": 1
@@ -4429,16 +4520,6 @@ window.WC_DATA = {
     {
       "p": "마마두 카마라",
       "t": "Senegal",
-      "n": 1
-    },
-    {
-      "p": "막시 아라우호",
-      "t": "Uruguay",
-      "n": 1
-    },
-    {
-      "p": "말릭 틸만",
-      "t": "United States",
       "n": 1
     },
     {
@@ -4492,12 +4573,12 @@ window.WC_DATA = {
       },
       {
         "t1": "Mexico",
-        "t2": null,
+        "t2": "Ecuador",
         "s1": null,
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "England",
         "t2": null,
         "s1": null,
         "s2": null
@@ -4522,7 +4603,7 @@ window.WC_DATA = {
       },
       {
         "t1": null,
-        "t2": null,
+        "t2": "Croatia",
         "s1": null,
         "s2": null
       },
@@ -4546,7 +4627,7 @@ window.WC_DATA = {
       },
       {
         "t1": null,
-        "t2": null,
+        "t2": "Ghana",
         "s1": null,
         "s2": null
       }
