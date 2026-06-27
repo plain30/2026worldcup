@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-26 23:43 UTC",
+  "updated": "2026-06-27 03:39 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -2952,13 +2952,49 @@ window.WC_DATA = {
       "t2": "Spain",
       "venue": "Guadalajara Stadium",
       "city": "Guadalajara",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "알렉스 바에나",
+          "t": "Spain",
+          "m": 42
+        }
+      ],
+      "assists": [
+        {
+          "p": "마르코스 요렌테",
+          "t": "Spain"
+        }
+      ],
+      "cards": [
+        {
+          "p": "알렉스 바에나",
+          "t": "Spain",
+          "m": 46,
+          "c": "yellow"
+        },
+        {
+          "p": "사나브리아",
+          "t": "Uruguay",
+          "m": 54,
+          "c": "yellow"
+        },
+        {
+          "p": "바렐라",
+          "t": "Uruguay",
+          "m": 58,
+          "c": "yellow"
+        },
+        {
+          "p": "데 라 크루스",
+          "t": "Uruguay",
+          "m": "90+3",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 1,
+      "naverEvents": true
     },
     {
       "date": "2026-06-27",
@@ -2969,11 +3005,36 @@ window.WC_DATA = {
       "city": "",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "사우드 압둘하미드",
+          "t": "Saudi Arabia",
+          "m": 4,
+          "c": "yellow"
+        },
+        {
+          "p": "바그너 피나",
+          "t": "Cape Verde",
+          "m": 8,
+          "c": "yellow"
+        },
+        {
+          "p": "나세르 알 다우사리",
+          "t": "Saudi Arabia",
+          "m": 67,
+          "c": "yellow"
+        },
+        {
+          "p": "페라스 알 부라이칸",
+          "t": "Saudi Arabia",
+          "m": "90+3",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-27",
@@ -3549,43 +3610,43 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "Spain",
-          "pld": 2,
-          "w": 1,
+          "pld": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 4,
+          "gf": 5,
           "ga": 0,
-          "pts": 4
+          "pts": 7
         },
         {
           "t": "Uruguay",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 2,
-          "l": 0,
+          "l": 1,
           "gf": 3,
-          "ga": 3,
+          "ga": 4,
           "pts": 2
         },
         {
           "t": "Saudi Arabia",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 1,
           "gf": 1,
           "ga": 5,
-          "pts": 1
+          "pts": 2
         },
         {
           "t": "Cape Verde",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
-          "d": 2,
+          "d": 3,
           "l": 0,
           "gf": 2,
           "ga": 2,
-          "pts": 2
+          "pts": 3
         }
       ]
     },
@@ -4235,6 +4296,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "마르코스 요렌테",
+      "t": "Spain",
+      "n": 1
+    },
+    {
       "p": "마마두 카마라",
       "t": "Senegal",
       "n": 1
@@ -4256,11 +4322,6 @@ window.WC_DATA = {
     },
     {
       "p": "모스타파 지코",
-      "t": "Egypt",
-      "n": 1
-    },
-    {
-      "p": "모하메드 하니",
       "t": "Egypt",
       "n": 1
     },
@@ -4291,7 +4352,7 @@ window.WC_DATA = {
       },
       {
         "t1": "Germany",
-        "t2": null,
+        "t2": "Paraguay",
         "s1": null,
         "s2": null
       },
@@ -4309,7 +4370,7 @@ window.WC_DATA = {
       },
       {
         "t1": "France",
-        "t2": null,
+        "t2": "Sweden",
         "s1": null,
         "s2": null
       },
@@ -4338,7 +4399,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Spain",
         "t2": null,
         "s1": null,
         "s2": null
@@ -4363,7 +4424,7 @@ window.WC_DATA = {
       },
       {
         "t1": "Argentina",
-        "t2": null,
+        "t2": "Cape Verde",
         "s1": null,
         "s2": null
       },
