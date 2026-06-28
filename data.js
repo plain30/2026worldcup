@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-27 23:34 UTC",
+  "updated": "2026-06-28 04:02 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -3321,13 +3321,72 @@ window.WC_DATA = {
       "t2": "Austria",
       "venue": "Kansas City Stadium",
       "city": "Kansas City",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "아르나우토비치",
+          "t": "Austria",
+          "m": 28
+        },
+        {
+          "p": "벨갈리",
+          "t": "Algeria",
+          "m": 45
+        },
+        {
+          "p": "자비처",
+          "t": "Austria",
+          "m": 55
+        },
+        {
+          "p": "마레즈",
+          "t": "Algeria",
+          "m": 60
+        },
+        {
+          "p": "마레즈",
+          "t": "Algeria",
+          "m": "90+3"
+        },
+        {
+          "p": "칼라이지치",
+          "t": "Austria",
+          "m": "90+6"
+        }
+      ],
+      "assists": [
+        {
+          "p": "알라바",
+          "t": "Austria"
+        },
+        {
+          "p": "라이머",
+          "t": "Austria"
+        },
+        {
+          "p": "아우아르",
+          "t": "Algeria"
+        },
+        {
+          "p": "아우아르",
+          "t": "Algeria"
+        },
+        {
+          "p": "그레고리치",
+          "t": "Austria"
+        }
+      ],
+      "cards": [
+        {
+          "p": "아르나우토비치",
+          "t": "Austria",
+          "m": 11,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 3,
+      "s2": 3,
+      "naverEvents": true
     },
     {
       "date": "2026-06-28",
@@ -3336,13 +3395,53 @@ window.WC_DATA = {
       "t2": "Argentina",
       "venue": "Dallas Stadium",
       "city": "Dallas",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "로 셀소",
+          "t": "Argentina",
+          "m": 19
+        },
+        {
+          "p": "무사 알 타마리",
+          "t": "Jordan",
+          "m": 55
+        },
+        {
+          "p": "메시",
+          "t": "Argentina",
+          "m": 80
+        }
+      ],
+      "assists": [
+        {
+          "p": "이산 하다드",
+          "t": "Jordan"
+        }
+      ],
+      "cards": [
+        {
+          "p": "모하나드 아부 타하",
+          "t": "Jordan",
+          "m": 17,
+          "c": "yellow"
+        },
+        {
+          "p": "야잔",
+          "t": "Jordan",
+          "m": 64,
+          "c": "yellow"
+        },
+        {
+          "p": "모하마드 아부 즈라이크",
+          "t": "Jordan",
+          "m": "90+4",
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 1,
+      "s2": 3,
+      "naverEvents": true
     },
     {
       "date": "2026-06-28",
@@ -3351,13 +3450,69 @@ window.WC_DATA = {
       "t2": "Uzbekistan",
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
-      "goals": [],
-      "assists": [],
-      "cards": [],
+      "goals": [
+        {
+          "p": "쇼무로도프",
+          "t": "Uzbekistan",
+          "m": 10
+        },
+        {
+          "p": "마옐레",
+          "t": "DR Congo",
+          "m": 78
+        },
+        {
+          "p": "위사",
+          "t": "DR Congo",
+          "m": "90+1"
+        }
+      ],
+      "assists": [
+        {
+          "p": "모즈고보이",
+          "t": "Uzbekistan"
+        },
+        {
+          "p": "엘리아",
+          "t": "DR Congo"
+        }
+      ],
+      "cards": [
+        {
+          "p": "사디키",
+          "t": "DR Congo",
+          "m": 21,
+          "c": "yellow"
+        },
+        {
+          "p": "후사노프",
+          "t": "Uzbekistan",
+          "m": 43,
+          "c": "yellow"
+        },
+        {
+          "p": "음부쿠",
+          "t": "DR Congo",
+          "m": "45+5",
+          "c": "yellow"
+        },
+        {
+          "p": "나스룰라예프",
+          "t": "Uzbekistan",
+          "m": 48,
+          "c": "yellow"
+        },
+        {
+          "p": "무투사미",
+          "t": "DR Congo",
+          "m": 62,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 3,
+      "s2": 1,
+      "naverEvents": true
     },
     {
       "date": "2026-06-28",
@@ -3368,11 +3523,18 @@ window.WC_DATA = {
       "city": "Miami",
       "goals": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "p": "푸에르타",
+          "t": "Colombia",
+          "m": 86,
+          "c": "yellow"
+        }
+      ],
       "lineups": null,
-      "s1": null,
-      "s2": null,
-      "pending": true
+      "s1": 0,
+      "s2": 0,
+      "naverEvents": true
     },
     {
       "date": "2026-06-28",
@@ -3424,9 +3586,9 @@ window.WC_DATA = {
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 0,
-      "s2": 2,
-      "naverEvents": true
+      "s2": 2
     },
     {
       "date": "2026-06-28",
@@ -3481,9 +3643,9 @@ window.WC_DATA = {
         }
       ],
       "lineups": null,
+      "naverEvents": true,
       "s1": 2,
-      "s2": 1,
-      "naverEvents": true
+      "s2": 1
     }
   ],
   "standings": [
@@ -3897,42 +4059,42 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "Argentina",
-          "pld": 2,
-          "w": 2,
+          "pld": 3,
+          "w": 3,
           "d": 0,
           "l": 0,
-          "gf": 5,
-          "ga": 0,
-          "pts": 6
+          "gf": 8,
+          "ga": 1,
+          "pts": 9
         },
         {
           "t": "Austria",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 3,
-          "ga": 3,
-          "pts": 3
+          "gf": 6,
+          "ga": 6,
+          "pts": 4
         },
         {
           "t": "Algeria",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 2,
-          "ga": 4,
-          "pts": 3
+          "gf": 5,
+          "ga": 7,
+          "pts": 4
         },
         {
           "t": "Jordan",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
-          "gf": 2,
-          "ga": 5,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
           "pts": 0
         }
       ]
@@ -3942,42 +4104,42 @@ window.WC_DATA = {
       "teams": [
         {
           "t": "Portugal",
-          "pld": 2,
+          "pld": 3,
           "w": 1,
-          "d": 1,
+          "d": 2,
           "l": 0,
           "gf": 6,
           "ga": 1,
-          "pts": 4
+          "pts": 5
         },
         {
           "t": "Colombia",
-          "pld": 2,
+          "pld": 3,
           "w": 2,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 4,
           "ga": 1,
-          "pts": 6
+          "pts": 7
         },
         {
           "t": "DR Congo",
-          "pld": 2,
-          "w": 0,
+          "pld": 3,
+          "w": 1,
           "d": 1,
           "l": 1,
-          "gf": 1,
-          "ga": 2,
-          "pts": 1
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
         },
         {
           "t": "Uzbekistan",
-          "pld": 2,
+          "pld": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
-          "gf": 1,
-          "ga": 8,
+          "l": 3,
+          "gf": 2,
+          "ga": 11,
           "pts": 0
         }
       ]
@@ -4033,7 +4195,7 @@ window.WC_DATA = {
     {
       "p": "리오넬 메시",
       "t": "Argentina",
-      "n": 5
+      "n": 6
     },
     {
       "p": "비니시우스 주니오르",
@@ -4073,6 +4235,11 @@ window.WC_DATA = {
     {
       "p": "엘리야 저스트",
       "t": "New Zealand",
+      "n": 3
+    },
+    {
+      "p": "요안 위사",
+      "t": "DR Congo",
       "n": 3
     },
     {
@@ -4123,6 +4290,16 @@ window.WC_DATA = {
     {
       "p": "루벤 바르가스",
       "t": "Switzerland",
+      "n": 2
+    },
+    {
+      "p": "리야드 마레즈",
+      "t": "Algeria",
+      "n": 2
+    },
+    {
+      "p": "마르코 아르나우토비치",
+      "t": "Austria",
       "n": 2
     },
     {
@@ -4256,21 +4433,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "니코 슐로터벡",
-      "t": "Germany",
-      "n": 1
-    },
-    {
-      "p": "니콜라 블라시치",
-      "t": "Croatia",
-      "n": 1
-    },
-    {
-      "p": "닐손 앙굴로",
-      "t": "Ecuador",
-      "n": 1
-    },
-    {
       "p": "오현규",
       "t": "South Korea",
       "n": 1
@@ -4383,6 +4545,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "후셈 아우아르",
+      "t": "Algeria",
+      "n": 2
+    },
+    {
       "p": "훌리오 엔시소",
       "t": "Paraguay",
       "n": 2
@@ -4435,6 +4602,11 @@ window.WC_DATA = {
     {
       "p": "다비드 묄레르 볼페",
       "t": "Norway",
+      "n": 1
+    },
+    {
+      "p": "다비드 알라바",
+      "t": "Austria",
       "n": 1
     },
     {
@@ -4513,16 +4685,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "마르코스 요렌테",
-      "t": "Spain",
-      "n": 1
-    },
-    {
-      "p": "마마두 카마라",
-      "t": "Senegal",
-      "n": 1
-    },
-    {
       "p": "이강인",
       "t": "South Korea",
       "n": 1
@@ -4579,13 +4741,13 @@ window.WC_DATA = {
       },
       {
         "t1": "England",
-        "t2": null,
+        "t2": "DR Congo",
         "s1": null,
         "s2": null
       },
       {
         "t1": "Belgium",
-        "t2": null,
+        "t2": "Senegal",
         "s1": null,
         "s2": null
       },
@@ -4597,19 +4759,19 @@ window.WC_DATA = {
       },
       {
         "t1": "Spain",
-        "t2": null,
+        "t2": "Austria",
         "s1": null,
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Portugal",
         "t2": "Croatia",
         "s1": null,
         "s2": null
       },
       {
         "t1": "Switzerland",
-        "t2": null,
+        "t2": "Algeria",
         "s1": null,
         "s2": null
       },
@@ -4626,7 +4788,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Colombia",
         "t2": "Ghana",
         "s1": null,
         "s2": null
