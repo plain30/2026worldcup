@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-29 23:00 UTC",
+  "updated": "2026-06-30 01:30 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4263,6 +4263,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "카이 하베르츠",
+      "t": "Germany",
+      "n": 3
+    },
+    {
       "p": "해리 케인",
       "t": "England",
       "n": 3
@@ -4340,11 +4345,6 @@ window.WC_DATA = {
     {
       "p": "카마다 다이치",
       "t": "Japan",
-      "n": 2
-    },
-    {
-      "p": "카이 하베르츠",
-      "t": "Germany",
       "n": 2
     },
     {
@@ -4460,6 +4460,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "플로리안 비르츠",
+      "t": "Germany",
+      "n": 3
+    },
+    {
       "p": "네이선 살리바",
       "t": "Canada",
       "n": 2
@@ -4532,11 +4537,6 @@ window.WC_DATA = {
     {
       "p": "킬리안 음바페",
       "t": "France",
-      "n": 2
-    },
-    {
-      "p": "플로리안 비르츠",
-      "t": "Germany",
       "n": 2
     },
     {
@@ -4712,8 +4712,8 @@ window.WC_DATA = {
       {
         "t1": "Germany",
         "t2": "Paraguay",
-        "s1": null,
-        "s2": null
+        "s1": 1,
+        "s2": 1
       },
       {
         "t1": "Netherlands",
@@ -4802,7 +4802,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Paraguay",
         "t2": null,
         "s1": null,
         "s2": null
