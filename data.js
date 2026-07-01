@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-01 17:28 UTC",
+  "updated": "2026-07-01 19:20 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4208,6 +4208,11 @@ window.WC_DATA = {
       "n": 5
     },
     {
+      "p": "해리 케인",
+      "t": "England",
+      "n": 5
+    },
+    {
       "p": "비니시우스 주니오르",
       "t": "Brazil",
       "n": 4
@@ -4270,11 +4275,6 @@ window.WC_DATA = {
     {
       "p": "코디 학포",
       "t": "Netherlands",
-      "n": 3
-    },
-    {
-      "p": "해리 케인",
-      "t": "England",
       "n": 3
     },
     {
@@ -4520,6 +4520,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "앤서니 고든",
+      "t": "England",
+      "n": 2
+    },
+    {
       "p": "요주아 키미히",
       "t": "Germany",
       "n": 2
@@ -4680,11 +4685,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "루이스 디아스",
-      "t": "Colombia",
-      "n": 1
-    },
-    {
       "p": "이강인",
       "t": "South Korea",
       "n": 1
@@ -4742,8 +4742,8 @@ window.WC_DATA = {
       {
         "t1": "England",
         "t2": "DR Congo",
-        "s1": null,
-        "s2": null
+        "s1": 2,
+        "s2": 1
       },
       {
         "t1": "Belgium",
@@ -4815,7 +4815,7 @@ window.WC_DATA = {
       },
       {
         "t1": "Mexico",
-        "t2": null,
+        "t2": "England",
         "s1": null,
         "s2": null
       },
