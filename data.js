@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-01 00:07 UTC",
+  "updated": "2026-07-01 05:06 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4278,6 +4278,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "훌리안 퀴뇨네스",
+      "t": "Mexico",
+      "n": 3
+    },
+    {
       "p": "니콜라 페페",
       "t": "Ivory Coast",
       "n": 2
@@ -4290,6 +4295,11 @@ window.WC_DATA = {
     {
       "p": "라민 레자에이안",
       "t": "Iran",
+      "n": 2
+    },
+    {
+      "p": "라울 히메네스",
+      "t": "Mexico",
       "n": 2
     },
     {
@@ -4388,11 +4398,6 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "훌리안 퀴뇨네스",
-      "t": "Mexico",
-      "n": 2
-    },
-    {
       "p": "가브리엘 마르티넬리",
       "t": "Brazil",
       "n": 1
@@ -4428,11 +4433,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "네스토리 이란쿤다",
-      "t": "Australia",
-      "n": 1
-    },
-    {
       "p": "오현규",
       "t": "South Korea",
       "n": 1
@@ -4453,6 +4453,11 @@ window.WC_DATA = {
       "p": "브루노 기마랑이스",
       "t": "Brazil",
       "n": 4
+    },
+    {
+      "p": "로베르토 알바라도",
+      "t": "Mexico",
+      "n": 3
     },
     {
       "p": "마르틴 외데고르",
@@ -4487,11 +4492,6 @@ window.WC_DATA = {
     {
       "p": "라이언 흐라벤베르흐",
       "t": "Netherlands",
-      "n": 2
-    },
-    {
-      "p": "로베르토 알바라도",
-      "t": "Mexico",
       "n": 2
     },
     {
@@ -4736,8 +4736,8 @@ window.WC_DATA = {
       {
         "t1": "Mexico",
         "t2": "Ecuador",
-        "s1": null,
-        "s2": null
+        "s1": 2,
+        "s2": 0
       },
       {
         "t1": "England",
@@ -4814,7 +4814,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Mexico",
         "t2": null,
         "s1": null,
         "s2": null
