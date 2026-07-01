@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-06-30 22:50 UTC",
+  "updated": "2026-07-01 00:07 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4198,6 +4198,11 @@ window.WC_DATA = {
       "n": 6
     },
     {
+      "p": "킬리안 음바페",
+      "t": "France",
+      "n": 6
+    },
+    {
       "p": "엘링 홀란",
       "t": "Norway",
       "n": 5
@@ -4209,11 +4214,6 @@ window.WC_DATA = {
     },
     {
       "p": "우스만 뎀벨레",
-      "t": "France",
-      "n": 4
-    },
-    {
-      "p": "킬리안 음바페",
       "t": "France",
       "n": 4
     },
@@ -4323,6 +4323,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "브래들리 바르콜라",
+      "t": "France",
+      "n": 2
+    },
+    {
       "p": "아마드 디알로",
       "t": "Ivory Coast",
       "n": 2
@@ -4428,11 +4433,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "네이선 살리바",
-      "t": "Canada",
-      "n": 1
-    },
-    {
       "p": "오현규",
       "t": "South Korea",
       "n": 1
@@ -4445,6 +4445,11 @@ window.WC_DATA = {
   ],
   "assists": [
     {
+      "p": "마이클 올리세",
+      "t": "France",
+      "n": 5
+    },
+    {
       "p": "브루노 기마랑이스",
       "t": "Brazil",
       "n": 4
@@ -4452,11 +4457,6 @@ window.WC_DATA = {
     {
       "p": "마르틴 외데고르",
       "t": "Norway",
-      "n": 3
-    },
-    {
-      "p": "마이클 올리세",
-      "t": "France",
       "n": 3
     },
     {
@@ -4522,6 +4522,11 @@ window.WC_DATA = {
     {
       "p": "요주아 키미히",
       "t": "Germany",
+      "n": 2
+    },
+    {
+      "p": "우스만 뎀벨레",
+      "t": "France",
       "n": 2
     },
     {
@@ -4680,11 +4685,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "루이스 로모",
-      "t": "Mexico",
-      "n": 1
-    },
-    {
       "p": "이강인",
       "t": "South Korea",
       "n": 1
@@ -4730,8 +4730,8 @@ window.WC_DATA = {
       {
         "t1": "France",
         "t2": "Sweden",
-        "s1": null,
-        "s2": null
+        "s1": 3,
+        "s2": 0
       },
       {
         "t1": "Mexico",
@@ -4803,7 +4803,7 @@ window.WC_DATA = {
       },
       {
         "t1": "Paraguay",
-        "t2": null,
+        "t2": "France",
         "s1": null,
         "s2": null
       },
