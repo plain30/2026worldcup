@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-01 22:47 UTC",
+  "updated": "2026-07-02 00:10 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4223,6 +4223,11 @@ window.WC_DATA = {
       "n": 4
     },
     {
+      "p": "이스마일라 사르",
+      "t": "Senegal",
+      "n": 4
+    },
+    {
       "p": "데니스 운다브",
       "t": "Germany",
       "n": 3
@@ -4255,11 +4260,6 @@ window.WC_DATA = {
     {
       "p": "이스마엘 사이바리",
       "t": "Morocco",
-      "n": 3
-    },
-    {
-      "p": "이스마일라 사르",
-      "t": "Senegal",
       "n": 3
     },
     {
@@ -4304,6 +4304,11 @@ window.WC_DATA = {
     },
     {
       "p": "레안드로 트로사르",
+      "t": "Belgium",
+      "n": 2
+    },
+    {
+      "p": "로멜루 루카쿠",
       "t": "Belgium",
       "n": 2
     },
@@ -4363,6 +4368,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "유리 틸레만스",
+      "t": "Belgium",
+      "n": 2
+    },
+    {
       "p": "주드 벨링엄",
       "t": "England",
       "n": 2
@@ -4398,6 +4408,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "하비브 디아라",
+      "t": "Senegal",
+      "n": 2
+    },
+    {
       "p": "가브리엘 마르티넬리",
       "t": "Brazil",
       "n": 1
@@ -4415,21 +4430,6 @@ window.WC_DATA = {
     {
       "p": "그라니트 자카",
       "t": "Switzerland",
-      "n": 1
-    },
-    {
-      "p": "나다니엘 브라운",
-      "t": "Germany",
-      "n": 1
-    },
-    {
-      "p": "나디르 벤부알리",
-      "t": "Algeria",
-      "n": 1
-    },
-    {
-      "p": "나카무라 케이토",
-      "t": "Japan",
       "n": 1
     },
     {
@@ -4665,6 +4665,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "레안드로 트로사르",
+      "t": "Belgium",
+      "n": 1
+    },
+    {
       "p": "로드리게스",
       "t": "Ecuador",
       "n": 1
@@ -4677,11 +4682,6 @@ window.WC_DATA = {
     {
       "p": "로멜루 루카쿠",
       "t": "Belgium",
-      "n": 1
-    },
-    {
-      "p": "루벤 바르가스",
-      "t": "Switzerland",
       "n": 1
     },
     {
@@ -4748,8 +4748,8 @@ window.WC_DATA = {
       {
         "t1": "Belgium",
         "t2": "Senegal",
-        "s1": null,
-        "s2": null
+        "s1": 3,
+        "s2": 2
       },
       {
         "t1": "United States",
@@ -4827,7 +4827,7 @@ window.WC_DATA = {
       },
       {
         "t1": null,
-        "t2": null,
+        "t2": "Belgium",
         "s1": null,
         "s2": null
       },
