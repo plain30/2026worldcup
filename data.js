@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-02 00:10 UTC",
+  "updated": "2026-07-02 04:40 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4278,6 +4278,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "폴라린 발로건",
+      "t": "United States",
+      "n": 3
+    },
+    {
       "p": "훌리안 퀴뇨네스",
       "t": "Mexico",
       "n": 3
@@ -4400,11 +4405,6 @@ window.WC_DATA = {
     {
       "p": "파페 게예",
       "t": "Senegal",
-      "n": 2
-    },
-    {
-      "p": "폴라린 발로건",
-      "t": "United States",
       "n": 2
     },
     {
@@ -4754,8 +4754,8 @@ window.WC_DATA = {
       {
         "t1": "United States",
         "t2": "Bosnia and Herzegovina",
-        "s1": null,
-        "s2": null
+        "s1": 2,
+        "s2": 0
       },
       {
         "t1": "Spain",
@@ -4826,7 +4826,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "United States",
         "t2": "Belgium",
         "s1": null,
         "s2": null
