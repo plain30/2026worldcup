@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-03 03:28 UTC",
+  "updated": "2026-07-03 06:48 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4353,6 +4353,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "브렐 엠볼로",
+      "t": "Switzerland",
+      "n": 2
+    },
+    {
       "p": "아마드 디알로",
       "t": "Ivory Coast",
       "n": 2
@@ -4425,11 +4430,6 @@ window.WC_DATA = {
     {
       "p": "곤살로 플라타",
       "t": "Ecuador",
-      "n": 1
-    },
-    {
-      "p": "곤살루 하무스",
-      "t": "Portugal",
       "n": 1
     },
     {
@@ -4532,6 +4532,11 @@ window.WC_DATA = {
     {
       "p": "요주아 키미히",
       "t": "Germany",
+      "n": 2
+    },
+    {
+      "p": "요한 만잠비",
+      "t": "Switzerland",
       "n": 2
     },
     {
@@ -4680,11 +4685,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "로드리고 데 파울",
-      "t": "Argentina",
-      "n": 1
-    },
-    {
       "p": "이강인",
       "t": "South Korea",
       "n": 1
@@ -4772,8 +4772,8 @@ window.WC_DATA = {
       {
         "t1": "Switzerland",
         "t2": "Algeria",
-        "s1": null,
-        "s2": null
+        "s1": 2,
+        "s2": 0
       },
       {
         "t1": "Australia",
@@ -4838,7 +4838,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Switzerland",
         "t2": null,
         "s1": null,
         "s2": null
