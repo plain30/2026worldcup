@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-03 19:41 UTC",
+  "updated": "2026-07-03 21:09 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4378,6 +4378,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "에맘 아슈르",
+      "t": "Egypt",
+      "n": 2
+    },
+    {
       "p": "우에다 아야세",
       "t": "Japan",
       "n": 2
@@ -4425,11 +4430,6 @@ window.WC_DATA = {
     {
       "p": "게시메 야신",
       "t": "Morocco",
-      "n": 1
-    },
-    {
-      "p": "곤살로 플라타",
-      "t": "Ecuador",
       "n": 1
     },
     {
@@ -4778,8 +4778,8 @@ window.WC_DATA = {
       {
         "t1": "Australia",
         "t2": "Egypt",
-        "s1": null,
-        "s2": null
+        "s1": 1,
+        "s2": 1
       },
       {
         "t1": "Argentina",
@@ -4833,7 +4833,7 @@ window.WC_DATA = {
       },
       {
         "t1": null,
-        "t2": null,
+        "t2": "Egypt",
         "s1": null,
         "s2": null
       },
