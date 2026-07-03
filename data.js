@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-02 23:38 UTC",
+  "updated": "2026-07-03 03:28 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4283,6 +4283,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "크리스티아누 호날두",
+      "t": "Portugal",
+      "n": 3
+    },
+    {
       "p": "폴라린 발로건",
       "t": "United States",
       "n": 3
@@ -4398,11 +4403,6 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "크리스티아누 호날두",
-      "t": "Portugal",
-      "n": 2
-    },
-    {
       "p": "파페 게예",
       "t": "Senegal",
       "n": 2
@@ -4428,8 +4428,8 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "그라니트 자카",
-      "t": "Switzerland",
+      "p": "곤살루 하무스",
+      "t": "Portugal",
       "n": 1
     },
     {
@@ -4766,8 +4766,8 @@ window.WC_DATA = {
       {
         "t1": "Portugal",
         "t2": "Croatia",
-        "s1": null,
-        "s2": null
+        "s1": 2,
+        "s2": 1
       },
       {
         "t1": "Switzerland",
@@ -4820,7 +4820,7 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Portugal",
         "t2": "Spain",
         "s1": null,
         "s2": null
