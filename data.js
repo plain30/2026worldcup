@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-04 00:06 UTC",
+  "updated": "2026-07-04 04:12 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4195,7 +4195,7 @@ window.WC_DATA = {
     {
       "p": "리오넬 메시",
       "t": "Argentina",
-      "n": 6
+      "n": 7
     },
     {
       "p": "킬리안 음바페",
@@ -4675,13 +4675,13 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "레안드로 트로사르",
-      "t": "Belgium",
+      "p": "라이언 멘데스",
+      "t": "Cape Verde",
       "n": 1
     },
     {
-      "p": "로드리게스",
-      "t": "Ecuador",
+      "p": "레안드로 트로사르",
+      "t": "Belgium",
       "n": 1
     },
     {
@@ -4784,14 +4784,14 @@ window.WC_DATA = {
       {
         "t1": "Argentina",
         "t2": "Cape Verde",
-        "s1": null,
-        "s2": null
+        "s1": 3,
+        "s2": 2
       },
       {
         "t1": "Colombia",
         "t2": "Ghana",
-        "s1": null,
-        "s2": null
+        "s1": 1,
+        "s2": 0
       }
     ],
     "r16": [
@@ -4832,14 +4832,14 @@ window.WC_DATA = {
         "s2": null
       },
       {
-        "t1": null,
+        "t1": "Argentina",
         "t2": "Egypt",
         "s1": null,
         "s2": null
       },
       {
         "t1": "Switzerland",
-        "t2": null,
+        "t2": "Colombia",
         "s1": null,
         "s2": null
       }
