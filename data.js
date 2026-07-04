@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-04 18:02 UTC",
+  "updated": "2026-07-04 19:44 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4358,8 +4358,18 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "수피안 라히미",
+      "t": "Morocco",
+      "n": 2
+    },
+    {
       "p": "아마드 디알로",
       "t": "Ivory Coast",
+      "n": 2
+    },
+    {
+      "p": "아제딘 우나히",
+      "t": "Morocco",
       "n": 2
     },
     {
@@ -4423,16 +4433,6 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "가브리엘 마르티넬리",
-      "t": "Brazil",
-      "n": 1
-    },
-    {
-      "p": "게시메 야신",
-      "t": "Morocco",
-      "n": 1
-    },
-    {
       "p": "오현규",
       "t": "South Korea",
       "n": 1
@@ -4448,6 +4448,11 @@ window.WC_DATA = {
       "p": "마이클 올리세",
       "t": "France",
       "n": 5
+    },
+    {
+      "p": "브라힘 디아스",
+      "t": "Morocco",
+      "n": 4
     },
     {
       "p": "브루노 기마랑이스",
@@ -4510,11 +4515,6 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "브라힘 디아스",
-      "t": "Morocco",
-      "n": 2
-    },
-    {
       "p": "브렐 엠볼로",
       "t": "Switzerland",
       "n": 2
@@ -4522,6 +4522,11 @@ window.WC_DATA = {
     {
       "p": "빅토르 요케레스",
       "t": "Sweden",
+      "n": 2
+    },
+    {
+      "p": "아슈라프 하키미",
+      "t": "Morocco",
       "n": 2
     },
     {
@@ -4680,11 +4685,6 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "레안드로 트로사르",
-      "t": "Belgium",
-      "n": 1
-    },
-    {
       "p": "이강인",
       "t": "South Korea",
       "n": 1
@@ -4798,8 +4798,8 @@ window.WC_DATA = {
       {
         "t1": "Canada",
         "t2": "Morocco",
-        "s1": null,
-        "s2": null
+        "s1": 0,
+        "s2": 3
       },
       {
         "t1": "Paraguay",
@@ -4847,7 +4847,7 @@ window.WC_DATA = {
     "qf": [
       {
         "t1": null,
-        "t2": null,
+        "t2": "Morocco",
         "s1": null,
         "s2": null
       },
