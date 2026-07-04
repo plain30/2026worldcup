@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-04 22:06 UTC",
+  "updated": "2026-07-04 23:31 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4200,7 +4200,7 @@ window.WC_DATA = {
     {
       "p": "킬리안 음바페",
       "t": "France",
-      "n": 6
+      "n": 7
     },
     {
       "p": "엘링 홀란",
@@ -4804,8 +4804,8 @@ window.WC_DATA = {
       {
         "t1": "Paraguay",
         "t2": "France",
-        "s1": null,
-        "s2": null
+        "s1": 0,
+        "s2": 1
       },
       {
         "t1": "Brazil",
@@ -4846,7 +4846,7 @@ window.WC_DATA = {
     ],
     "qf": [
       {
-        "t1": null,
+        "t1": "France",
         "t2": "Morocco",
         "s1": null,
         "s2": null
