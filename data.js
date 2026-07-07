@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-07 22:37 UTC",
+  "updated": "2026-07-07 23:58 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4840,8 +4840,8 @@ window.WC_DATA = {
       {
         "t1": "Switzerland",
         "t2": "Colombia",
-        "s1": null,
-        "s2": null
+        "s1": 0,
+        "s2": 0
       }
     ],
     "qf": [
@@ -4865,7 +4865,7 @@ window.WC_DATA = {
       },
       {
         "t1": "Argentina",
-        "t2": null,
+        "t2": "Switzerland",
         "s1": null,
         "s2": null
       }
