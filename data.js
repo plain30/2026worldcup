@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-09 21:58 UTC",
+  "updated": "2026-07-09 23:20 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4198,19 +4198,24 @@ window.WC_DATA = {
       "n": 8
     },
     {
-      "p": "엘링 홀란",
-      "t": "Norway",
-      "n": 7
-    },
-    {
       "p": "킬리안 음바페",
       "t": "France",
+      "n": 8
+    },
+    {
+      "p": "엘링 홀란",
+      "t": "Norway",
       "n": 7
     },
     {
       "p": "해리 케인",
       "t": "England",
       "n": 6
+    },
+    {
+      "p": "우스만 뎀벨레",
+      "t": "France",
+      "n": 5
     },
     {
       "p": "미켈 오야르사발",
@@ -4220,11 +4225,6 @@ window.WC_DATA = {
     {
       "p": "비니시우스 주니오르",
       "t": "Brazil",
-      "n": 4
-    },
-    {
-      "p": "우스만 뎀벨레",
-      "t": "France",
       "n": 4
     },
     {
@@ -4485,6 +4485,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "킬리안 음바페",
+      "t": "France",
+      "n": 3
+    },
+    {
       "p": "플로리안 비르츠",
       "t": "Germany",
       "n": 3
@@ -4577,11 +4582,6 @@ window.WC_DATA = {
     {
       "p": "크리스 우드",
       "t": "New Zealand",
-      "n": 2
-    },
-    {
-      "p": "킬리안 음바페",
-      "t": "France",
       "n": 2
     },
     {
@@ -4680,8 +4680,8 @@ window.WC_DATA = {
       "n": 1
     },
     {
-      "p": "데클란 라이스",
-      "t": "England",
+      "p": "데지레 두에",
+      "t": "France",
       "n": 1
     },
     {
@@ -4848,8 +4848,8 @@ window.WC_DATA = {
       {
         "t1": "France",
         "t2": "Morocco",
-        "s1": null,
-        "s2": null
+        "s1": 2,
+        "s2": 0
       },
       {
         "t1": "Spain",
@@ -4872,7 +4872,7 @@ window.WC_DATA = {
     ],
     "sf": [
       {
-        "t1": null,
+        "t1": "France",
         "t2": null,
         "s1": null,
         "s2": null
