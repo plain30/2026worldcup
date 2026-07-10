@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-10 20:49 UTC",
+  "updated": "2026-07-10 22:05 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4268,6 +4268,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "샤를 데 케텔라에르",
+      "t": "Belgium",
+      "n": 3
+    },
+    {
       "p": "엘리야 저스트",
       "t": "New Zealand",
       "n": 3
@@ -4363,6 +4368,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "미켈 메리노",
+      "t": "Spain",
+      "n": 2
+    },
+    {
       "p": "브래들리 바르콜라",
       "t": "France",
       "n": 2
@@ -4370,11 +4380,6 @@ window.WC_DATA = {
     {
       "p": "브렐 엠볼로",
       "t": "Switzerland",
-      "n": 2
-    },
-    {
-      "p": "샤를 데 케텔라에르",
-      "t": "Belgium",
       "n": 2
     },
     {
@@ -4435,11 +4440,6 @@ window.WC_DATA = {
     {
       "p": "크리센시오 서머빌",
       "t": "Netherlands",
-      "n": 2
-    },
-    {
-      "p": "파페 게예",
-      "t": "Senegal",
       "n": 2
     }
   ],
@@ -4854,8 +4854,8 @@ window.WC_DATA = {
       {
         "t1": "Spain",
         "t2": "Belgium",
-        "s1": null,
-        "s2": null
+        "s1": 2,
+        "s2": 1
       },
       {
         "t1": "Norway",
@@ -4873,7 +4873,7 @@ window.WC_DATA = {
     "sf": [
       {
         "t1": "France",
-        "t2": null,
+        "t2": "Spain",
         "s1": null,
         "s2": null
       },
