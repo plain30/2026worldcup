@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-11 23:56 UTC",
+  "updated": "2026-07-12 03:37 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4208,6 +4208,11 @@ window.WC_DATA = {
       "n": 7
     },
     {
+      "p": "주드 벨링엄",
+      "t": "England",
+      "n": 6
+    },
+    {
       "p": "해리 케인",
       "t": "England",
       "n": 6
@@ -4230,11 +4235,6 @@ window.WC_DATA = {
     {
       "p": "이스마일라 사르",
       "t": "Senegal",
-      "n": 4
-    },
-    {
-      "p": "주드 벨링엄",
-      "t": "England",
       "n": 4
     },
     {
@@ -4450,6 +4450,11 @@ window.WC_DATA = {
       "n": 5
     },
     {
+      "p": "마르틴 외데고르",
+      "t": "Norway",
+      "n": 4
+    },
+    {
       "p": "브라힘 디아스",
       "t": "Morocco",
       "n": 4
@@ -4465,11 +4470,6 @@ window.WC_DATA = {
       "n": 3
     },
     {
-      "p": "마르틴 외데고르",
-      "t": "Norway",
-      "n": 3
-    },
-    {
       "p": "부카요 사카",
       "t": "England",
       "n": 3
@@ -4482,6 +4482,11 @@ window.WC_DATA = {
     {
       "p": "알렉산더 이삭",
       "t": "Sweden",
+      "n": 3
+    },
+    {
+      "p": "앤서니 고든",
+      "t": "England",
       "n": 3
     },
     {
@@ -4547,11 +4552,6 @@ window.WC_DATA = {
     {
       "p": "아슈라프 하키미",
       "t": "Morocco",
-      "n": 2
-    },
-    {
-      "p": "앤서니 고든",
-      "t": "England",
       "n": 2
     },
     {
