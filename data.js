@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-15 20:33 UTC",
+  "updated": "2026-07-15 22:03 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4248,6 +4248,11 @@ window.WC_DATA = {
       "n": 3
     },
     {
+      "p": "라우타로 마르티네스",
+      "t": "Argentina",
+      "n": 3
+    },
+    {
       "p": "라울 히메네스",
       "t": "Mexico",
       "n": 3
@@ -4338,11 +4343,6 @@ window.WC_DATA = {
       "n": 2
     },
     {
-      "p": "라우타로 마르티네스",
-      "t": "Argentina",
-      "n": 2
-    },
-    {
       "p": "레안드로 트로사르",
       "t": "Belgium",
       "n": 2
@@ -4428,6 +4428,11 @@ window.WC_DATA = {
       "n": 2
     },
     {
+      "p": "엔소 페르난데스",
+      "t": "Argentina",
+      "n": 2
+    },
+    {
       "p": "우에다 아야세",
       "t": "Japan",
       "n": 2
@@ -4436,11 +4441,6 @@ window.WC_DATA = {
       "p": "유리 틸레만스",
       "t": "Belgium",
       "n": 2
-    },
-    {
-      "p": "카마다 다이치",
-      "t": "Japan",
-      "n": 2
     }
   ],
   "assists": [
@@ -4448,6 +4448,11 @@ window.WC_DATA = {
       "p": "마이클 올리세",
       "t": "France",
       "n": 5
+    },
+    {
+      "p": "리오넬 메시",
+      "t": "Argentina",
+      "n": 4
     },
     {
       "p": "마르틴 외데고르",
@@ -4532,11 +4537,6 @@ window.WC_DATA = {
     {
       "p": "레안드로 트로사르",
       "t": "Belgium",
-      "n": 2
-    },
-    {
-      "p": "리오넬 메시",
-      "t": "Argentina",
       "n": 2
     },
     {
@@ -4880,21 +4880,21 @@ window.WC_DATA = {
       {
         "t1": "England",
         "t2": "Argentina",
-        "s1": null,
-        "s2": null
+        "s1": 1,
+        "s2": 2
       }
     ],
     "third": [],
     "final": [
       {
         "t1": "France",
-        "t2": null,
+        "t2": "England",
         "s1": null,
         "s2": null
       },
       {
         "t1": "Spain",
-        "t2": null,
+        "t2": "Argentina",
         "s1": null,
         "s2": null
       }
