@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-16 17:18 UTC",
+  "updated": "2026-07-16 18:41 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
