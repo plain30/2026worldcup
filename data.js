@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-07-19 21:54 UTC",
+  "updated": "2026-07-19 22:54 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -4660,6 +4660,11 @@ window.WC_DATA = {
       "n": 1
     },
     {
+      "p": "니코 윌리엄스",
+      "t": "Spain",
+      "n": 1
+    },
+    {
       "p": "니콜라 잭슨",
       "t": "Senegal",
       "n": 1
@@ -4677,11 +4682,6 @@ window.WC_DATA = {
     {
       "p": "다비드 묄레르 볼페",
       "t": "Norway",
-      "n": 1
-    },
-    {
-      "p": "다비드 알라바",
-      "t": "Austria",
       "n": 1
     },
     {
@@ -4895,8 +4895,8 @@ window.WC_DATA = {
       {
         "t1": "Spain",
         "t2": "Argentina",
-        "s1": null,
-        "s2": null
+        "s1": 1,
+        "s2": 0
       }
     ]
   },
