@@ -1,5 +1,5 @@
 window.WC_DATA = {
-  "updated": "2026-08-25 17:05 UTC",
+  "updated": "2026-08-25 17:57 UTC",
   "note": "스코어·순위는 GitHub Actions가 football-data.org에서 자동 갱신. 선수 상세(라인업·득점·도움·카드)는 수동 시드 데이터(교차검증).",
   "matches": [
     {
@@ -1002,27 +1002,13 @@ window.WC_DATA = {
       "date": "2026-06-16",
       "group": "H",
       "t1": "Spain",
-      "t2": "Cape Verde",
+      "t2": "Cape Verde Islands",
       "venue": "",
       "city": "",
       "goals": [],
       "assists": [],
-      "cards": [
-        {
-          "p": "시드니 카브랄",
-          "t": "Cape Verde",
-          "m": 16,
-          "c": "yellow"
-        },
-        {
-          "p": "페드리",
-          "t": "Spain",
-          "m": "90+3",
-          "c": "yellow"
-        }
-      ],
+      "cards": [],
       "lineups": null,
-      "naverEvents": true,
       "s1": 0,
       "s2": 0
     },
@@ -1805,65 +1791,13 @@ window.WC_DATA = {
       "date": "2026-06-22",
       "group": "H",
       "t1": "Uruguay",
-      "t2": "Cape Verde",
+      "t2": "Cape Verde Islands",
       "venue": "",
       "city": "",
-      "goals": [
-        {
-          "p": "케빈 피나",
-          "t": "Cape Verde",
-          "m": 21
-        },
-        {
-          "p": "막시 아라우호",
-          "t": "Uruguay",
-          "m": 44
-        },
-        {
-          "p": "카노비오",
-          "t": "Uruguay",
-          "m": "45+6"
-        },
-        {
-          "p": "엘리우 바렐라",
-          "t": "Cape Verde",
-          "m": 61
-        }
-      ],
-      "assists": [
-        {
-          "p": "막시 아라우호",
-          "t": "Uruguay"
-        }
-      ],
-      "cards": [
-        {
-          "p": "시드니 카브랄",
-          "t": "Cape Verde",
-          "m": 5,
-          "c": "yellow"
-        },
-        {
-          "p": "벤탄쿠르",
-          "t": "Uruguay",
-          "m": 20,
-          "c": "yellow"
-        },
-        {
-          "p": "올리베라",
-          "t": "Uruguay",
-          "m": 58,
-          "c": "yellow"
-        },
-        {
-          "p": "디네이 보르제스",
-          "t": "Cape Verde",
-          "m": "90+3",
-          "c": "yellow"
-        }
-      ],
+      "goals": [],
+      "assists": [],
+      "cards": [],
       "lineups": null,
-      "naverEvents": true,
       "s1": 2,
       "s2": 2
     },
@@ -2258,45 +2192,6 @@ window.WC_DATA = {
     {
       "date": "2026-06-25",
       "group": "A",
-      "t1": "South Africa",
-      "t2": "South Korea",
-      "venue": "Monterrey Stadium",
-      "city": "Monterrey",
-      "goals": [
-        {
-          "p": "마세코",
-          "t": "South Africa",
-          "m": 63
-        }
-      ],
-      "assists": [
-        {
-          "p": "모레미",
-          "t": "South Africa"
-        }
-      ],
-      "cards": [
-        {
-          "p": "모디바",
-          "t": "South Africa",
-          "m": 73,
-          "c": "yellow"
-        },
-        {
-          "p": "조규성",
-          "t": "South Korea",
-          "m": 79,
-          "c": "yellow"
-        }
-      ],
-      "lineups": null,
-      "naverEvents": true,
-      "s1": 1,
-      "s2": 0
-    },
-    {
-      "date": "2026-06-25",
-      "group": "A",
       "t1": "Czechia",
       "t2": "Mexico",
       "venue": "Mexico City Stadium",
@@ -2347,60 +2242,42 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-25",
-      "group": "B",
-      "t1": "Bosnia and Herzegovina",
-      "t2": "Qatar",
-      "venue": "Seattle Stadium",
-      "city": "Seattle",
+      "group": "A",
+      "t1": "South Africa",
+      "t2": "South Korea",
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey",
       "goals": [
         {
-          "p": "알라이베고비치",
-          "t": "Bosnia and Herzegovina",
-          "m": 29
-        },
-        {
-          "p": "하산 알 하이도스",
-          "t": "Qatar",
-          "m": 42
-        },
-        {
-          "p": "마흐미치",
-          "t": "Bosnia and Herzegovina",
-          "m": 80
+          "p": "마세코",
+          "t": "South Africa",
+          "m": 63
         }
       ],
       "assists": [
         {
-          "p": "바시치",
-          "t": "Bosnia and Herzegovina"
-        },
-        {
-          "p": "에드밀손 주니오르",
-          "t": "Qatar"
-        },
-        {
-          "p": "하지카두니치",
-          "t": "Bosnia and Herzegovina"
+          "p": "모레미",
+          "t": "South Africa"
         }
       ],
       "cards": [
         {
-          "p": "아흐메드 파티",
-          "t": "Qatar",
-          "m": 78,
+          "p": "모디바",
+          "t": "South Africa",
+          "m": 73,
           "c": "yellow"
         },
         {
-          "p": "마흐미치",
-          "t": "Bosnia and Herzegovina",
-          "m": 82,
+          "p": "조규성",
+          "t": "South Korea",
+          "m": 79,
           "c": "yellow"
         }
       ],
       "lineups": null,
       "naverEvents": true,
-      "s1": 3,
-      "s2": 1
+      "s1": 1,
+      "s2": 0
     },
     {
       "date": "2026-06-25",
@@ -2463,6 +2340,63 @@ window.WC_DATA = {
       "lineups": null,
       "naverEvents": true,
       "s1": 2,
+      "s2": 1
+    },
+    {
+      "date": "2026-06-25",
+      "group": "B",
+      "t1": "Bosnia and Herzegovina",
+      "t2": "Qatar",
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "goals": [
+        {
+          "p": "알라이베고비치",
+          "t": "Bosnia and Herzegovina",
+          "m": 29
+        },
+        {
+          "p": "하산 알 하이도스",
+          "t": "Qatar",
+          "m": 42
+        },
+        {
+          "p": "마흐미치",
+          "t": "Bosnia and Herzegovina",
+          "m": 80
+        }
+      ],
+      "assists": [
+        {
+          "p": "바시치",
+          "t": "Bosnia and Herzegovina"
+        },
+        {
+          "p": "에드밀손 주니오르",
+          "t": "Qatar"
+        },
+        {
+          "p": "하지카두니치",
+          "t": "Bosnia and Herzegovina"
+        }
+      ],
+      "cards": [
+        {
+          "p": "아흐메드 파티",
+          "t": "Qatar",
+          "m": 78,
+          "c": "yellow"
+        },
+        {
+          "p": "마흐미치",
+          "t": "Bosnia and Herzegovina",
+          "m": 82,
+          "c": "yellow"
+        }
+      ],
+      "lineups": null,
+      "naverEvents": true,
+      "s1": 3,
       "s2": 1
     },
     {
@@ -2608,34 +2542,6 @@ window.WC_DATA = {
     {
       "date": "2026-06-26",
       "group": "D",
-      "t1": "Paraguay",
-      "t2": "Australia",
-      "venue": "San Francisco Bay Area Stadium",
-      "city": "San Francisco Bay Area",
-      "goals": [],
-      "assists": [],
-      "cards": [
-        {
-          "p": "어바인",
-          "t": "Australia",
-          "m": 46,
-          "c": "yellow"
-        },
-        {
-          "p": "디에고 고메스",
-          "t": "Paraguay",
-          "m": 77,
-          "c": "yellow"
-        }
-      ],
-      "lineups": null,
-      "naverEvents": true,
-      "s1": 0,
-      "s2": 0
-    },
-    {
-      "date": "2026-06-26",
-      "group": "D",
       "t1": "Turkey",
       "t2": "United States",
       "venue": "Los Angeles Stadium",
@@ -2696,57 +2602,31 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-26",
-      "group": "E",
-      "t1": "Curaçao",
-      "t2": "Ivory Coast",
-      "venue": "Philadelphia Stadium",
-      "city": "Philadelphia",
-      "goals": [
-        {
-          "p": "페페",
-          "t": "Ivory Coast",
-          "m": 7
-        },
-        {
-          "p": "페페",
-          "t": "Ivory Coast",
-          "m": 64
-        }
-      ],
-      "assists": [
-        {
-          "p": "디오망데",
-          "t": "Ivory Coast"
-        },
-        {
-          "p": "상가레",
-          "t": "Ivory Coast"
-        }
-      ],
+      "group": "D",
+      "t1": "Paraguay",
+      "t2": "Australia",
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "goals": [],
+      "assists": [],
       "cards": [
         {
-          "p": "페페",
-          "t": "Ivory Coast",
-          "m": 35,
+          "p": "어바인",
+          "t": "Australia",
+          "m": 46,
           "c": "yellow"
         },
         {
-          "p": "주니뉴 바쿠나",
-          "t": "Curaçao",
-          "m": 75,
-          "c": "yellow"
-        },
-        {
-          "p": "카스타네르",
-          "t": "Curaçao",
-          "m": 83,
+          "p": "디에고 고메스",
+          "t": "Paraguay",
+          "m": 77,
           "c": "yellow"
         }
       ],
       "lineups": null,
       "naverEvents": true,
       "s1": 0,
-      "s2": 2
+      "s2": 0
     },
     {
       "date": "2026-06-26",
@@ -2816,6 +2696,60 @@ window.WC_DATA = {
       "naverEvents": true,
       "s1": 2,
       "s2": 1
+    },
+    {
+      "date": "2026-06-26",
+      "group": "E",
+      "t1": "Curaçao",
+      "t2": "Ivory Coast",
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "goals": [
+        {
+          "p": "페페",
+          "t": "Ivory Coast",
+          "m": 7
+        },
+        {
+          "p": "페페",
+          "t": "Ivory Coast",
+          "m": 64
+        }
+      ],
+      "assists": [
+        {
+          "p": "디오망데",
+          "t": "Ivory Coast"
+        },
+        {
+          "p": "상가레",
+          "t": "Ivory Coast"
+        }
+      ],
+      "cards": [
+        {
+          "p": "페페",
+          "t": "Ivory Coast",
+          "m": 35,
+          "c": "yellow"
+        },
+        {
+          "p": "주니뉴 바쿠나",
+          "t": "Curaçao",
+          "m": 75,
+          "c": "yellow"
+        },
+        {
+          "p": "카스타네르",
+          "t": "Curaçao",
+          "m": 83,
+          "c": "yellow"
+        }
+      ],
+      "lineups": null,
+      "naverEvents": true,
+      "s1": 0,
+      "s2": 2
     },
     {
       "date": "2026-06-26",
@@ -3115,42 +3049,91 @@ window.WC_DATA = {
     {
       "date": "2026-06-27",
       "group": "H",
-      "t1": "Cape Verde",
+      "t1": "Cape Verde Islands",
       "t2": "Saudi Arabia",
       "venue": "",
       "city": "",
       "goals": [],
       "assists": [],
+      "cards": [],
+      "lineups": null,
+      "s1": 0,
+      "s2": 0
+    },
+    {
+      "date": "2026-06-27",
+      "group": "I",
+      "t1": "Norway",
+      "t2": "France",
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "goals": [
+        {
+          "p": "뎀벨레",
+          "t": "France",
+          "m": 7
+        },
+        {
+          "p": "뎀벨레",
+          "t": "France",
+          "m": 20
+        },
+        {
+          "p": "오스고르",
+          "t": "Norway",
+          "m": 21
+        },
+        {
+          "p": "뎀벨레",
+          "t": "France",
+          "m": 32
+        },
+        {
+          "p": "두에",
+          "t": "France",
+          "m": "90+4"
+        }
+      ],
+      "assists": [
+        {
+          "p": "음바페",
+          "t": "France"
+        },
+        {
+          "p": "음바페",
+          "t": "France"
+        },
+        {
+          "p": "시엘데루프",
+          "t": "Norway"
+        },
+        {
+          "p": "추아메니",
+          "t": "France"
+        },
+        {
+          "p": "바르콜라",
+          "t": "France"
+        }
+      ],
       "cards": [
         {
-          "p": "사우드 압둘하미드",
-          "t": "Saudi Arabia",
-          "m": 4,
+          "p": "베르그",
+          "t": "Norway",
+          "m": 10,
           "c": "yellow"
         },
         {
-          "p": "바그너 피나",
-          "t": "Cape Verde",
-          "m": 8,
-          "c": "yellow"
-        },
-        {
-          "p": "나세르 알 다우사리",
-          "t": "Saudi Arabia",
-          "m": 67,
-          "c": "yellow"
-        },
-        {
-          "p": "페라스 알 부라이칸",
-          "t": "Saudi Arabia",
-          "m": "90+3",
+          "p": "추아메니",
+          "t": "France",
+          "m": 74,
           "c": "yellow"
         }
       ],
       "lineups": null,
       "naverEvents": true,
-      "s1": 0,
-      "s2": 0
+      "s1": 1,
+      "s2": 4
     },
     {
       "date": "2026-06-27",
@@ -3240,79 +3223,59 @@ window.WC_DATA = {
       "s2": 0
     },
     {
-      "date": "2026-06-27",
-      "group": "I",
-      "t1": "Norway",
-      "t2": "France",
-      "venue": "Boston Stadium",
-      "city": "Boston",
+      "date": "2026-06-28",
+      "group": "J",
+      "t1": "Jordan",
+      "t2": "Argentina",
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
       "goals": [
         {
-          "p": "뎀벨레",
-          "t": "France",
-          "m": 7
+          "p": "로 셀소",
+          "t": "Argentina",
+          "m": 19
         },
         {
-          "p": "뎀벨레",
-          "t": "France",
-          "m": 20
+          "p": "무사 알 타마리",
+          "t": "Jordan",
+          "m": 55
         },
         {
-          "p": "오스고르",
-          "t": "Norway",
-          "m": 21
-        },
-        {
-          "p": "뎀벨레",
-          "t": "France",
-          "m": 32
-        },
-        {
-          "p": "두에",
-          "t": "France",
-          "m": "90+4"
+          "p": "메시",
+          "t": "Argentina",
+          "m": 80
         }
       ],
       "assists": [
         {
-          "p": "음바페",
-          "t": "France"
-        },
-        {
-          "p": "음바페",
-          "t": "France"
-        },
-        {
-          "p": "시엘데루프",
-          "t": "Norway"
-        },
-        {
-          "p": "추아메니",
-          "t": "France"
-        },
-        {
-          "p": "바르콜라",
-          "t": "France"
+          "p": "이산 하다드",
+          "t": "Jordan"
         }
       ],
       "cards": [
         {
-          "p": "베르그",
-          "t": "Norway",
-          "m": 10,
+          "p": "모하나드 아부 타하",
+          "t": "Jordan",
+          "m": 17,
           "c": "yellow"
         },
         {
-          "p": "추아메니",
-          "t": "France",
-          "m": 74,
+          "p": "야잔",
+          "t": "Jordan",
+          "m": 64,
+          "c": "yellow"
+        },
+        {
+          "p": "모하마드 아부 즈라이크",
+          "t": "Jordan",
+          "m": "90+4",
           "c": "yellow"
         }
       ],
       "lineups": null,
       "naverEvents": true,
       "s1": 1,
-      "s2": 4
+      "s2": 3
     },
     {
       "date": "2026-06-28",
@@ -3390,58 +3353,25 @@ window.WC_DATA = {
     },
     {
       "date": "2026-06-28",
-      "group": "J",
-      "t1": "Jordan",
-      "t2": "Argentina",
-      "venue": "Dallas Stadium",
-      "city": "Dallas",
-      "goals": [
-        {
-          "p": "로 셀소",
-          "t": "Argentina",
-          "m": 19
-        },
-        {
-          "p": "무사 알 타마리",
-          "t": "Jordan",
-          "m": 55
-        },
-        {
-          "p": "메시",
-          "t": "Argentina",
-          "m": 80
-        }
-      ],
-      "assists": [
-        {
-          "p": "이산 하다드",
-          "t": "Jordan"
-        }
-      ],
+      "group": "K",
+      "t1": "Colombia",
+      "t2": "Portugal",
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "goals": [],
+      "assists": [],
       "cards": [
         {
-          "p": "모하나드 아부 타하",
-          "t": "Jordan",
-          "m": 17,
-          "c": "yellow"
-        },
-        {
-          "p": "야잔",
-          "t": "Jordan",
-          "m": 64,
-          "c": "yellow"
-        },
-        {
-          "p": "모하마드 아부 즈라이크",
-          "t": "Jordan",
-          "m": "90+4",
+          "p": "푸에르타",
+          "t": "Colombia",
+          "m": 86,
           "c": "yellow"
         }
       ],
       "lineups": null,
       "naverEvents": true,
-      "s1": 1,
-      "s2": 3
+      "s1": 0,
+      "s2": 0
     },
     {
       "date": "2026-06-28",
@@ -3513,28 +3443,6 @@ window.WC_DATA = {
       "naverEvents": true,
       "s1": 3,
       "s2": 1
-    },
-    {
-      "date": "2026-06-28",
-      "group": "K",
-      "t1": "Colombia",
-      "t2": "Portugal",
-      "venue": "Miami Stadium",
-      "city": "Miami",
-      "goals": [],
-      "assists": [],
-      "cards": [
-        {
-          "p": "푸에르타",
-          "t": "Colombia",
-          "m": 86,
-          "c": "yellow"
-        }
-      ],
-      "lineups": null,
-      "naverEvents": true,
-      "s1": 0,
-      "s2": 0
     },
     {
       "date": "2026-06-28",
@@ -3999,13 +3907,13 @@ window.WC_DATA = {
         },
         {
           "t": "Cape Verde",
-          "pld": 3,
+          "pld": 0,
           "w": 0,
-          "d": 3,
+          "d": 0,
           "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 3
+          "gf": 0,
+          "ga": 0,
+          "pts": 0
         }
       ]
     },
@@ -4190,7 +4098,7 @@ window.WC_DATA = {
       ]
     }
   ],
-  "source_note": "FIFA api.fifa.com",
+  "source_note": "football-data.org",
   "scorers": [
     {
       "p": "킬리안 음바페",
@@ -4712,14 +4620,14 @@ window.WC_DATA = {
       {
         "t1": "Germany",
         "t2": "Paraguay",
-        "s1": 1,
-        "s2": 1
+        "s1": 4,
+        "s2": 5
       },
       {
         "t1": "Netherlands",
         "t2": "Morocco",
-        "s1": 1,
-        "s2": 1
+        "s1": 3,
+        "s2": 4
       },
       {
         "t1": "Ivory Coast",
@@ -4778,12 +4686,12 @@ window.WC_DATA = {
       {
         "t1": "Australia",
         "t2": "Egypt",
-        "s1": 1,
-        "s2": 1
+        "s1": 3,
+        "s2": 5
       },
       {
         "t1": "Argentina",
-        "t2": "Cape Verde",
+        "t2": "Cape Verde Islands",
         "s1": 3,
         "s2": 2
       },
@@ -4840,8 +4748,8 @@ window.WC_DATA = {
       {
         "t1": "Switzerland",
         "t2": "Colombia",
-        "s1": 0,
-        "s2": 0
+        "s1": 4,
+        "s2": 3
       }
     ],
     "qf": [
@@ -4884,14 +4792,15 @@ window.WC_DATA = {
         "s2": 2
       }
     ],
-    "third": [],
-    "final": [
+    "third": [
       {
         "t1": "France",
         "t2": "England",
         "s1": 4,
         "s2": 6
-      },
+      }
+    ],
+    "final": [
       {
         "t1": "Spain",
         "t2": "Argentina",
